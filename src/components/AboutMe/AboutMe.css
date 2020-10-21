@@ -31,13 +31,14 @@ font-weight: 100;
     
     color: #FFFFFF;
 }
-.computer{
-   position: absolute;
-   left: 45vw;
+.astraunaut{
+   position: relative;
+   left: 55vw;
+   width: 50px; 
 }
 .image{
     height: auto;
-    width: 50vw;
+    width: 35vw;
 }
 .line1{
     display: block;
