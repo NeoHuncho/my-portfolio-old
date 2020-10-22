@@ -2,9 +2,10 @@ import React from 'react'
 import './MyProjects.css'
 import computer from './files/final art.svg';
 import Button from 'react-bootstrap/Button';
+import '../general.css';
 export default function MyProjects() {
     return (
-        <div id='myProjects'>
+        <div className='page'>
            
             <div className='titles'>
     <h1 className='title'>My<br/> Projects</h1>
@@ -13,8 +14,8 @@ export default function MyProjects() {
     <span></span>
     <Button className='button' size="lg" variant="info">Learn More</Button>
              </div>   
-             <div className='computer'>
-             <img className= 'image'src={computer} alt='Computer' />
+             <div className='svgProject'>
+             <img className= 'computerProject'src={computer} alt='Computer' />
              
       </div>
         

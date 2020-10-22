@@ -1,60 +1,10 @@
-#front-page{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    position: relative;
-    align-items: center;
-  background: radial-gradient(50% 98.88% at 50% 50%, #16045E 18.23%, #0E021E 100%);
-}
-.titles{
-    position: absolute;
-    overflow: hidden;   
-     margin-left: 11%;
-}
-.title{   
-    
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 60px;
-    line-height: 8vw;
-    
-    color: #FFFFFF;
-}
-.subtitle{
-    
-    font-family: Roboto;
-    font-style: normal;
-font-weight: 100;
-    font-size: 3vw;
-    line-height: 3.5vw;
-    
-    color: #FFFFFF;
-}
-.astraunaut{
-   position: relative;
-   left: 55vw;
-   width: 50px; 
-}
-.image{
+
+.astronaut{
     height: auto;
-    width: 35vw;
-}
-.line1{
-    display: block;
-    width: 25vw;
-    height: 2px;
-    border-radius: 5px;
-    background:#CF749C; ;
-}
-.line2{
+    width: 30vw;
     
-    margin-top:3vh;
-    margin-bottom:3vh;
-    margin-left:15vw;
-    display: block;
-    width: 25vw;
-    height: 2px;
-    border-radius: 5px;
-    background:#CF749C;
 }
+.svgAbout{
+    position: relative;
+    left: 60vw;
+ }
