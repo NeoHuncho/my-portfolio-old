@@ -5,6 +5,10 @@ import computer from './files/computer-01.svg'
 function FrontPage() {
     return (
         <div className='page'>
+            <div>
+            <p className='scroolDown'>SCROLLDOWN</p>
+            <span className='lineSD'></span>
+            </div>
             <div className='titles'>
     <h1 className='title'>WILLIAM<br/> GUINAUDIE</h1>
     <span className='line1'></span>
