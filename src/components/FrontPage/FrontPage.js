@@ -9,6 +9,11 @@ function FrontPage() {
             <p className='scroolDown'>SCROLLDOWN</p>
             <span className='lineSD'></span>
             </div>
+            <div>
+                <span className='page1'></span>
+                <span className='page2'></span>
+                <span className='page3'></span>
+            </div>
             <div className='titles'>
     <h1 className='title'>WILLIAM<br/> GUINAUDIE</h1>
     <span className='line1'></span>
