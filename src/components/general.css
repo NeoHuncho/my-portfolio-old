@@ -67,8 +67,8 @@ font-weight: 100;
 
  .button{
     margin-top: 2vh;
-    font-size: 2vw;
-
+    font-size: 1.5vw;
+    border-radius: 3vh;
 }
 .page1{
     position: fixed;
