@@ -1,5 +1,5 @@
-import { animate, motion } from "framer-motion";
 import React from 'react';
+import {motion} from "framer-motion";
 import './FrontPage.css';
 import '../general.css';
 import computer from './files/computer-01.svg'
@@ -8,11 +8,7 @@ function FrontPage() {
         hidden: { opacity: 0, x: -50 },
         visible: { opacity: 1, x: 0 },
     }
-    const variantssvg = {
-        animate: { y: [0, 10, 0] }
 
-
-    }
     return (
         <div className='page'>
             <div>
