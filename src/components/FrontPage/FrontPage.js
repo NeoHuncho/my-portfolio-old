@@ -1,8 +1,10 @@
 import React from 'react';
 import {motion} from "framer-motion";
 import './FrontPage.css';
-import '../general.css';
-import computer from './files/computer-01.svg'
+
+import computer from './files/computer-01.svg';
+
+
 function FrontPage() {
     const variantstext = {
         hidden: { opacity: 0, x: -50 },
@@ -16,9 +18,7 @@ function FrontPage() {
                 <span className='lineSD'></span>
             </div>
             <div>
-                <span className='page1'></span>
-                <span className='page2'></span>
-                <span className='page3'></span>
+             
             </div>
             <motion.div className='titles' initial="hidden"
                 animate="visible"
@@ -29,13 +29,13 @@ function FrontPage() {
                 <span className='line2' style={{ zIndex: 1 }}></span>
                 <h2 className='subtitle'>full stack<br />web developer</h2>
             </motion.div>
-            <div className='svgFront' style={{ zIndex: 0 }}>
+            <motion.div className='svgFront' style={{ zIndex: 0 }} initial={{opacity:0}}animate={{ opacity:1}}>
                 <motion.img animate={{ y: [0, -10, 0] }} transition={{
                     duration: 5,
                     ease: "easeInOut",
                     loop: Infinity
                 }} className='computerFront' src={computer} alt='Computer' />
-            </div>
+            </motion.div>
         </div>
     )
 }
