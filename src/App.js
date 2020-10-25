@@ -1,5 +1,4 @@
 import React from 'react';
-import {useInView} from 'react-intersection-observer';
 import './App.css';
 import FrontPage from './components/FrontPage/FrontPage';
 import MyProjects from './components/MyProjects/MyProjects';

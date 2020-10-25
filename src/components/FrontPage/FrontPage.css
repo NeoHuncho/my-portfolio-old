@@ -1,3 +1,37 @@
+@media screen and (max-width: 420px){
+    .svgFront{
+        position: relative;
+        bottom:20vw
+    
+     }
+    .computerFront{
+        height: auto;
+        width: 100vw;
+        
+    }
+    .scroolDown {
+            position: fixed;
+            font-size: 1.5vh;
+            bottom: 7vh;
+            right: 3.5vw;
+            line-height: 1;
+            letter-spacing: 0.3em;
+            writing-mode: vertical-rl;
+            color: #fff;
+           
+    }
+    .lineSD{
+        position: fixed;
+       bottom: 3vh;
+     right: 0.1vw;
+        width: 8vh;
+        height: 2px;
+        border-radius: 5px;
+        background:white; 
+        transform: rotate(90deg);
+    }  
+}
+@media screen and (min-width: 1024px){
 .svgFront{
     position: relative;
     left: 52vw;
@@ -27,4 +61,4 @@
     border-radius: 5px;
     background:white; 
     transform: rotate(90deg);
-}
+}}

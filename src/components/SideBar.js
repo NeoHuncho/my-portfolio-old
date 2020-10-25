@@ -1,11 +1,8 @@
-import { getDefaultNormalizer } from '@testing-library/react';
 import React from 'react';
 import './general.css';
 
 export default function SideBar() {
-   const linkstyle={
 
-   }
     return (
         <div>
             <div>

@@ -1,106 +1,154 @@
-*{
+* {
     -ms-overflow-style: none;
 }
+
 ::-webkit-scrollbar {
     display: none;
 }
-.page{
+
+.page {
     width: 100%;
     height: 100vh;
     display: flex;
+    overflow: hidden;
     position: relative;
     align-items: center;
-  background: radial-gradient(50% 98.88% at 50% 50%, #16045E 18.23%, #0E021E 100%);
-}
-.titles{
-    position: absolute;
-    overflow: hidden;   
-     margin-left: 7vw;
-}
-.title{   
-    
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 8vw;
-    line-height: 8vw;
-    
-    color: #FFFFFF;
-}
-.page{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    position: relative;
-    align-items: center;
-  background: radial-gradient(50% 98.88% at 50% 50%, #16045E 18.23%, #0E021E 100%);
-}
-.line1{
-    margin-top: 3vh;
-    display: block;
-    width: 25vw;
-    height: 2px;
-    border-radius: 5px;
-    background:#CF749C; ;
-}
-.line2{
-    
-    margin-top:3vh;
-    margin-bottom:3vh;
-    margin-left:15vw;
-    display: block;
-    width: 25vw;
-    height: 2px;
-    border-radius: 5px;
-    background:#CF749C;
-}
-.subtitle{
-    
-    font-family: Roboto;
-    font-style: normal;
-font-weight: 100;
-    font-size: 2.5vw;
-    line-height: 3vw;
-    
-    color: #FFFFFF;
+    background: radial-gradient(50% 98.88% at 50% 50%, #16045E 18.23%, #0E021E 100%);
 }
 
- .button{
-    margin-top: 2vh;
-    font-size: 1.2vw;
-    border-radius: 6vh;
-    padding-left: 2vw;
-    padding-right: 2vw;
-    padding-top: 1vw;
-    padding-bottom: 1vw;
+@media screen and (max-width: 420px) {
+    .title {
+        font-size: 12vw;
+        line-height: 7vh;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 700;
+        color: #FFFFFF;
+    }
+    .titles {
+        margin: 0.13%;
+        width: 87.5%;
+        top: auto;
+        bottom: 10vh;
+        left: 10vw;
+        position: absolute;
+    }
+    .line1 {
+        margin-top: 2vh;
+        display: block;
+        width: 30vw;
+        height: 2px;
+        border-radius: 5px;
+        background: #CF749C;
+        ;
+    }
+    .line2 {
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        margin-left: 15vw;
+        display: block;
+        width: 30vw;
+        height: 2px;
+        border-radius: 5px;
+        background: #CF749C;
+    }
+    .subtitle {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 100;
+        font-size: 6vw;
+        line-height: 6vw;
+        color: #FFFFFF;
+    }
+    .button {
+        margin-top: 2vh;
+        font-size: 5vw;
+        border-radius: 6vh;
+        padding-left: 8vw;
+        padding-right: 8vw;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+    }
 }
-.page1{
-    position: fixed;
-    left: 1.15vw;
-    top:45vh;
-    width: 5vh;
-    height: 2px;
-    border-radius: 5px;
-    background:white; 
-    z-index: 100;
-}
-.page2{
-    position: fixed;
-    top:50vh;
-    left: 1.15vw;
-    width: 5vh;
-    height: 2px;
-    border-radius: 5px;
-    background:white; 
-    z-index: 100;
-}
-.page3{
-    position: fixed;
-    top:55vh;
-    left: 1.15vw;
-    width: 5vh;
-    height: 2px;
-    border-radius: 5px;
-    background:white; 
-    z-index: 100;
+
+@media screen and (min-width: 1024px) {
+    .titles {
+        position: absolute;
+        overflow: hidden;
+        margin-left: 7vw;
+    }
+    .title {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 8vw;
+        line-height: 8vw;
+        color: #FFFFFF;
+    }
+    .line1 {
+        margin-top: 3vh;
+        display: block;
+        width: 25vw;
+        height: 2px;
+        border-radius: 5px;
+        background: #CF749C;
+        ;
+    }
+    .line2 {
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+        margin-left: 15vw;
+        display: block;
+        width: 25vw;
+        height: 2px;
+        border-radius: 5px;
+        background: #CF749C;
+    }
+    .subtitle {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 100;
+        font-size: 2.5vw;
+        line-height: 3vw;
+        color: #FFFFFF;
+    }
+    .button {
+        margin-top: 2vh;
+        font-size: 1.2vw;
+        border-radius: 6vh;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+    }
+    .page1 {
+        position: fixed;
+        left: 1.15vw;
+        top: 45vh;
+        width: 5vh;
+        height: 2px;
+        border-radius: 5px;
+        background: white;
+        z-index: 100;
+    }
+    .page2 {
+        position: fixed;
+        top: 50vh;
+        left: 1.15vw;
+        width: 5vh;
+        height: 2px;
+        border-radius: 5px;
+        background: white;
+        z-index: 100;
+    }
+    .page3 {
+        position: fixed;
+        top: 55vh;
+        left: 1.15vw;
+        width: 5vh;
+        height: 2px;
+        border-radius: 5px;
+        background: white;
+        z-index: 100;
+    }
 }
