@@ -67,8 +67,12 @@ font-weight: 100;
 
  .button{
     margin-top: 2vh;
-    font-size: 1.5vw;
-    border-radius: 3vh;
+    font-size: 1.2vw;
+    border-radius: 6vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
 }
 .page1{
     position: fixed;

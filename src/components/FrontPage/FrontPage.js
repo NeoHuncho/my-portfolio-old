@@ -23,7 +23,7 @@ function FrontPage() {
             <motion.div className='titles' initial="hidden"
                 animate="visible"
                 variants={variantstext}
-                transition={{ ease: "easeOut", duration: 1 }}>
+                transition={{ ease: "easeOut", duration: 1.5 }}>
                 <h1 className='title'>WILLIAM<br /> GUINAUDIE</h1>
                 <span className='line1'></span>
                 <span className='line2' style={{ zIndex: 1 }}></span>

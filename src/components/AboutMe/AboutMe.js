@@ -12,11 +12,11 @@ function AboutMe() {
     return (
         <div className='page'>
             <motion.div ref={ref} className='titles' initial={{opacity:0,x:-50}}
-                animate={{opacity:inView?1:0,x:inView?0:-50}}>
+                animate={{opacity:inView?1:0,x:inView?0:-50}} transition={{duration:1, ease: "easeOut"}}>
     <h1 className='title'>About<br/>Me</h1>
     <span className='line1'></span>
     <span className='line2'style={{zIndex:1}}></span>
-    <Button className='button' size="lg" variant="info">Learn More</Button>
+    <Button className='button' size="lg" variant="info">Show Me More</Button>
              </motion.div>   
              <motion.div initial={{opacity:0}}animate={{ opacity:inView?1:0 }} className='svgAbout'style={{zIndex:0}}>
       <motion.img

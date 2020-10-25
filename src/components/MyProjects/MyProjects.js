@@ -20,13 +20,13 @@ export default function MyProjects() {
         <div className='page'>
            
             <motion.div ref={ref} className='titles' initial={{opacity:0,x:-50}}
-                animate={{opacity:inView?1:0,x:inView?0:-50}}
+                animate={{opacity:inView?1:0,x:inView?0:-50}} transition={{duration:1, ease: "easeOut"}}
                 variants={variantstext}>
     <h1 className='title'>My<br/> Projects</h1>
     <span className='line1'></span>
     <span className='line2' ></span>
     <span></span>
-    <Button className='button' size="lg" variant="info">Learn More</Button>
+    <Button className='button' size="lg" variant="info">Show Me More</Button>
              </motion.div>   
              <div className='svgProject'>
              <motion.img
