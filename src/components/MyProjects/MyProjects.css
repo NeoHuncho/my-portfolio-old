@@ -1,9 +1,22 @@
-.svgProject{
-    position: relative;
-    left: 55vw;
- }
-.computerProject{
-    height: auto;
-    width: 40vw;
+@media screen and (max-width: 420px){
+    .svgProject{
+        position: relative;
+        bottom:12vh;
+        left:4vw;
+     }
+    .computerProject{
+        height: auto;
+        width: 90vw;
+    }
 }
 
+@media screen and (min-width: 1024px){
+    .svgProject{
+        position: relative;
+        left: 55vw;
+     }
+    .computerProject{
+        height: auto;
+        width: 40vw;
+    }
+}

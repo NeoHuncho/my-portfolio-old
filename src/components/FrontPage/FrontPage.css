@@ -1,47 +1,45 @@
-@media screen and (max-width: 420px){
-    .svgFront{
+@media screen and (max-width: 420px) {
+    .svgFront {
         position: relative;
-        bottom:20vw
-    
-     }
-    .computerFront{
+        bottom: 13vh;
+        right: 10vw;
+    }
+    .computerFront {
         height: auto;
-        width: 100vw;
-        
+        width: 120vw;
     }
     .scroolDown {
-            position: fixed;
-            font-size: 1.5vh;
-            bottom: 7vh;
-            right: 3.5vw;
-            line-height: 1;
-            letter-spacing: 0.3em;
-            writing-mode: vertical-rl;
-            color: #fff;
-           
-    }
-    .lineSD{
         position: fixed;
-       bottom: 3vh;
-     right: 0.1vw;
+        font-size: 1.5vh;
+        bottom: 7vh;
+        right: 3.5vw;
+        line-height: 1;
+        letter-spacing: 0.3em;
+        writing-mode: vertical-rl;
+        color: #fff;
+    }
+    .lineSD {
+        position: fixed;
+        bottom: 3vh;
+        right: 0.1vw;
         width: 8vh;
         height: 2px;
         border-radius: 5px;
-        background:white; 
+        background: white;
         transform: rotate(90deg);
-    }  
+    }
 }
-@media screen and (min-width: 1024px){
-.svgFront{
-    position: relative;
-    left: 52vw;
- }
-.computerFront{
-    height: auto;
-    width: 50vw;
-    
-}
-.scroolDown {
+
+@media screen and (min-width: 1024px) {
+    .svgFront {
+        position: relative;
+        left: 52vw;
+    }
+    .computerFront {
+        height: auto;
+        width: 50vw;
+    }
+    .scroolDown {
         position: fixed;
         font-size: 1.5vh;
         bottom: 7vh;
@@ -50,15 +48,15 @@
         letter-spacing: 0.3em;
         writing-mode: vertical-rl;
         color: #fff;
-       
+    }
+    .lineSD {
+        position: fixed;
+        bottom: 3vh;
+        left: 0.4vw;
+        width: 8vh;
+        height: 2px;
+        border-radius: 5px;
+        background: white;
+        transform: rotate(90deg);
+    }
 }
-.lineSD{
-    position: fixed;
-   bottom: 3vh;
-    left: 0.4vw;
-    width: 8vh;
-    height: 2px;
-    border-radius: 5px;
-    background:white; 
-    transform: rotate(90deg);
-}}
