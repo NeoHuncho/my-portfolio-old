@@ -40,7 +40,7 @@
         margin-left: 5vw;
     }
 }
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1025px){
     .computer-hide{
         display: none;
     }
@@ -76,5 +76,81 @@
     }
     .github{
         width: 2vw;
+    } 
+}
+@media screen and (min-width:421px) and (max-width: 811px){
+    .computer-hide{
+        display: none;
+    }
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+     
+        color: white;
+        font-family: Roboto;
+        font-weight: 500;
+        z-index: 1000;
+    }
+    
+    .navbar__title {
+        margin-right: auto;
+        font-size: 150%;
+        padding: 12px 16px;
+    }
+    
+    .navbar__item {
+        padding: 16px 16px;
+        cursor: pointer;
+        font-size: 175%;
+        vertical-align: middle;
+    }
+    .fcc {
+       height: auto;
+       width: 5.5vw;
+    }
+    .github{
+        width: 4vw;
+    } 
+}
+@media screen and (min-width:811px) and (max-width: 1025px){
+    .computer-hide{
+        display: none;
+    }
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+     
+        color: white;
+        font-family: Roboto;
+        font-weight: 500;
+        z-index: 1000;
+    }
+    
+    .navbar__title {
+        margin-right: auto;
+        font-size: 200%;
+        padding: 12px 16px;
+    }
+    
+    .navbar__item {
+        padding: 16px 16px;
+        cursor: pointer;
+        font-size: 225%;
+        vertical-align: middle;
+    }
+    .fcc {
+       height: auto;
+       width: 5vw;
+    }
+    .github{
+        width: 3.5vw;
     } 
 }

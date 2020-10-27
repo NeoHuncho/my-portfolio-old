@@ -71,7 +71,7 @@
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1026px) {
     .titles {
         position: absolute;
         overflow: hidden;
@@ -150,5 +150,114 @@
         border-radius: 5px;
         background: white;
         z-index: 100;
+    }
+}
+@media screen and (min-width:421px) and (max-width: 811px) {
+    .title {
+        font-size: 12vw;
+        line-height: 9vh;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 700;
+        color: #FFFFFF;
+    }
+    .titles {
+        margin: 0.13%;
+        width: 87.5%;
+        top: auto;
+        bottom: 7vh;
+        left: 10vw;
+        position: absolute;
+    }
+    .line1 {
+        margin-top: 2vh;
+        display: block;
+        width: 30vw;
+        height: 2px;
+        border-radius: 5px;
+        background: #CF749C;
+        ;
+    }
+    .line2 {
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        margin-left: 15vw;
+        display: block;
+        width: 30vw;
+        height: 2px;
+        border-radius: 5px;
+        background: #CF749C;
+    }
+    .subtitle {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 100;
+        font-size: 6vw;
+        line-height: 6vw;
+        color: #FFFFFF;
+    }
+    .button {
+        margin-top: 2vh;
+        font-size: 5vw;
+        border-radius: 6vh;
+        padding-left: 8vw;
+        padding-right: 8vw;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+    }
+}
+@media screen and (min-width:811px) and (max-width: 1025px){
+    .title {
+        margin-top: 2vh;
+        font-size: 12vw;
+        line-height: 9vh;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 700;
+        color: #FFFFFF;
+    }
+    .titles {
+        margin: 0.13%;
+        width: 87.5%;
+        top: auto;
+        bottom: 7vh;
+        left: 10vw;
+        position: absolute;
+    }
+    .line1 {
+        margin-top: 2vh;
+        display: block;
+        width: 30vw;
+        height: 2px;
+        border-radius: 5px;
+        background: #CF749C;
+        ;
+    }
+    .line2 {
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        margin-left: 15vw;
+        display: block;
+        width: 30vw;
+        height: 2px;
+        border-radius: 5px;
+        background: #CF749C;
+    }
+    .subtitle {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 100;
+        font-size: 6vw;
+        line-height: 6vw;
+        color: #FFFFFF;
+    }
+    .button {
+        margin-top: 2vh;
+        font-size: 5vw;
+        border-radius: 6vh;
+        padding-left: 8vw;
+        padding-right: 8vw;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
     }
 }

@@ -10,7 +10,7 @@
     }
 }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1025px){
     .svgProject{
         position: relative;
         left: 55vw;
@@ -18,5 +18,27 @@
     .computerProject{
         height: auto;
         width: 40vw;
+    }
+}
+@media screen and (min-width:421px) and (max-width: 811px){
+    .svgProject{
+        position: relative;
+        bottom:18vh;
+        left:4vw;
+     }
+    .computerProject{
+        height: auto;
+        width: 90vw;
+    }
+}
+@media screen and (min-width:811px) and (max-width: 1025px){
+    .svgProject{
+        position: relative;
+        bottom:16vh;
+        left:4vw;
+     }
+    .computerProject{
+        height: auto;
+        width: 90vw;
     }
 }

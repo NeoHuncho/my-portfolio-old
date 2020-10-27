@@ -1,20 +1,44 @@
-@media screen and (max-width: 420px){
-.astronaut{
-    height: auto;
-    width: 80vw;
-    
+@media screen and (max-width: 420px) {
+    .astronaut {
+        height: auto;
+        width: 80vw;
+    }
+    .svgAbout {
+        position: relative;
+        bottom: 20vh;
+        left: 8vw;
+    }
 }
-.svgAbout{
-    position: relative;
-    bottom:20vh;
-    left:8vw;
- }}
- @media screen and (min-width: 1024px){.astronaut{
-    height: auto;
-    width: 30vw;
-    
+
+@media screen and (min-width: 1025px) {
+    .astronaut {
+        height: auto;
+        width: 30vw;
+    }
+    .svgAbout {
+        position: relative;
+        left: 62vw;
+    }
 }
-.svgAbout{
-    position: relative;
-    left: 62vw;
- }}
+@media screen and (min-width:421px) and (max-width: 811px){
+    .astronaut {
+        height: auto;
+        width: 70vw;
+    }
+    .svgAbout {
+        position: relative;
+        bottom: 20vh;
+        left: 14vw;
+    }
+}
+@media screen and (min-width:811px) and (max-width: 1025px){
+    .astronaut {
+        height: auto;
+        width: 70vw;
+    }
+    .svgAbout {
+        position: relative;
+        bottom: 20vh;
+        left: 14vw;
+    }
+}
