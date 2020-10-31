@@ -19,7 +19,7 @@ export default function NavBar() {
             <div className='navbar__item '>
             <img className='hamburger computer-hide' src={hamburger} alt='menu'/>
             </div>
-            <div className='navbar__item mobile-hide'>My Projects</div>
+            <Link className='navbar__item mobile-hide' to="my-projects">My Projects</Link>
             <Link className='navbar__item mobile-hide'to="about-me">About Me</Link>
         </header>
     )
