@@ -3,11 +3,11 @@ import './NavBar.css';
 import fcc from './Files/fcc.png';
 import github from './Files/github white.svg';
 import hamburger from './Files/hamburger.svg';
-
+import { Link } from 'react-router-dom'
 export default function NavBar() {
     return (
         <header className='navbar'>
-            <div className='navbar__title navbar__item'>W.G</div>
+            <Link className='navbar__title navbar__item' to="/">W.G</Link>
             <div className='navbar__item '>
             <a href='https://github.com/NeoHuncho'  target="_blank">
                 <img className='github' src={github} alt='Free Code Camp link'/>
@@ -20,7 +20,7 @@ export default function NavBar() {
             <img className='hamburger computer-hide' src={hamburger} alt='menu'/>
             </div>
             <div className='navbar__item mobile-hide'>My Projects</div>
-            <div className='navbar__item mobile-hide'>About Me</div>
+            <Link className='navbar__item mobile-hide'to="about-me">About Me</Link>
         </header>
     )
 }
