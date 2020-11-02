@@ -13,11 +13,11 @@
 @media screen and (min-width: 1025px){
     .svgProject{
         position: relative;
-        left: 55vw;
+        left: 41vw;
      }
     .computerProject{
         height: auto;
-        width: 40vw;
+        width: 60vw;
     }
 }
 @media screen and (min-width:421px) and (max-width: 811px){
