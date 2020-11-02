@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 export default function NavBar() {
     return (
         <header className='navbar'>
-            <Link className='navbar__title navbar__item' to="/">W.G</Link>
+            <Link style={{ textDecoration: 'none',color: 'white' }} className='navbar__title navbar__item' to="/">W.G</Link>
             <div className='navbar__item '>
             <a href='https://github.com/NeoHuncho'  target="_blank">
                 <img className='github' src={github} alt='Free Code Camp link'/>
@@ -19,8 +19,8 @@ export default function NavBar() {
             <div className='navbar__item '>
             <img className='hamburger computer-hide' src={hamburger} alt='menu'/>
             </div>
-            <Link className='navbar__item mobile-hide' to="my-projects">My Projects</Link>
-            <Link className='navbar__item mobile-hide'to="about-me">About Me</Link>
+            <Link style={{ textDecoration: 'none', color: 'white'}} className='navbar__item mobile-hide' to="my-projects">My Projects</Link>
+            <Link  style={{ textDecoration: 'none',color: 'white' }}className='navbar__item mobile-hide'to="about-me">About Me</Link>
         </header>
     )
 }

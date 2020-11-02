@@ -1,0 +1,119 @@
+@media screen and (max-width: 420px) {
+    .titleCE {
+        font-size: 12vw;
+        line-height: 7vh;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 700;
+        color: #FFFFFF;
+    }
+    .titlesCE {
+        margin: 0.13%;
+        width: 87.5%;
+        top: auto;
+        bottom: 10vh;
+        left: 10vw;
+        position: absolute;
+    }
+    .svgFrontCE {
+        position: relative;
+        bottom: 13vh;
+        right: 10vw;
+    }
+    .computerFrontCE {
+        height: auto;
+        width: 120vw;
+    }
+}
+
+@media screen and (min-width: 1026px) {
+    .titlesCE {
+        position: absolute;
+        overflow: hidden;
+        right:3vw;
+        left:45vw;
+         top:10vh
+    }
+    .titleCE {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 5vw;
+        line-height: 8vw;
+        color: #FFFFFF;
+    }
+    .paragraphCE{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 2.3vh;
+        line-height: 3.8vh;
+        color: #FFFFFF;
+      
+    }
+}
+    .svgFrontCE {
+        position: relative;
+        left: 5vw;
+        top:7vh
+    }
+    .computerFrontCE {
+        height: auto;
+        width: 35vw;
+    }
+    
+
+@media screen and (min-width:421px) and (max-width: 811px) {
+    .titleCE {
+        font-size: 12vw;
+        line-height: 9vh;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 700;
+        color: #FFFFFF;
+    }
+    .titlesCE {
+        margin: 0.13%;
+        width: 87.5%;
+        top: auto;
+        bottom: 7vh;
+        left: 10vw;
+        position: absolute;
+    }
+    .svgFrontCE {
+        position: relative;
+        left:52vw;
+    }
+    .computerFrontCE {
+        height: auto;
+        width: 50vw;
+    }
+}
+
+@media screen and (min-width:811px) and (max-width: 1025px) {
+    .titleCE {
+        margin-top: 2vh;
+        font-size: 12vw;
+        line-height: 9vh;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 700;
+        color: #FFFFFF;
+    }
+    .titlesCE {
+        margin: 0.13%;
+        width: 87.5%;
+        top: auto;
+        bottom: 7vh;
+        left: 10vw;
+        position: absolute;
+    }
+    .svgFrontCE {
+        position: relative;
+        left: 52vw;
+    }
+    .computerFrontCE {
+        height: auto;
+        width: 50vw;
+    }
+}

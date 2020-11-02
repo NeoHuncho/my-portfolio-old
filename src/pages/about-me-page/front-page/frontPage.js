@@ -1,6 +1,8 @@
 import React from 'react'
 import {motion} from "framer-motion";
 import './frontPage.css';
+import '../general.css';
+import front_page_image from './front_page_image.png'
 export default function frontPage() {
   
     const variantstext = {
@@ -9,21 +11,25 @@ export default function frontPage() {
     }
     return (
                     <div className='page'>
-            <div>
+     
                 <p className='scroolDown'>SCROLLDOWN</p>
                 <span className='lineSD'></span>
-            </div>
-            <div>
-             
-            </div>
+       
+         
             <motion.div className='titles' initial="hidden"
                 animate="visible"
                 variants={variantstext}
                 transition={{ ease: "easeOut", duration: 1.5 }}>
-                <h1 className='title'>WILLIAM<br /> GUINAUDIE</h1>
+                <h1 className='title'>WHO AM I?</h1>
                 <span className='line1'></span>
                 <span className='line2' style={{ zIndex: 1 }}></span>
-                <h2 className='subtitle'>full stack<br />web developer</h2>
+            </motion.div>
+            <motion.div className='svgFront' style={{ zIndex: 0 }} initial={{opacity:0}}animate={{ opacity:1}}>
+                <motion.img animate={{ y: [0, -10, 0] }} transition={{
+                    duration: 5,
+                    ease: "easeInOut",
+                    loop: Infinity
+                }} className='computerFront' src={front_page_image} alt='Computer' />
             </motion.div>
         </div>
     )
