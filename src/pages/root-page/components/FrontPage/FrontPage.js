@@ -13,10 +13,8 @@ function FrontPage() {
 
     return (
         <div className='page'>
-            <div>
-                <motion.img className='scroolDown' src={scroolDown} style={{zIndex:1}} />
 
-            </div>
+            <motion.img className='scroolDown' src={scroolDown} style={{ zIndex: 1 }} />
 
             <motion.div className='titles' initial="hidden"
                 animate="visible"

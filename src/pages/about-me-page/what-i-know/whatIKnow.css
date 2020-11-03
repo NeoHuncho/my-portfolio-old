@@ -1,0 +1,119 @@
+@media screen and (max-width: 420px) {
+    .titleWH {
+        font-size: 12vw;
+        line-height: 7vh;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 700;
+        color: #FFFFFF;
+    }
+    .titlesWH  {
+        margin: 0.13%;
+        width: 87.5%;
+        top: auto;
+        bottom: 10vh;
+        left: 10vw;
+        position: absolute;
+    }
+    .svgFrontCE {
+        position: relative;
+        bottom: 13vh;
+        right: 10vw;
+    }
+    .computerFrontCE {
+        height: auto;
+        width: 120vw;
+    }
+}
+
+@media screen and (min-width: 1026px) {
+    .titlesWH  {
+        position: absolute;
+        overflow: hidden;
+        right:3vw;
+        left:5vw;
+         top:10vh
+    }
+    .titleWH  {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 5vw;
+        line-height: 8vw;
+        color: #FFFFFF;
+    }
+    .paragraphCE{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 2.3vh;
+        line-height: 3.8vh;
+        color: #FFFFFF;
+      
+    }
+}
+.svgFrontWH {
+    position: relative;
+    left: 10vw;
+    top:10vh
+}
+.computerFrontWH {
+    height: auto;
+    width:80vw;
+}
+    
+
+@media screen and (min-width:421px) and (max-width: 811px) {
+    .titleWH  {
+        font-size: 12vw;
+        line-height: 9vh;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 700;
+        color: #FFFFFF;
+    }
+    .titlesWH {
+        margin: 0.13%;
+        width: 87.5%;
+        top: auto;
+        bottom: 7vh;
+        left: 10vw;
+        position: absolute;
+    }
+    .svgFrontCE {
+        position: relative;
+        left:52vw;
+    }
+    .computerFrontCE {
+        height: auto;
+        width: 50vw;
+    }
+}
+
+@media screen and (min-width:811px) and (max-width: 1025px) {
+    .titleWH  {
+        margin-top: 2vh;
+        font-size: 12vw;
+        line-height: 9vh;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 700;
+        color: #FFFFFF;
+    }
+    .titlesWH  {
+        margin: 0.13%;
+        width: 87.5%;
+        top: auto;
+        bottom: 7vh;
+        left: 10vw;
+        position: absolute;
+    }
+    .svgFrontCE {
+        position: relative;
+        left: 52vw;
+    }
+    .computerFrontCE {
+        height: auto;
+        width: 50vw;
+    }
+}

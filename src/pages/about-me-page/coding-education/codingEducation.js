@@ -15,9 +15,7 @@ export default function CodingEducation() {
       })
  
     return (
-        <div className='page'>
-            <p className='scroolDown'>SCROLLDOWN</p>
-            <span className='lineSD'></span>
+        <div className='page'  style={{ zIndex: 1 }}>
             <motion.div ref={ref}className='titlesCE' initial={{opacity:0,x:-50}}
                animate={{opacity:inView?1:0,x:inView?0:-50}}
                 variants={variantstext}

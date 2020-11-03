@@ -52,14 +52,14 @@
       
     }
 }
-    .svgFrontCE {
+    .svgFrontCE{
         position: relative;
         left: 5vw;
-        top:7vh
+        top:5vh
     }
     .computerFrontCE {
         height: auto;
-        width: 35vw;
+        width:32vw;
     }
     
 
