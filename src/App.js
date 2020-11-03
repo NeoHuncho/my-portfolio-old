@@ -9,7 +9,7 @@ import AboutMe from './pages/about-me-page/aboutMe';
 import MyProjects from './pages/my-projects-page/myProjects';
 function App() {
   return (
-    <Router>
+      <Router>
       <div className="App">
         <NavBar />
         <Route exact path="/" render={e => (

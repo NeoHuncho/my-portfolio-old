@@ -17,7 +17,7 @@ export default function MyProjects() {
       })
  
     return (
-        <div className='page'>
+        <div className='page' style={{zIndex:2}}>
            
             <motion.div ref={ref} className='titles' initial={{opacity:0,x:-50}}
                 animate={{opacity:inView?1:0,x:inView?0:-50}} transition={{duration:1, ease: "easeOut"}}

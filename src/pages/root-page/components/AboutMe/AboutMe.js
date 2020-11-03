@@ -10,12 +10,12 @@ function AboutMe() {
     rootMargin: '-100px 0px',
   })
     return (
-        <div className='page'>
+        <div className='page' style={{zIndex:2}}>
             <motion.div ref={ref} className='titles' initial={{opacity:0,x:-50}}
                 animate={{opacity:inView?1:0,x:inView?0:-50}} transition={{duration:1, ease: "easeOut"}}>
     <h1 className='title'>About<br/>Me</h1>
     <span className='line1'></span>
-    <span className='line2'style={{zIndex:1}}></span>
+    <span className='line2'></span>
     <Button className='button' size="lg" variant="info">Show Me More</Button>
              </motion.div>   
              <motion.div initial={{opacity:0}}animate={{ opacity:inView?1:0 }} className='svgAbout'style={{zIndex:0}}>

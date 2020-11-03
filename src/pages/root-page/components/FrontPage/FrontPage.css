@@ -10,23 +10,10 @@
     }
     .scroolDown {
         position: fixed;
-        font-size: 1.5vh;
+        height: auto;
+        width: 2vh;
         bottom: 7vh;
         right: 3.5vw;
-        line-height: 1;
-        letter-spacing: 0.3em;
-        writing-mode: vertical-rl;
-        color: #fff;
-    }
-    .lineSD {
-        position: fixed;
-        bottom: 3vh;
-        right: 0.1vw;
-        width: 8vh;
-        height: 2px;
-        border-radius: 5px;
-        background: white;
-        transform: rotate(90deg);
     }
 }
 
@@ -41,23 +28,12 @@
     }
     .scroolDown {
         position: fixed;
-        font-size: 1.5vh;
-        bottom: 7vh;
-        left: 1.2vw;
-        line-height: 1;
-        letter-spacing: 0.3em;
-        writing-mode: vertical-rl;
-        color: #fff;
-    }
-    .lineSD {
-        position: fixed;
-        bottom: 3vh;
-        left: 0.4vw;
-        width: 8vh;
-        height: 2px;
-        border-radius: 5px;
-        background: white;
-        transform: rotate(90deg);
+        height: auto;
+        width: 10vh;
+        bottom: 0vh;
+        left: 1vw;
+        
+    
     }
 }
 @media screen and (min-width:421px) and (max-width: 811px){
@@ -80,16 +56,7 @@
         writing-mode: vertical-rl;
         color: #fff;
     }
-    .lineSD {
-        position: fixed;
-        bottom: 3vh;
-        right: 0.1vw;
-        width: 8vh;
-        height: 2px;
-        border-radius: 5px;
-        background: white;
-        transform: rotate(90deg);
-    }
+ 
 }
 @media screen and (min-width:811px) and (max-width: 1025px){
     .svgFront {
@@ -110,16 +77,6 @@
         letter-spacing: 0.3em;
         writing-mode: vertical-rl;
         color: #fff;
-    }
-    .lineSD {
-        position: fixed;
-        bottom: 3vh;
-        right: 0.1vw;
-        width: 8vh;
-        height: 2px;
-        border-radius: 5px;
-        background: white;
-        transform: rotate(90deg);
     }
 
 }
