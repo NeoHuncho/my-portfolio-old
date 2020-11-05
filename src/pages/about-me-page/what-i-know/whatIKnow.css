@@ -30,8 +30,7 @@
     .titlesWH  {
         position: absolute;
         overflow: hidden;
-        right:3vw;
-        left:5vw;
+      left: 35vw;
          top:10vh
     }
     .titleWH  {
@@ -51,16 +50,27 @@
         color: #FFFFFF;
       
     }
+    .svgFrontWH {
+        position: relative;
+        left: 13vw;
+        top:15vh
+    }
+    .computerFrontWH {
+        height: auto;
+        width:75vw;
+    }
+    .category_title{
+        position: absolute;
+        color: black;
+        font-size: 2vw;
+    }
+    .logos{
+        position: absolute;
+        height: auto;
+        width: 3vw;
+    }
 }
-.svgFrontWH {
-    position: relative;
-    left: 10vw;
-    top:10vh
-}
-.computerFrontWH {
-    height: auto;
-    width:80vw;
-}
+
     
 
 @media screen and (min-width:421px) and (max-width: 811px) {
