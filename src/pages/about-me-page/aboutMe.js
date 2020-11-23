@@ -1,6 +1,6 @@
 import React from 'react'
 import FrontPage from './front-page/frontPage';
-import CodingEducation from './coding-education/CodingEducation.js';
+import CodingEducation from './coding-education/CodingEducation';
 import WhatIKnow from './what-i-know/whatIKnow'
 export default function aboutMe() {
     return (
@@ -8,7 +8,6 @@ export default function aboutMe() {
            <FrontPage />
            <CodingEducation />
            <WhatIKnow />
-
         </div>
     )
 }
