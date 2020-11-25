@@ -9,11 +9,11 @@ export default function NavBar() {
         <header className='navbar'>
             <Link style={{ textDecoration: 'none',color: 'white' }} className='navbar__title navbar__item' to="/">W.G</Link>
             <div className='navbar__item '>
-            <a href='https://github.com/NeoHuncho'  target="_blank">
+            <a href='https://github.com/NeoHuncho' rel="noopener noreferrer" target="_blank">
                 <img className='github' src={github} alt='Free Code Camp link'/>
             </a></div>
             <div className='navbar__item '>
-            <a href='https://www.freecodecamp.org/neohuncho'  target="_blank">
+            <a href='https://www.freecodecamp.org/neohuncho' rel="noopener noreferrer" target="_blank">
             <img className='fcc' src={fcc}  alt='Free Code Camp link'/>
             </a></div>
             <div className='navbar__item '>
