@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from "framer-motion";
 import '../general.css';
 import './codingEducations.css';
-import second_page_image from './second_page_image.png';
+import second_page_image from './second page image-01-min.png';
 import {useInView} from 'react-intersection-observer';
 
 export default function CodingEducation() {

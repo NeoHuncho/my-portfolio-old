@@ -1,7 +1,7 @@
 import React from 'react';
 import {motion} from "framer-motion";
 import './MyProjects.css'
-import computer from './files/final art 2.svg';
+import computer from './files/final art 2-min.png';
 import Button from 'react-bootstrap/Button';
 import '../general.css';
 import {useInView} from 'react-intersection-observer';

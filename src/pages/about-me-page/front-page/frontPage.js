@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from "framer-motion";
 import './frontPage.css';
 import '../general.css';
-import front_page_image from './front_page_image.png';
+import front_page_image from './1st image-min (1).png';
 import scroolDown from '../../ScroolDown_bar.svg'
 export default function frontPage() {
 
@@ -29,7 +29,7 @@ export default function frontPage() {
                     duration: 5,
                     ease: "easeInOut",
                     loop: Infinity
-                }} className='computerFront' src={front_page_image} alt='Computer' />
+                }}  src={front_page_image} alt='Computer' />
             </motion.div>
         </div>
     )
