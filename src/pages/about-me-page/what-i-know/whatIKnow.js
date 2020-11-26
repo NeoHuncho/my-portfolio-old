@@ -23,11 +23,11 @@ import express from './back-end/express.webp';
 import mongodb from './back-end/mongodb.webp';
 import node from './back-end/node.webp';
 
-import ae from './other-skills/ae-01.webp';
+/*import ae from './other-skills/ae-01.webp';
 import figma from './other-skills/figma-01.webp';
 import illustrator from './other-skills/illu-01.webp'
 import premiere from './other-skills/premier-pro.webp'
-import ps from './other-skills/ps-01.webp'
+import ps from './other-skills/ps-01.webp'*/
 
 export default function CodingEducation() {
     const variantstext = {
