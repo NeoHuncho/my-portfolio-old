@@ -3,30 +3,31 @@ import { motion } from "framer-motion";
 import '../general.css';
 import { useInView } from 'react-intersection-observer';
 import './whatIKnow.css';
-import frame from './frames_for_logos.png';
+import frame from './frames_for_logos.webp';
 
 import england from './flags/england.png';
 import france from './flags/france.png';
 
-import react from './front-end/react-01.png';
-import redux from './front-end/redux-01.png';
-import vue from './front-end/vue-01.png';
-import npm from './front-end/npm-01.png';
-import d3 from './front-end/d3.png';
-import sass from './front-end/sass-01.png';
-import motion_framer from './front-end/motion_framer.png';
-import jquery from './front-end/jquery-01.png';
-import chrome from './front-end/chrome-01.png';
+import react from './front-end/react-01.webp';
+import redux from './front-end/redux-01.webp';
+import vue from './front-end/vue-01.webp';
+import npm from './front-end/npm-01.webp';
+import d3 from './front-end/d3.webp';
+import sass from './front-end/sass-01.webp';
+import motion_framer from './front-end/motion_framer.webp';
+import jquery from './front-end/jquery-01.webp';
+import chrome from './front-end/chrome-01.webp';
 
-/*import mongoose from './back-end/mongoose.png';
-import express from './back-end/express.png';
-import mongodb from './back-end/mongodb.png';
-import node from './back-end/node.png';
+import mongoose from './back-end/mongoose.webp';
+import express from './back-end/express.webp';
+import mongodb from './back-end/mongodb.webp';
+import node from './back-end/node.webp';
 
-import ae from './other-skills/ae-01.png';
-import figma from './other-skills/figma-01.png';*/
-
-
+import ae from './other-skills/ae-01.webp';
+import figma from './other-skills/figma-01.webp';
+import illustrator from './other-skills/illu-01.webp'
+import premiere from './other-skills/premier-pro.webp'
+import ps from './other-skills/ps-01.webp'
 
 export default function CodingEducation() {
     const variantstext = {
@@ -62,7 +63,10 @@ export default function CodingEducation() {
                 <img className="logos" src={jquery} style={{ top: "24.5vh", left: "135vh" }} alt='' />
                 <img className="logos" src={chrome} style={{ top: "24.5vh", left: "145vh" }} alt='' />
                 <h2 className='category_title' style={{ top: "40vh", left: "6vh" }}>Back-End Technologies I use: </h2>
-
+                <img className="logos" src={node} style={{ top: "40.3vh", left: "63vh" , height:"auto",width:'5vw'  }} alt=''/>
+                <img className="logos" src={express} style={{ top: "40.3vh", left: "75vh", height:"auto",width:'5vw'  }} alt=''/>
+                <img className="logos" src={mongodb} style={{ top: "40.3vh", left: "86.5vh" , height:"auto",width:'5vw' }} alt='' />
+                <img className="logos" src={mongoose} style={{ top: "40.4vh", left: "98vh", height:"auto ",width:'5vw' }} alt='' />
                 <h2 className='category_title' style={{ top: "55vh", left: "6vh" }}>Other notable skills: </h2><br />
             </motion.div>
         </div>
