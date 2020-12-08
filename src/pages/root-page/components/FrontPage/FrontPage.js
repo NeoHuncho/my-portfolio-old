@@ -7,27 +7,32 @@ import computer from './files/computer-01.svg';
 
 
 const Svg = styled.section`
-height: auto;
+
 position:relative;
  @media(max-width: 420px){
     width: 250vw;
     bottom: 13vh;
    
+    padding:-5vw;
+    border:0;
+   
  }
  @media(min-width:421px) and (max-width: 811px){
-    width: 120vw;
-    bottom: 13vh;
+    width: 90vw;
+    bottom: 18vh;
+    left:5vw;
    
 
 }
 @media(min-width:811px) and (max-width: 1025px){
-    width: 120vw;
-    bottom: 13vh;
+    width: 90vw;
+    bottom: 18vh;
+    left:5vw;
   
 }
 @media(min-width: 1025px){
-    width: 50vw;
-    left: 52vw;
+    width: 45vw;
+    left: 55vw;
 }
  
  `

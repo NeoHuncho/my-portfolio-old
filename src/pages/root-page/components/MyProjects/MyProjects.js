@@ -9,7 +9,7 @@ import Button from 'react-bootstrap/Button';
 import '../general.css';
 
 const Svg = styled.section`
-height: auto;
+
 position:relative;
  @media(max-width: 420px){
     width: 120vw;
