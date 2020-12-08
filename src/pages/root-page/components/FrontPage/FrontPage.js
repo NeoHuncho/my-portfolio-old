@@ -1,10 +1,64 @@
 import React from 'react';
 import { motion } from "framer-motion";
-import './FrontPage.css';
+import styled from 'styled-components';
+
 import scroolDown from '../../../ScroolDown_bar.svg'
 import computer from './files/computer-01.svg';
 
 
+const Svg = styled.section`
+height: auto;
+position:relative;
+ @media(max-width: 420px){
+    width: 250vw;
+    bottom: 13vh;
+   
+ }
+ @media(min-width:421px) and (max-width: 811px){
+    width: 120vw;
+    bottom: 13vh;
+   
+
+}
+@media(min-width:811px) and (max-width: 1025px){
+    width: 120vw;
+    bottom: 13vh;
+  
+}
+@media(min-width: 1025px){
+    width: 50vw;
+    left: 52vw;
+}
+ 
+ `
+const Scrooldown = styled.img`
+ position: fixed;
+ @media(max-width: 420px){
+    height: auto;
+    bottom: 0vh;
+    right: 3.5vw;
+    width:13vw;
+ }
+ @media(min-width:421px) and (max-width: 811px){
+    height: auto;
+    bottom: 0vh;
+    right: 3.5vw;
+    width:13vw;
+}
+@media(min-width:811px) and (max-width: 1025px){
+    height: auto;
+    bottom: 0vh;
+    right: 3.5vw;
+    width:13vw;
+}
+@media(min-width: 1025px){
+    height: auto;
+    width: 10vh;
+    bottom: 0vh;
+    left: 1vw;
+}
+ 
+ `
 function FrontPage() {
     const variantstext = {
         hidden: { opacity: 0, x: -50 },
@@ -14,7 +68,7 @@ function FrontPage() {
     return (
         <div className='page'>
 
-            <motion.img className='scroolDown' src={scroolDown} style={{ zIndex: 1 }} />
+            <Scrooldown  src={scroolDown} style={{ zIndex: 1 }} />
 
             <motion.div className='titles' initial="hidden"
                 animate="visible"
@@ -25,13 +79,18 @@ function FrontPage() {
                 <span className='line2' ></span>
                 <h2 className='subtitle'>full stack<br />web developer</h2>
             </motion.div>
-            <motion.div className='svgFront' initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-                <motion.img animate={{ y: [0, -10, 0] }} transition={{
-                    duration: 5,
-                    ease: "easeInOut",
-                    loop: Infinity
-                }} className='computerFront' src={computer} alt='Computer' />
-            </motion.div>
+            <Svg>
+                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+                    
+                    <motion.img animate={{ y: [0, -10, 0] }} transition={{
+                        duration: 5,
+                        ease: "easeInOut",
+                        loop: Infinity
+                    }}  src={computer} alt='Computer' />
+                  
+                </motion.div>
+            </Svg>
+           
         </div>
     )
 }
