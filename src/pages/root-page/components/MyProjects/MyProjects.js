@@ -2,35 +2,25 @@ import React from 'react';
 import { motion } from "framer-motion";
 import styled from 'styled-components';
 import { useInView } from 'react-intersection-observer';
-import './MyProjects.css'
+
 
 import computer from './files/final art 2-min.png';
 import Button from 'react-bootstrap/Button';
 import '../general.css';
 
-const Svg = styled.section`
+const Svg = styled(motion.img)`
 
 position:relative;
- @media(max-width: 420px){
-    width: 120vw;
-    bottom: 13vh;
-    right: 10vw;
+ @media(max-width: 1025px){
+    width: 90vw;
+    bottom: 20vh;
+    left: 4vw;
  }
- @media(min-width:421px) and (max-width: 811px){
-    width: 120vw;
-    bottom: 13vh;
-    right: 10vw;
-
-}
-@media(min-width:811px) and (max-width: 1025px){
-    width: 120vw;
-    bottom: 13vh;
-    right: 8vw;
-}
+ 
 @media(min-width: 1025px){
-    width: 50vw;
+    width: 45vw;
     left: 52vw;
-    width: 12vw;
+   
 }
 `
 
@@ -56,9 +46,7 @@ export default function MyProjects() {
                 <Button className='button' size="lg" variant="info">Show Me More</Button>
             </motion.div>
             
-            <Svg>
-                <motion.img
-                    initial={{ opacity: 0 }} animate={{ opacity: inView ? 1 : 0 }} src={computer} alt='Computer' />
+            <Svg initial={{ opacity: 0 }} animate={{ opacity: inView ? 1 : 0 }} src={computer} alt='Computer' >
             </Svg>
 
         </div>

@@ -6,56 +6,31 @@ import scroolDown from '../../../ScroolDown_bar.svg'
 import computer from './files/computer-01.svg';
 
 
-const Svg = styled.section`
+const Svg = styled(motion.section)`
 
 position:relative;
- @media(max-width: 420px){
-    width: 250vw;
-    bottom: 13vh;
-   
-    padding:-5vw;
-    border:0;
+ @media(max-width: 1025px){
+    width: 90vw;
+    bottom: 18vh;
+    left:5vw;
    
  }
- @media(min-width:421px) and (max-width: 811px){
-    width: 90vw;
-    bottom: 18vh;
-    left:5vw;
-   
 
-}
-@media(min-width:811px) and (max-width: 1025px){
-    width: 90vw;
-    bottom: 18vh;
-    left:5vw;
-  
-}
 @media(min-width: 1025px){
     width: 45vw;
-    left: 55vw;
+    left: 53vw;
 }
  
  `
 const Scrooldown = styled.img`
  position: fixed;
- @media(max-width: 420px){
+ @media(max-width: 1025px){
     height: auto;
     bottom: 0vh;
     right: 3.5vw;
     width:13vw;
  }
- @media(min-width:421px) and (max-width: 811px){
-    height: auto;
-    bottom: 0vh;
-    right: 3.5vw;
-    width:13vw;
-}
-@media(min-width:811px) and (max-width: 1025px){
-    height: auto;
-    bottom: 0vh;
-    right: 3.5vw;
-    width:13vw;
-}
+
 @media(min-width: 1025px){
     height: auto;
     width: 10vh;
@@ -84,8 +59,8 @@ function FrontPage() {
                 <span className='line2' ></span>
                 <h2 className='subtitle'>full stack<br />web developer</h2>
             </motion.div>
-            <Svg>
-                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+            <Svg initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+                
                     
                     <motion.img animate={{ y: [0, -10, 0] }} transition={{
                         duration: 5,
@@ -93,7 +68,7 @@ function FrontPage() {
                         loop: Infinity
                     }}  src={computer} alt='Computer' />
                   
-                </motion.div>
+           
             </Svg>
            
         </div>
