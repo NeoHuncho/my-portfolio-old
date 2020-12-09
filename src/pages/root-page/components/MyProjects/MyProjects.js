@@ -45,10 +45,14 @@ export default function MyProjects() {
                 <span></span>
                 <Button className='button' size="lg" variant="info">Show Me More</Button>
             </motion.div>
-            
-            <Svg initial={{ opacity: 0 }} animate={{ opacity: inView ? 1 : 0 }} src={computer} alt='Computer' >
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: inView ? 1 : 0 }} > 
+            <Svg  animate={{ y: [0, -10, 0] }} transition={{
+            duration: 5,
+            ease: "easeInOut",
+            loop: Infinity
+          }} src={computer} alt='Computer' >
             </Svg>
-
+            </motion.div>
         </div>
     )
 }
