@@ -2,19 +2,18 @@ import React from 'react'
 import { motion } from "framer-motion";
 import styled from 'styled-components';
 
-import './frontPage.css';
+
 import '../general.css';
 
 import front_page_image from './files/1st image-min (1).png';
 import scroolDown from '../../ScroolDown_bar.svg'
 
-const Svg = styled(motion.section)`
-
+const Svg = styled(motion.img)`
 position:relative;
  @media(max-width: 1025px){
-    width: 90vw;
+    width: 100vw;
     bottom: 18vh;
-    left:5vw;
+    left:0vw;
    
  }
 
@@ -62,15 +61,15 @@ export default function frontPage() {
                 <span className='line2' ></span>
             </motion.div>
             
-            <Svg style={{ zIndex: 0 }} initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+            <motion.div style={{ zIndex: 0 }} initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
                 
-                <motion.img animate={{ y: [0, -10, 0] }} transition={{
+                <Svg animate={{ y: [0, -10, 0] }} transition={{
                     duration: 5,
                     ease: "easeInOut",
                     loop: Infinity
                 }}  src={front_page_image} alt='Computer' />
 
-            </Svg>
+            </motion.div >
         </div>
     )
 }

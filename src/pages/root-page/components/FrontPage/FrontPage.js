@@ -2,6 +2,8 @@ import React from 'react';
 import { motion } from "framer-motion";
 import styled from 'styled-components';
 
+import { Page, Title, TitleSection, LineBottom, LineTop } from '../../../../styles'
+
 import scroolDown from '../../../ScroolDown_bar.svg'
 import computer from './files/computer-01.svg';
 
@@ -46,32 +48,31 @@ function FrontPage() {
     }
 
     return (
-        <div className='page'>
+        <Page>
 
-            <Scrooldown  src={scroolDown} style={{ zIndex: 1 }} />
+            <Scrooldown src={scroolDown} style={{ zIndex: 1 }} />
 
-            <motion.div className='titles' initial="hidden"
+            <Svg initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+
+                <motion.img animate={{ y: [0, -10, 0] }} transition={{
+                    duration: 5,
+                    ease: "easeInOut",
+                    loop: Infinity
+                }} src={computer} alt='Computer' />
+
+            </Svg>
+
+            <TitleSection  initial="hidden"
                 animate="visible"
                 variants={variantstext}
                 transition={{ ease: "easeOut", duration: 1.5 }}>
-                <h1 className='title'>WILLIAM<br /> GUINAUDIE</h1>
-                <span className='line1'></span>
-                <span className='line2' ></span>
+                <Title style={{fontSize: '10vw'}}>WILLIAM<br /> GUINAUDIE</Title>
+                <LineTop/>
+                <LineBottom/>
                 <h2 className='subtitle'>full stack<br />web developer</h2>
-            </motion.div>
-            <Svg initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-                
-                    
-                    <motion.img animate={{ y: [0, -10, 0] }} transition={{
-                        duration: 5,
-                        ease: "easeInOut",
-                        loop: Infinity
-                    }}  src={computer} alt='Computer' />
-                  
-           
-            </Svg>
-           
-        </div>
+            </TitleSection>
+
+        </Page>
     )
 }
 

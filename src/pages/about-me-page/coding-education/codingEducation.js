@@ -8,6 +8,21 @@ import './codingEducations.css';
 import second_page_image from './second page image-01-min.png';
 import {useInView} from 'react-intersection-observer';
 
+const Svg = styled(motion.img)`
+position:relative;
+ @media(max-width: 1025px){
+    width: 50vw;
+    bottom: 29vh;
+    left:25vw;
+   
+ }
+
+@media(min-width: 1025px){
+    width: 35vw;
+    left: 5vw;
+}
+ `
+
 export default function CodingEducation() {
     const variantstext = {
         hidden: { opacity: 0, x: -50 },
@@ -31,12 +46,12 @@ export default function CodingEducation() {
                 In terms of education, I spent my first 18 years of my life in a multilingual school, called Lycee International, located next to Paris, France. From there, I enrolled in a business undergraduate degree, at the University of Concordia, Montreal, Canada. My major is Business Technology Management. Although it helped me grow as a person, it paradoxically also help me understand what I wanted to do later in life: I didn’t want to manage people or technology projects, but rather build software and collaborate with people. I felt like what we were learning was theoretical and stuck in the past, when I am interested in concrete and the cutting edge! <br /> <br />
 </p>
             </motion.div>
-            <motion.div className='svgFrontCE' style={{ zIndex: 0 }} initial={{ opacity: 0 }}  transition={{ ease: "easeOut", duration: 1.25 }}animate={{ opacity:inView?1:0 }}>
-                <motion.img animate={{ y: [0, -10, 0] }} transition={{
+            <motion.div  style={{ zIndex: 0 }} initial={{ opacity: 0 }}  transition={{ ease: "easeOut", duration: 1.25 }}animate={{ opacity:inView?1:0 }}>
+                <Svg animate={{ y: [0, -10, 0] }} transition={{
                     duration: 5,
                     ease: "easeInOut",
                     loop: Infinity
-                }} className='computerFrontCE' src={second_page_image} alt='Computer' />
+                }}  src={second_page_image} alt='Computer' />
             </motion.div>
         </div>
     )
