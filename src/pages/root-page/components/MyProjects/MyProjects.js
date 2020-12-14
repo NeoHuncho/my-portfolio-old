@@ -30,7 +30,8 @@ export default function MyProjects() {
         visible: { opacity: 1, x: 0 },
     }
     const [ref, inView] = useInView({
-        rootMargin: '-100px 0px',
+        
+        rootMargin: '50px 0px',
     })
 
     return (
@@ -45,13 +46,13 @@ export default function MyProjects() {
                 <span></span>
                 <Button className='button' size="lg" variant="info">Show Me More</Button>
             </motion.div>
+           
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: inView ? 1 : 0 }} > 
             <Svg  animate={{ y: [0, -10, 0] }} transition={{
             duration: 5,
             ease: "easeInOut",
             loop: Infinity
-          }} src={computer} alt='Computer' >
-            </Svg>
+          }} src={computer} alt='Computer' />
             </motion.div>
         </div>
     )

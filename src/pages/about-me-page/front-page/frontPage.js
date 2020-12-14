@@ -1,9 +1,46 @@
 import React from 'react'
 import { motion } from "framer-motion";
+import styled from 'styled-components';
+
 import './frontPage.css';
 import '../general.css';
-import front_page_image from './1st image-min (1).png';
+
+import front_page_image from './files/1st image-min (1).png';
 import scroolDown from '../../ScroolDown_bar.svg'
+
+const Svg = styled(motion.section)`
+
+position:relative;
+ @media(max-width: 1025px){
+    width: 90vw;
+    bottom: 18vh;
+    left:5vw;
+   
+ }
+
+@media(min-width: 1025px){
+    width: 45vw;
+    left: 53vw;
+}
+ `
+
+const Scrooldown = styled.img`
+ position: fixed;
+ @media(max-width: 1025px){
+    height: auto;
+    bottom: 0vh;
+    right: 3.5vw;
+    width:13vw;
+ }
+
+@media(min-width: 1025px){
+    height: auto;
+    width: 10vh;
+    bottom: 0vh;
+    left: 1vw;
+}
+ `
+
 export default function frontPage() {
 
     const variantstext = {
@@ -13,7 +50,7 @@ export default function frontPage() {
     return (
         <div className='page'>
 
-            <motion.img className='scroolDown' src={scroolDown} style={{ zIndex: 1 }} />
+            <Scrooldown className='scroolDown' src={scroolDown} style={{ zIndex: 1 }} />
 
 
             <motion.div className='titles' initial="hidden"
@@ -24,13 +61,16 @@ export default function frontPage() {
                 <span className='line1'></span>
                 <span className='line2' ></span>
             </motion.div>
-            <motion.div className='svgFront' style={{ zIndex: 0 }} initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+            
+            <Svg style={{ zIndex: 0 }} initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+                
                 <motion.img animate={{ y: [0, -10, 0] }} transition={{
                     duration: 5,
                     ease: "easeInOut",
                     loop: Infinity
                 }}  src={front_page_image} alt='Computer' />
-            </motion.div>
+
+            </Svg>
         </div>
     )
 }
