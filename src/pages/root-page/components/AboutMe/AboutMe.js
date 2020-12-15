@@ -33,15 +33,17 @@ function AboutMe() {
   return (
     < Page style={{ zIndex: 2 }}>
      
-      <TitleSection ref={ref} initial={{ opacity: 0, x: -50 }}  animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -50 }} transition={{ duration: 1, ease: "easeOut" }}>
-          <Link to='about-me'><Title>About<br />Me</Title></Link>
+    <TitleSection ref={ref} initial={{ opacity: 0, x: -50 }}  animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -50 }} transition={{ duration: 1, ease: "easeOut" }}>
+    <Link to='/about-me' >
+      <Title > About<br />Me</Title>
+    </Link>
           <LineTop />
           <LineBottom />
-        <Button to='about-me' className='button' size="lg" variant="info">Show Me More</Button>
+          <Link to='/about-me'>  <Button  className='button' size="lg" variant="info">Show Me More</Button></Link>
       </TitleSection>
 
      <motion.div initial={{ opacity: 0 }} animate={{ opacity: inView ? 1 : 0 }}style={{ zIndex: 0 }}>
-        <Link to='about-me'> 
+        <Link to='/about-me'> 
           <Svg
           animate={{ y: [0, -10, 0] }} transition={{
             duration: 5,

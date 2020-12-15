@@ -27,7 +27,7 @@ color: #FFFFFF;
 font-style: normal;
 
 @media ${mediaQueries.mobile}{
-    font-size: 18vw;
+    font-size: 15vw;
     line-height: 10vh;
  }
 

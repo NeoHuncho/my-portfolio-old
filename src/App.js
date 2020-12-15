@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
+import ScrollToTop from './ScrolllToTop';
 import FrontPage from './pages/root-page/components/FrontPage/FrontPage';
 import MyProjectsRoot from './pages/root-page/components/MyProjects/MyProjects';
 import AboutMeRoot from './pages/root-page/components/AboutMe/AboutMe';
@@ -9,9 +10,11 @@ import AboutMe from './pages/about-me-page/aboutMe';
 import MyProjects from './pages/my-projects-page/myProjects';
 function App() {
   return (
-      <Router>
+      <Router  onUpdate={() => window.scrollTo(0, 0)} >
+      <ScrollToTop />
       <div className="App">
         <NavBar />
+        
         <Route exact path="/" render={e => (
           <React.Fragment >
             <FrontPage />
