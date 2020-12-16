@@ -32,9 +32,9 @@ position:relative;
 `
 
 function AboutMe() {
-  const [ref, inView] = useInView({
-    rootMargin: '50px 0px',
-  })
+  const { ref, inView } = useInView({
+    threshold: 0.5,
+})
   return (
     < Page style={{ zIndex: 1}}>
 

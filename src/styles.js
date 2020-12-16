@@ -83,6 +83,7 @@ left: 10vw;
  //extended in root-page/frontPage to keep titlesection higher as page full height
 @media ${mediaQueries.mobile}{    
     bottom: 6vh;
+    left: 8vw;
  }
 
  @media ${mediaQueries.ipad}{
