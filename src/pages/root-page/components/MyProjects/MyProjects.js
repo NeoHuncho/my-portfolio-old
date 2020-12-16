@@ -10,7 +10,12 @@ import '../general.css';
 const Svg = styled(motion.img)`
 
 position:relative;
- @media(max-width: 1025px){
+@media(max-width: 420px){
+    width: 90vw;
+    bottom: 17vh;
+    left: 4vw;
+ }
+ @media(min-width:421px) and (max-width: 1025px){
     width: 90vw;
     bottom: 20vh;
     left: 4vw;
@@ -28,9 +33,8 @@ export default function MyProjects() {
         hidden: { opacity: 0, x: -50 },
         visible: { opacity: 1, x: 0 },
     }
-    const [ref, inView] = useInView({
-
-        rootMargin: '50px 0px',
+    const { ref, inView } = useInView({
+        threshold: 0.47,
     })
 
     return (

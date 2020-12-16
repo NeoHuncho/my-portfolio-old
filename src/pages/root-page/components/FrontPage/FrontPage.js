@@ -7,7 +7,11 @@ import { Page, Title, TitleSection, LineBottom, LineTop } from '../../../../styl
 import scroolDown from '../../../ScroolDown_bar.svg'
 import computer from './files/computer-01.svg';
 
-
+const ThisPage= styled(Page)`
+@media (max-width: 420px){
+    height: 100vh;
+}
+`
 const Svg = styled(motion.section)`
 
 position:relative;
@@ -48,7 +52,7 @@ function FrontPage() {
     }
 
     return (
-        <Page>
+        <ThisPage>
 
             <Scrooldown src={scroolDown} style={{ zIndex: 1 }} />
 
@@ -72,7 +76,7 @@ function FrontPage() {
                 <h2 className='subtitle'>full stack<br />web developer</h2>
             </TitleSection>
 
-        </Page>
+        </ThisPage>
     )
 }
 

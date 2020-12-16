@@ -13,7 +13,12 @@ import astraunaut from './files/astraunaut.svg';
 const Svg = styled(motion.img)`
 
 position:relative;
- @media(max-width: 1025px){
+@media(max-width: 420px){
+    width: 70vw;
+    bottom: 17vh;
+    left: 15vw;
+ }
+ @media(min-width:421px) and (max-width: 1025px){
     width: 70vw;
     bottom: 20vh;
     left: 15vw;

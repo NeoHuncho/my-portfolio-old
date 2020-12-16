@@ -18,9 +18,12 @@ export const Page = styled.section`
     position: relative;
     align-items: center;
     background: radial-gradient(50% 98.88% at 50% 50%, #16045E 18.23%, #0E021E 100%);
-    
-
+    //extended in root-page/frontPage to keep front page at 100% height
+    @media ${mediaQueries.mobile}{
+    height:80vh;
+ }
 `
+
 
 export const StyledLink = styled(Link)`
  &:hover{
@@ -79,7 +82,7 @@ position: absolute;
 left: 10vw;
 
 @media ${mediaQueries.mobile}{    
-    bottom: 15vh;
+    bottom: 6vh;
  }
 
  @media ${mediaQueries.ipad}{
