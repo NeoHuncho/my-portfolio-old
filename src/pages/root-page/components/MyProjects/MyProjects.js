@@ -2,11 +2,10 @@ import React from 'react';
 import { motion } from "framer-motion";
 import styled from 'styled-components';
 import { useInView } from 'react-intersection-observer';
-
-import { Page, Title, TitleSection, LineBottom, LineTop } from '../../../../styles'
+import { Page, Title, TitleSection, LineBottom, LineTop,StyledLink } from '../../../../styles'
 
 import computer from './files/final art 2-min.png';
-import Button from 'react-bootstrap/Button';
+import Button from '@material-ui/core/Button';
 import '../general.css';
 
 const Svg = styled(motion.img)`
@@ -37,22 +36,26 @@ export default function MyProjects() {
 
     return (
         <Page className='page' style={{ zIndex: 2 }}>
-
-            <motion.div initial={{ opacity: 0 }} animate={{ opacity: inView ? 1 : 0 }} >
-                <Svg animate={{ y: [0, -10, 0] }} transition={{
-                    duration: 5,
-                    ease: "easeInOut",
-                    loop: Infinity
-                }} src={computer} alt='Computer' />
-            </motion.div>
-
-            <TitleSection ref={ref}  initial={{ opacity: 0, x: -50 }}
+            <StyledLink to='/my-projects'>
+                <motion.div initial={{ opacity: 0 }} animate={{ opacity: inView ? 1 : 0 }} >
+                    <Svg animate={{ y: [0, -10, 0] }} transition={{
+                        duration: 5,
+                        ease: "easeInOut",
+                        loop: Infinity
+                    }} src={computer} alt='Computer' />
+                </motion.div>
+            </StyledLink>
+            <TitleSection ref={ref} initial={{ opacity: 0, x: -50 }}
                 animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -50 }} transition={{ duration: 1, ease: "easeOut" }}
                 variants={variantstext}>
-                <Title >My<br /> Projects</Title>
-                <LineTop style={{marginTop:'4vh'}}/>
-                <LineBottom/>
-                <Button className='button' size="lg" variant="info">Show Me More</Button>
+                <StyledLink to='/my-projects' >
+                    <Title >My<br /> Projects</Title>
+                </StyledLink>
+                <LineTop style={{ marginTop: '4vh' }} />
+                <LineBottom />
+                <Button component={StyledLink} to="/my-projects" variant="contained" color="primary">
+                    Show me more!
+        </Button>
             </TitleSection>
 
 

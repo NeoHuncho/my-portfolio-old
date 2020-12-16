@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-
+import { Link } from 'react-router-dom';
 import styled from 'styled-components'
 
 const mediaQueries = {
@@ -17,6 +17,12 @@ export const Page = styled.section`
     position: relative;
     align-items: center;
     background: radial-gradient(50% 98.88% at 50% 50%, #16045E 18.23%, #0E021E 100%);
+`
+
+export const StyledLink= styled(Link)`
+ &:hover{
+     text-decoration: none
+     };
 `
 
 
