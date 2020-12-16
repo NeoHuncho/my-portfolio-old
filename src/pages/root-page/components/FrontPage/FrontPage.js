@@ -12,6 +12,10 @@ const ThisPage= styled(Page)`
     height: 100vh;
 }
 `
+const ThisTitleSection=styled(TitleSection)`
+@media (max-width: 420px){    
+    bottom: 12vh;
+ }`
 const Svg = styled(motion.section)`
 
 position:relative;
@@ -66,7 +70,7 @@ function FrontPage() {
 
             </Svg>
 
-            <TitleSection  initial="hidden"
+            <ThisTitleSection  initial="hidden"
                 animate="visible"
                 variants={variantstext}
                 transition={{ ease: "easeOut", duration: 1.5 }}>
@@ -74,7 +78,7 @@ function FrontPage() {
                 <LineTop/>
                 <LineBottom/>
                 <h2 className='subtitle'>full stack<br />web developer</h2>
-            </TitleSection>
+            </ThisTitleSection>
 
         </ThisPage>
     )

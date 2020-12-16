@@ -80,7 +80,7 @@ font-style: normal;
 export const TitleSection = styled(motion.div)`
 position: absolute;
 left: 10vw;
-
+ //extended in root-page/frontPage to keep titlesection higher as page full height
 @media ${mediaQueries.mobile}{    
     bottom: 6vh;
  }
