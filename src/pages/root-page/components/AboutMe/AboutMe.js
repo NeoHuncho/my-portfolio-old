@@ -2,10 +2,10 @@ import React from 'react';
 import { motion } from "framer-motion";
 import styled from 'styled-components';
 
-import { Page, Title, TitleSection, LineBottom, LineTop,StyledLink } from '../../../../styles'
+import { Page, Title, TitleSection, LineBottom, LineTop,StyledLink,StyledButton } from '../../../../styles'
 import '../general.css';
 
-import Button from '@material-ui/core/Button';
+
 import { useInView } from 'react-intersection-observer';
 
 
@@ -39,9 +39,9 @@ function AboutMe() {
         </StyledLink>
         <LineTop />
         <LineBottom />
-        <Button component={ StyledLink } to="/about-me" variant="contained" color="primary">
-    Show me more!
-        </Button>
+        <StyledButton variant="contained"   size="large" color="primary" component={StyledLink} to="/about-me" >
+                    Show me more!
+        </StyledButton>
       </TitleSection>
 
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: inView ? 1 : 0 }} >

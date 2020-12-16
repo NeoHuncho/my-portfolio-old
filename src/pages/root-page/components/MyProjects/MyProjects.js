@@ -2,10 +2,9 @@ import React from 'react';
 import { motion } from "framer-motion";
 import styled from 'styled-components';
 import { useInView } from 'react-intersection-observer';
-import { Page, Title, TitleSection, LineBottom, LineTop,StyledLink } from '../../../../styles'
+import { Page, Title, TitleSection, LineBottom, LineTop,StyledLink,StyledButton } from '../../../../styles'
 
 import computer from './files/final art 2-min.png';
-import Button from '@material-ui/core/Button';
 import '../general.css';
 
 const Svg = styled(motion.img)`
@@ -53,9 +52,9 @@ export default function MyProjects() {
                 </StyledLink>
                 <LineTop style={{ marginTop: '4vh' }} />
                 <LineBottom />
-                <Button component={StyledLink} to="/my-projects" variant="contained" color="primary">
+                <StyledButton variant="contained"   size="large" color="primary" component={StyledLink} to="/my-projects" >
                     Show me more!
-        </Button>
+        </StyledButton>
             </TitleSection>
 
 

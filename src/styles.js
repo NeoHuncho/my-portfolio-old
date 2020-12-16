@@ -1,6 +1,7 @@
+import styled from 'styled-components'
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import styled from 'styled-components'
+import Button from '@material-ui/core/Button';
 
 const mediaQueries = {
     mobile: '(max-width: 420px)',
@@ -17,6 +18,7 @@ export const Page = styled.section`
     position: relative;
     align-items: center;
     background: radial-gradient(50% 98.88% at 50% 50%, #16045E 18.23%, #0E021E 100%);
+    
 `
 
 export const StyledLink= styled(Link)`
@@ -25,6 +27,13 @@ export const StyledLink= styled(Link)`
      };
 `
 
+export const StyledButton = styled(Button)`
+ color: white !important;
+ 
+ &:hover{
+     text-decoration: none
+     };
+`
 
 export const Title = styled.h1`
 font-family: Roboto;
@@ -34,16 +43,16 @@ font-style: normal;
 
 @media ${mediaQueries.mobile}{
     font-size: 15vw;
-    line-height: 10vh;
+    line-height: 8vh;
  }
 
  @media ${mediaQueries.ipad}{
-    font-size: 15vw;
+    font-size: 13vw;
     line-height: 11vh;
  }
 
  @media ${mediaQueries.ipadPro}{
-    font-size: 15vw;
+    font-size: 13vw;
     line-height: 10vh;
  }
  

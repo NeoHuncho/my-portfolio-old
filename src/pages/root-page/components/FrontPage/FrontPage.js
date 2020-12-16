@@ -66,7 +66,7 @@ function FrontPage() {
                 animate="visible"
                 variants={variantstext}
                 transition={{ ease: "easeOut", duration: 1.5 }}>
-                <Title style={{fontSize:'2'}}>WILLIAM<br /> GUINAUDIE</Title>
+                <Title >WILLIAM<br /> GUINAUDIE</Title>
                 <LineTop/>
                 <LineBottom/>
                 <h2 className='subtitle'>full stack<br />web developer</h2>
