@@ -19,9 +19,10 @@ export const Page = styled.section`
     align-items: center;
     background: radial-gradient(50% 98.88% at 50% 50%, #16045E 18.23%, #0E021E 100%);
     
+
 `
 
-export const StyledLink= styled(Link)`
+export const StyledLink = styled(Link)`
  &:hover{
      text-decoration: none
      };
@@ -29,10 +30,20 @@ export const StyledLink= styled(Link)`
 
 export const StyledButton = styled(Button)`
  color: white !important;
- 
+
+@media ${mediaQueries.ipad}{
+font-size:3vw !important;
+}
+
+@media ${mediaQueries.ipadPro}{
+margin-top:1vh !important;
+font-size:3vw !important;
+}
+
  &:hover{
      text-decoration: none
      };
+ 
 `
 
 export const Title = styled.h1`
@@ -68,11 +79,11 @@ position: absolute;
 left: 10vw;
 
 @media ${mediaQueries.mobile}{    
-    bottom: 8vh;
+    bottom: 15vh;
  }
 
  @media ${mediaQueries.ipad}{
-    bottom: 5vh;
+    bottom: 6.5vh;
  }
 
  @media ${mediaQueries.ipadPro}{
