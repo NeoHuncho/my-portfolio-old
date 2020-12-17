@@ -15,7 +15,7 @@ const Svg = styled(motion.img)`
 position:relative;
 @media(max-width: 420px){
     width: 70vw;
-    bottom: 17vh;
+    bottom: 19vh;
     left: 15vw;
  }
  @media(min-width:421px) and (max-width: 1025px){
