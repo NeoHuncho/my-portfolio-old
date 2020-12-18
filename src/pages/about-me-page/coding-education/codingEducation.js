@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from "framer-motion";
 import styled from 'styled-components';
 
-import { FullPage, Title, TitleSection, LineBottom, LineTop } from '../../../styling/styles'
+import { FullPage, Title, TitleSection,  } from '../../../styling/styles'
 
 
 import second_page_image from './second page image-01-min.png';
