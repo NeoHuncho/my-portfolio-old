@@ -3,25 +3,27 @@ import { motion } from "framer-motion";
 import styled from 'styled-components';
 
 import { FullPage, Title, TitleSection, LineBottom, LineTop,Scrooldown } from '../../../styling/styles'
+import {mediaQueries} from '../../../styling/mediaQueries'
 
 import front_page_image from './files/1st image-min (1).png';
 import scroolDown from '../../ScroolDown_bar.svg'
 
 const ThisTitleSection=styled(TitleSection)`
-@media (max-width: 1025px){    
-    bottom: 20vh;
- }`
+@media ${mediaQueries.nondesktop}{    
+    bottom: 16vh;
+ }
+ `
 
 const Svg = styled(motion.img)`
 position:relative;
- @media(max-width: 1025px){
+ @media ${mediaQueries.nondesktop}{
     width: 100vw;
     bottom: 18vh;
     left:0vw;
    
  }
 
-@media(min-width: 1025px){
+@media ${mediaQueries.desktop}{
     width: 45vw;
     left: 53vw;
 }
@@ -38,7 +40,7 @@ export default function frontPage() {
 
             <Scrooldown  src={scroolDown} style={{ zIndex: 1 }} />
            
-            <motion.div style={{ zIndex: 0 }} initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+            <motion.div style={{ zIndex: 0}} initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
                 
                 <Svg animate={{ y: [0, -10, 0] }} transition={{
                     duration: 5,

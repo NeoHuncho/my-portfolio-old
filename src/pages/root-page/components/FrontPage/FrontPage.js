@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import styled from 'styled-components';
 
 import { FullPage, Title, TitleSection, LineBottom, LineTop,Scrooldown } from '../../../../styling/styles'
+import { mediaQueries} from '../../../../styling/mediaQueries'
 
 import scroolDown from '../../../ScroolDown_bar.svg'
 import computer from './files/computer-01.svg';
@@ -15,14 +16,14 @@ const ThisTitleSection=styled(TitleSection)`
 const Svg = styled(motion.section)`
 
 position:relative;
- @media(max-width: 1025px){
+ @media ${mediaQueries.nondesktop}{
     width: 90vw;
     bottom: 18vh;
     left:5vw;
    
  }
 
-@media(min-width: 1025px){
+@media ${mediaQueries.desktop}{
     width: 45vw;
     left: 53vw;
 }
@@ -34,12 +35,12 @@ font-family: Roboto;
 font-style: normal;
 font-weight: 100;
 color: #FFFFFF;
- @media(max-width: 1025px){
+ @media ${mediaQueries.nondesktop}{
     font-size: 6vw;
     line-height: 6vw;   
  }
 
-@media(min-width: 1025px){
+@media ${mediaQueries.desktop}{
     font-size: 2.5vw;
     line-height: 3vw;
 }

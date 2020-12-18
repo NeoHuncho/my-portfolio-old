@@ -13,18 +13,18 @@ import astraunaut from './files/astraunaut.svg';
 const Svg = styled(motion.img)`
 
 position:relative;
-@media(max-width: 420px){
+@media ${mediaQueries.mobile}{
     width: 70vw;
-    bottom: 19vh;
+    bottom: 18vh;
     left: 15vw;
  }
- @media(min-width:421px) and (max-width: 1025px){
+ @media ${mediaQueries.ipadAndIpadPro}{
     width: 70vw;
     bottom: 16vh;
     left: 15vw;
  }
  
-@media(min-width: 1025px){
+@media ${mediaQueries.desktop}{
     width: 35vw;
     left: 60vw;
    

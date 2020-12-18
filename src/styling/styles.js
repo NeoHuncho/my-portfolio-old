@@ -7,7 +7,7 @@ import {mediaQueries} from './mediaQueries';
 
 export const Page = styled.section`
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     overflow: hidden;
     position: relative;
@@ -18,9 +18,7 @@ export const Page = styled.section`
  }
 `
 export const FullPage= styled(Page)`//for opening pages 
-@media ${mediaQueries.mobile}{
     height: 100vh;
-}
 `
 
 export const StyledLink = styled(Link)`

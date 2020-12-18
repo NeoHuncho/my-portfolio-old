@@ -2,7 +2,9 @@ import React from 'react';
 import { motion } from "framer-motion";
 import styled from 'styled-components';
 import { useInView } from 'react-intersection-observer';
+
 import { Page, Title, TitleSection, LineBottom, LineTop,StyledLink,StyledButton } from '../../../../styling/styles'
+import { mediaQueries } from '../../../../styling/mediaQueries';
 
 import computer from './files/final art 2-min.png';
 
@@ -10,18 +12,18 @@ import computer from './files/final art 2-min.png';
 const Svg = styled(motion.img)`
 
 position:relative;
-@media(max-width: 420px){
+@media ${mediaQueries.mobile}{
     width: 90vw;
     bottom: 17vh;
     left: 4vw;
  }
- @media(min-width:421px) and (max-width: 1025px){
+ @media ${mediaQueries.ipadAndIpadPro}{
     width: 90vw;
     bottom: 20vh;
     left: 4vw;
  }
  
-@media(min-width: 1025px){
+@media ${mediaQueries.desktop}{
     width: 45vw;
     left: 52vw;
    
