@@ -2,8 +2,8 @@ import React from 'react';
 import { motion } from "framer-motion";
 import styled from 'styled-components';
 
-import { Page, Title, TitleSection, LineBottom, LineTop,StyledLink,StyledButton } from '../../../../styles'
-import '../general.css';
+import { Page, Title, TitleSection, LineBottom, LineTop,StyledLink,StyledButton } from '../../../../styling/styles'
+import { mediaQueries} from '../../../../styling/mediaQueries'
 
 
 import { useInView } from 'react-intersection-observer';
@@ -20,7 +20,7 @@ position:relative;
  }
  @media(min-width:421px) and (max-width: 1025px){
     width: 70vw;
-    bottom: 20vh;
+    bottom: 16vh;
     left: 15vw;
  }
  

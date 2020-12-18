@@ -2,13 +2,8 @@ import styled from 'styled-components'
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import Button from '@material-ui/core/Button';
+import {mediaQueries} from './mediaQueries';
 
-const mediaQueries = {
-    mobile: '(max-width: 420px)',
-    ipad: '(min-width:421px) and (max-width: 811px)',
-    ipadPro: '(min-width:811px) and (max-width: 1025px)',
-    desktop: '(min-width: 1025px)'
-};
 
 export const Page = styled.section`
     width: 100%;
@@ -18,12 +13,15 @@ export const Page = styled.section`
     position: relative;
     align-items: center;
     background: radial-gradient(50% 98.88% at 50% 50%, #16045E 18.23%, #0E021E 100%);
-    //extended in root-page/frontPage to keep front page at 100% height
     @media ${mediaQueries.mobile}{
     height:80vh;
  }
 `
-
+export const FullPage= styled(Page)`//for opening pages 
+@media ${mediaQueries.mobile}{
+    height: 100vh;
+}
+`
 
 export const StyledLink = styled(Link)`
  &:hover{
@@ -48,7 +46,23 @@ font-size:3vw !important;
      };
  
 `
+export const Scrooldown = styled.img`
+ position: fixed;
+ @media ${mediaQueries.nondesktop}{
+    height: auto;
+    bottom: 0vh;
+    right: 3.5vw;
+    width:13vw;
+ }
 
+@media ${mediaQueries.desktop}{
+    height: auto;
+    width: 10vh;
+    bottom: 0vh;
+    left: 1vw;
+}
+ 
+ `
 export const Title = styled.h1`
 font-family: Roboto;
 font-weight: 700;

@@ -2,16 +2,12 @@ import React from 'react';
 import { motion } from "framer-motion";
 import styled from 'styled-components';
 
-import { Page, Title, TitleSection, LineBottom, LineTop } from '../../../../styles'
+import { FullPage, Title, TitleSection, LineBottom, LineTop,Scrooldown } from '../../../../styling/styles'
 
 import scroolDown from '../../../ScroolDown_bar.svg'
 import computer from './files/computer-01.svg';
 
-const ThisPage= styled(Page)`
-@media (max-width: 420px){
-    height: 100vh;
-}
-`
+
 const ThisTitleSection=styled(TitleSection)`
 @media (max-width: 420px){    
     bottom: 12vh;
@@ -32,20 +28,20 @@ position:relative;
 }
  
  `
-const Scrooldown = styled.img`
- position: fixed;
+
+const SubTitle = styled.h2`
+font-family: Roboto;
+font-style: normal;
+font-weight: 100;
+color: #FFFFFF;
  @media(max-width: 1025px){
-    height: auto;
-    bottom: 0vh;
-    right: 3.5vw;
-    width:13vw;
+    font-size: 6vw;
+    line-height: 6vw;   
  }
 
 @media(min-width: 1025px){
-    height: auto;
-    width: 10vh;
-    bottom: 0vh;
-    left: 1vw;
+    font-size: 2.5vw;
+    line-height: 3vw;
 }
  
  `
@@ -56,7 +52,7 @@ function FrontPage() {
     }
 
     return (
-        <ThisPage>
+        <FullPage>
 
             <Scrooldown src={scroolDown} style={{ zIndex: 1 }} />
 
@@ -77,10 +73,10 @@ function FrontPage() {
                 <Title >WILLIAM<br /> GUINAUDIE</Title>
                 <LineTop/>
                 <LineBottom/>
-                <h2 className='subtitle'>full stack<br />web developer</h2>
+                <SubTitle>full stack<br />web developer</SubTitle>
             </ThisTitleSection>
 
-        </ThisPage>
+        </FullPage>
     )
 }
 

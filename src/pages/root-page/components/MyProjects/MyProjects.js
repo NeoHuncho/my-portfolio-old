@@ -2,10 +2,10 @@ import React from 'react';
 import { motion } from "framer-motion";
 import styled from 'styled-components';
 import { useInView } from 'react-intersection-observer';
-import { Page, Title, TitleSection, LineBottom, LineTop,StyledLink,StyledButton } from '../../../../styles'
+import { Page, Title, TitleSection, LineBottom, LineTop,StyledLink,StyledButton } from '../../../../styling/styles'
 
 import computer from './files/final art 2-min.png';
-import '../general.css';
+
 
 const Svg = styled(motion.img)`
 

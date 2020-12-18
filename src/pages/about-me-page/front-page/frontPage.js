@@ -2,11 +2,15 @@ import React from 'react'
 import { motion } from "framer-motion";
 import styled from 'styled-components';
 
-
-import '../general.css';
+import { FullPage, Title, TitleSection, LineBottom, LineTop,Scrooldown } from '../../../styling/styles'
 
 import front_page_image from './files/1st image-min (1).png';
 import scroolDown from '../../ScroolDown_bar.svg'
+
+const ThisTitleSection=styled(TitleSection)`
+@media (max-width: 1025px){    
+    bottom: 20vh;
+ }`
 
 const Svg = styled(motion.img)`
 position:relative;
@@ -23,23 +27,6 @@ position:relative;
 }
  `
 
-const Scrooldown = styled.img`
- position: fixed;
- @media(max-width: 1025px){
-    height: auto;
-    bottom: 0vh;
-    right: 3.5vw;
-    width:13vw;
- }
-
-@media(min-width: 1025px){
-    height: auto;
-    width: 10vh;
-    bottom: 0vh;
-    left: 1vw;
-}
- `
-
 export default function frontPage() {
 
     const variantstext = {
@@ -47,20 +34,10 @@ export default function frontPage() {
         visible: { opacity: 1, x: 0 },
     }
     return (
-        <div className='page'>
+        <FullPage>
 
-            <Scrooldown className='scroolDown' src={scroolDown} style={{ zIndex: 1 }} />
-
-
-            <motion.div className='titles' initial="hidden"
-                animate="visible"
-                variants={variantstext}
-                transition={{ ease: "easeOut", duration: 1.5 }}>
-                <h1 className='title'>WHO AM I?</h1>
-                <span className='line1'></span>
-                <span className='line2' ></span>
-            </motion.div>
-            
+            <Scrooldown  src={scroolDown} style={{ zIndex: 1 }} />
+           
             <motion.div style={{ zIndex: 0 }} initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
                 
                 <Svg animate={{ y: [0, -10, 0] }} transition={{
@@ -70,6 +47,17 @@ export default function frontPage() {
                 }}  src={front_page_image} alt='Computer' />
 
             </motion.div >
-        </div>
+
+            <ThisTitleSection  initial="hidden"
+                animate="visible"
+                variants={variantstext}
+                transition={{ ease: "easeOut", duration: 1.5 }}>
+                <Title>WHO AM I?</Title>
+                <LineTop />
+                <LineBottom />
+            </ThisTitleSection>
+            
+          
+        </FullPage>
     )
 }
