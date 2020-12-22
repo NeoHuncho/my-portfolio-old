@@ -2,30 +2,49 @@ import React from 'react'
 import { motion } from "framer-motion";
 import styled from 'styled-components';
 
-import { FullPage, Title, TitleSection, LineBottom, LineTop,Scrooldown } from '../../../styling/styles'
+import { FullPage, Title, TitleSection, LineBottom, LineTop,Scrooldown,Grid,ImageSection } from '../../../styling/styles'
 import {mediaQueries} from '../../../styling/mediaQueries'
 
 import front_page_image from './files/1st image-min (1).png';
 import scroolDown from '../../ScroolDown_bar.svg'
 
 const ThisTitleSection=styled(TitleSection)`
-@media ${mediaQueries.nondesktop}{    
-    bottom: 16vh;
- }
+ 
+ @media ${mediaQueries.mobile}{
+        margin-top:15%;
+        margin-bottom:10%
+    }
+   
+    @media ${mediaQueries.ipadAndIpadPro}{
+        margin-bottom:15%;
+        margin-top:5%
+    }
  `
 
+const ThisImageSection = styled(ImageSection)`
+
+@media ${mediaQueries.mobile}{
+  margin-top:40%;
+  margin-left:1%;
+}
+
+@media ${mediaQueries.ipadAndIpadPro}{
+  margin-left:11%;
+  margin-top:20%;
+  }   
+`
+
 const Svg = styled(motion.img)`
-position:relative;
- @media ${mediaQueries.nondesktop}{
+ @media ${mediaQueries.mobile}{
     width: 100vw;
-    bottom: 18vh;
-    left:0vw;
-   
+ }
+ @media ${mediaQueries.ipadAndIpadPro}{
+    width: 80vw;
  }
 
 @media ${mediaQueries.desktop}{
     width: 45vw;
-    left: 53vw;
+    margin-left:8%;
 }
  `
 
@@ -37,10 +56,10 @@ export default function frontPage() {
     }
     return (
         <FullPage>
-
+         
             <Scrooldown  src={scroolDown} style={{ zIndex: 1 }} />
-           
-            <motion.div style={{ zIndex: 0}} initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+            <Grid>
+            <ThisImageSection style={{ zIndex: 0}} initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
                 
                 <Svg animate={{ y: [0, -10, 0] }} transition={{
                     duration: 5,
@@ -48,7 +67,7 @@ export default function frontPage() {
                     loop: Infinity
                 }}  src={front_page_image} alt='Computer' />
 
-            </motion.div >
+            </ThisImageSection >
 
             <ThisTitleSection  initial="hidden"
                 animate="visible"
@@ -59,7 +78,7 @@ export default function frontPage() {
                 <LineBottom />
             </ThisTitleSection>
             
-          
+            </Grid>
         </FullPage>
     )
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import {motion} from "framer-motion";
-import './frontPage.css';
+
 export default function frontPage() {
   
     const variantstext = {
