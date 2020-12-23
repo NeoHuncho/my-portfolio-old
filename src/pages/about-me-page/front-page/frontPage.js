@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import styled from 'styled-components';
 
 import { FullPage, Title, TitleSection, LineBottom, LineTop,Scrooldown,Grid,ImageSection } from '../../../styling/styles'
-import {mediaQueries} from '../../../styling/mediaQueries'
+import {mediaQueries} from '../../../styling/mediaQueries';
 
 import front_page_image from './files/1st image-min (1).png';
 import scroolDown from '../../ScroolDown_bar.svg'

@@ -57,6 +57,10 @@ color: white !important;
         font-size:3vw !important;
     }
 
+    @media ${mediaQueries.desktop}{
+        font-size:1.5vw !important;
+    }
+
     &:hover{
         text-decoration: none
     };  
@@ -67,7 +71,14 @@ export const Scrooldown = styled.img`
 position:fixed;
 z-index:1;
 
-    @media ${mediaQueries.nondesktop}{
+    @media ${mediaQueries.mobile}{
+        height: auto;
+        bottom: 0vh;
+        right: 3vw;
+        width:14vw;
+    }
+
+    @media ${mediaQueries.ipadAndIpadPro}{
         height: auto;
         bottom: 0vh;
         right: 3vw;
@@ -99,7 +110,6 @@ export const TitleSection = styled(motion.div)`
 
     @media ${mediaQueries.desktop}{
         grid-area: title; 
-        width:84%;
         margin-left:4vw;
     }
 `
