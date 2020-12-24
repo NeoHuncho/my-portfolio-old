@@ -13,17 +13,38 @@ import MenuItem from '@material-ui/core/MenuItem';
 
 export const Navbar = styled.header`
 position: fixed;
-top: 0;
-left: 0;
+top: 2vh;
+left: 2vw;
 width: 100%;
-display: flex;
 align-items: center;
 color: white;
 font-family: Roboto;
 font-weight: 500;
 z-index: 3; 
-   
+
 `
+
+export const Grid= styled.div`
+ display: grid;
+        grid-template-rows: 100%;
+        gap: 0px 0px;
+        grid-template-areas:
+            "Home Github FCC myProjects aboutMe";
+    @media ${mediaQueries.desktop}{
+        grid-template-columns: 60% 5% 15% 10% 10%;}
+
+     @media ${mediaQueries.ipad}{
+        grid-template-columns: 40% 6% 13% 21% 22%;}
+
+     @media ${mediaQueries.ipadPro}{
+        grid-template-columns: 38% 6% 13% 22% 22%;}
+
+    @media ${mediaQueries.mobile}{
+        grid-template-areas:
+            "Home Github FCC Menu";
+        grid-template-columns: 54% 10% 22% 0%;}
+`
+
 export const StyledLink = styled(Link)`
   
 text-decoration: 'none';
@@ -55,13 +76,14 @@ export const NavBarItem = styled.div`
     }
 
     @media ${mediaQueries.desktop}{
-        padding: 16px 16px;
         cursor: pointer;
         font-size: 125%;
-        vertical-align: middle;
+        
+       
     }
 `
 export const TitleItem = styled(NavBarItem)`
+grid-area: Home;
 text-decoration: 'none';
 color: 'white';
 
@@ -74,7 +96,7 @@ color: 'white';
     @media ${mediaQueries.desktop}{
         margin-right: auto;
         font-size: 150%;
-        padding: 12px 16px;
+
     }
 
  `
@@ -89,6 +111,7 @@ export const NotMobileLink = styled(NavBarItem)`
 `
 export const FCC = styled.img`
 height: auto;
+grid-area: FCC;
     @media ${mediaQueries.mobile}{
        width: 8vw;
     }
@@ -109,8 +132,9 @@ height: auto;
 
 export const Github = styled.img`
 height: auto;
+grid-area: Github;
     @media ${mediaQueries.mobile}{
-        width: 8vw;
+        width: 6vw;
     }
 
     @media ${mediaQueries.ipad}{
@@ -128,21 +152,20 @@ height: auto;
 `
 
 export const HamburgerMobile = styled.img`
+    
     @media ${mediaQueries.mobile}{
-        width: 6vw;
-        margin-left: 5vw;
+        width: 8vw;
+        grid-area: Menu;
     }
 
-    @media ${mediaQueries.desktop}{
+    @media ${mediaQueries.nonmobile}{
         display:none;
-    }
-
-    @media ${mediaQueries.ipadAndIpadPro}{
-        display:none;
+        width:0px;
+        height:0px;
     }
 
 `
-
+//for menu dropdown on mobile
 export const ThisMenu = styled(Menu)`
     @media ${mediaQueries.desktop}{
         display:none;
@@ -152,7 +175,7 @@ export const ThisMenu = styled(Menu)`
         display:none;
     }
 `
-
+//for menu dropdown on mobile
 export const ThisMenuItem = styled(MenuItem)`
    color: black !important;
     @media ${mediaQueries.desktop}{
@@ -178,6 +201,7 @@ export default function NavBar() {
 
     return (
         <Navbar>
+            <Grid >
             <StyledLink to="/">
                 <TitleItem >W.G</TitleItem>
             </StyledLink>
@@ -191,7 +215,7 @@ export default function NavBar() {
                     <FCC src={fcc} alt='Free Code Camp link' />
                 </Link>
             </NavBarItem>
-            <NavBarItem>
+         
                 <HamburgerMobile aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick} src={hamburger} alt='menu' />
                 <ThisMenu
                     id="simple-menu"
@@ -204,19 +228,20 @@ export default function NavBar() {
                         <ThisMenuItem onClick={handleClose} >Home</ThisMenuItem>
                     </StyledLink>
                     <StyledLink to="/my-projects">
-                        <ThisMenuItem onClick={handleClose} >My Projects</ThisMenuItem>
+                        <ThisMenuItem style={{gridArea: 'myProjects' }} onClick={handleClose} >My Projects</ThisMenuItem>
                     </StyledLink>
                     <StyledLink to="/about-me">
-                        <ThisMenuItem onClick={handleClose} >About Me</ThisMenuItem>
+                        <ThisMenuItem style={{gridArea: 'aboutMe' }} onClick={handleClose} >About Me</ThisMenuItem>
                     </StyledLink>
                 </ThisMenu>
-            </NavBarItem>
+           
             <StyledLink to="/my-projects">
                 <NotMobileLink  >My Projects</NotMobileLink>
             </StyledLink>
             <StyledLink to="/about-me">
                 <NotMobileLink  >About Me</NotMobileLink>
             </StyledLink>
+            </Grid >
         </Navbar>
     )
 }
