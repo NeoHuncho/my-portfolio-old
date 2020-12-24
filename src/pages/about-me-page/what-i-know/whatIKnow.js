@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from "framer-motion";
-import '../general.css';
+//import '../general.css';
 import { useInView } from 'react-intersection-observer';
 import './whatIKnow.css';
 import frame from './frames_for_logos.webp';

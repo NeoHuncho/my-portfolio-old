@@ -206,14 +206,14 @@ export default function NavBar() {
                 <TitleItem >W.G</TitleItem>
             </StyledLink>
             <NavBarItem>
-                <Link to='https://github.com/NeoHuncho' rel="noopener noreferrer" target="_blank">
+                <a href='https://github.com/NeoHuncho' rel="noopener noreferrer" target="_blank">
                     <Github src={github} alt='Free Code Camp link' />
-                </Link>
+                </a>
             </NavBarItem>
             <NavBarItem>
-                <Link to='https://www.freecodecamp.org/neohuncho' rel="noopener noreferrer" target="_blank">
+                <a href='https://www.freecodecamp.org/neohuncho' rel="noopener noreferrer" target="_blank">
                     <FCC src={fcc} alt='Free Code Camp link' />
-                </Link>
+                </a>
             </NavBarItem>
          
                 <HamburgerMobile aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick} src={hamburger} alt='menu' />
