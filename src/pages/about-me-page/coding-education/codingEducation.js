@@ -12,8 +12,7 @@ import { mediaQueries } from '../../../styling/mediaQueries';
 const ThisPage= styled(FullPage)`
 
 @media ${mediaQueries.mobile}{
-    height: 156vh;
-    overflow:scroll;
+    height: 170vh;
 }
 
 @media ${mediaQueries.ipadAndIpadPro}{
@@ -119,6 +118,7 @@ const Paragraph =styled.p`
     
    @media ${mediaQueries.mobile}{
     line-height: 3.5vh;
+    margin-top:3vh;
  margin-left:4vh;
  margin-right:4vh;
     font-size: 2vh;

@@ -21,7 +21,9 @@ color: white;
 font-family: Roboto;
 font-weight: 500;
 z-index: 3; 
-
+    @media ${mediaQueries.mobile}{
+        margin-left:4vw;
+    }
 `
 
 export const Grid= styled.div`
@@ -42,7 +44,7 @@ export const Grid= styled.div`
     @media ${mediaQueries.mobile}{
         grid-template-areas:
             "Home Github FCC Menu";
-        grid-template-columns: 54% 10% 22% 0%;}
+        grid-template-columns: 54% 10% 17% 0%;}
 `
 
 export const StyledLink = styled(Link)`
