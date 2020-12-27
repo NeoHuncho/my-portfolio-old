@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from "framer-motion";
 import styled from 'styled-components';
 
-import { FullPage, Title, TitleSection, LineBottom, LineTop,Scrooldown,Grid,ImageSection } from '../../../styling/styles'
+import { FullPage, Title, TitleSection, LineBottom, LineTop,Scrooldown,GridHorizontal,ImageSection } from '../../../styling/styles'
 import {mediaQueries} from '../../../styling/mediaQueries';
 
 import front_page_image from './files/1st image-min (1).png';
@@ -58,7 +58,7 @@ export default function frontPage() {
         <FullPage>
          
             <Scrooldown  src={scroolDown} style={{ zIndex: 1 }} />
-            <Grid>
+            <GridHorizontal>
             <ThisImageSection style={{ zIndex: 0}} initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
                 
                 <Svg animate={{ y: [0, -10, 0] }} transition={{
@@ -78,7 +78,7 @@ export default function frontPage() {
                 <LineBottom />
             </ThisTitleSection>
             
-            </Grid>
+            </GridHorizontal>
         </FullPage>
     )
 }

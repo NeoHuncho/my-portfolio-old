@@ -3,8 +3,9 @@ import { motion } from "framer-motion";
 import styled from 'styled-components';
 import { useInView } from 'react-intersection-observer';
 
-import { Page, Title, TitleSection, LineBottom, LineTop,StyledLink,StyledButton,ImageSection,Grid } from '../../../../styling/styles'
+import { Page, Title, TitleSection, LineBottom, LineTop,StyledLink,StyledButton,ImageSection,GridHorizontal } from '../../../../styling/styles'
 import { mediaQueries } from '../../../../styling/mediaQueries';
+
 
 import computer from './files/final art 2-min.png';
 
@@ -47,17 +48,14 @@ const ThisTitleSection= styled(TitleSection)`
 `
 
 export default function MyProjects() {
-    const variantstext = {
-        hidden: { opacity: 0, x: -50 },
-        visible: { opacity: 1, x: 0 },
-    }
+
     const { ref, inView } = useInView({
         threshold: 0,
     })
 
     return (
         <Page  style={{ zIndex: 2 }}>
-             <Grid>
+             <GridHorizontal>
             <StyledLink to='/my-projects'>
                 <ThisImageSection  ref={ref} initial={{ opacity: 0 }} animate={{ opacity: inView ? 1 : 0 }}  >
                     <Svg animate={{ y: [0, -10, 0] }} transition={{
@@ -68,8 +66,7 @@ export default function MyProjects() {
                 </ThisImageSection>
             </StyledLink>
             <ThisTitleSection  initial={{ opacity: 0, x: -50 }}
-                animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -50 }} transition={{ duration: 1, ease: "easeOut" }}
-                variants={variantstext}>
+                animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -50 }} transition={{ duration: 1, ease: "easeOut" }}>
                 <StyledLink to='/my-projects' >
                     <Title >My<br /> Projects</Title>
                 </StyledLink>
@@ -80,7 +77,7 @@ export default function MyProjects() {
         </StyledButton>
             </ThisTitleSection>
 
-            </Grid>
+            </GridHorizontal>
         </Page>
     )
 }

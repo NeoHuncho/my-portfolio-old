@@ -13,8 +13,8 @@ import MenuItem from '@material-ui/core/MenuItem';
 
 export const Navbar = styled.header`
 position: fixed;
-top: 2vh;
-left: 2vw;
+top: 3%;
+left: 2%;
 width: 100%;
 align-items: center;
 color: white;
@@ -22,7 +22,7 @@ font-family: Roboto;
 font-weight: 500;
 z-index: 3; 
     @media ${mediaQueries.mobile}{
-        margin-left:4vw;
+        margin-left:3%;
     }
 `
 

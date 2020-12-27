@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from "framer-motion";
 import styled from 'styled-components';
 
-import { FullPage, Title, TitleSection} from '../../../styling/styles'
+import { FullPage, Title, TitleSection,LineBottom, LineTop} from '../../../styling/styles'
 
 
 import second_page_image from './second page image-01-min.png';
@@ -12,17 +12,19 @@ import { mediaQueries } from '../../../styling/mediaQueries';
 const ThisPage= styled(FullPage)`
 
 @media ${mediaQueries.mobile}{
-    height: 170vh;
+    height: 180vh;
 }
 
 @media ${mediaQueries.ipadAndIpadPro}{
-    height: 125vh;
+    height: 135vh;
     width:100%
 }
+
 `
 
 const Grid = styled.div`
 @media ${mediaQueries.desktop}{
+margin-top:5vh;
 display: grid;
 grid-template-columns: 100%;
 grid-template-rows: 15% 85%;
@@ -42,13 +44,16 @@ gap: 0px 0px;
 grid-template-areas:
   "image paragraph";
 grid-area: content;}
+margin-top:5vh;
 
 `
 
 const ThisTitleSection= styled(TitleSection)`
 
+
 @media ${mediaQueries.nondesktop} {
     width:100%;
+
 
 
 }
@@ -64,30 +69,33 @@ margin-left: 4vw;
 
 @media ${mediaQueries.desktop} {
     grid-area: title;
+    
     }
 `
 
 const ThisTitle= styled(Title)`
 
 @media ${mediaQueries.nondesktop}{
-    font-size:7vw;
+    font-size:8vw;
+    margin-bottom:0vh;
 }
 
 @media ${mediaQueries.desktop}{
-    font-size:5vw;
+    font-size:6vw;
 }
 `
 
-const ImageSection = styled.div`
+const ImageSection = styled(motion.div)`
 @media ${mediaQueries.desktop}{
     grid-area: image;
     margin-left:1vw;
 }
 @media ${mediaQueries.nondesktop}{
     display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top:5vh;
 }
 `
 
@@ -107,7 +115,7 @@ const Svg = styled(motion.img)`
 
 
 
-const Paragraph =styled.p`
+const Paragraph =styled(motion.p)`
    
    font-family: Roboto;
    font-weight: 300;
@@ -142,32 +150,39 @@ const Paragraph =styled.p`
    }
 `
 
+export const ThisLineTop= styled(LineTop)`
+
+      margin-top:0vh;
+
+`
+
 export default function CodingEducation() {
    
     const { ref, inView } = useInView({
-        threshold: 0.5,
+        threshold: 0.4
     })
  
     return (
       
-        <ThisPage style={{ zIndex: 1 }}>
+        <ThisPage ref={ref} style={{ zIndex: 1 }}>
               <Grid>
-            <ThisTitleSection ref={ref} initial={{opacity:0,x:-50}}
+            <ThisTitleSection   initial={{opacity:0,x:-50}}
                animate={{opacity:inView?1:0,x:inView?0:-50}}
                 transition={{ ease: "easeOut", duration: 1.5 }}>
                 <ThisTitle>Coding and Education.</ThisTitle>
-                
+                <ThisLineTop />
+                <LineBottom /> 
             </ThisTitleSection>
             
             <InnerGrid>
-            <ImageSection  style={{ zIndex: 0 }} initial={{ opacity: 0 }}  transition={{ ease: "easeOut", duration: 1.25 }}animate={{ opacity:inView?1:0 }}>
+            <ImageSection  initial={{ opacity: 0 }}  transition={{ ease: "easeOut", duration: 1.25 }}animate={{ opacity:inView?1:0 }}>
                 <Svg animate={{ y: [0, -10, 0] }} transition={{
-                    duration: 5,
-                    ease: "easeInOut",
-                    loop: Infinity
-                }}  src={second_page_image} alt='Computer' />
+                        duration: 5,
+                        ease: "easeInOut",
+                        loop: Infinity
+                    }}  src={second_page_image} alt='Computer' />
             </ImageSection>
-            <Paragraph>I love to code. It all started when I was 12 y/o and my parents bought me a book called ‘Learn to Code’. While this book only covered the basics of HTML and CSS,  I knew from then on that technology would be a driving force in my life. <br /> <br />
+            <Paragraph  initial={{ opacity: 0 }}  transition={{ ease: "easeOut", duration: 1.25 }}animate={{ opacity:inView?1:0 }}>I love to code. It all started when I was 12 y/o and my parents bought me a book called ‘Learn to Code’. While this book only covered the basics of HTML and CSS,  I knew from then on that technology would be a driving force in my life. <br /> <br />
 
                 I’m addicted to the expansiveness of the subject and the fact that there is always more to see and new things to learn/use. What kick-started my learning was FreeCodeCamp. I would also say that the 100s of YouTube tutorials that I watched throughout the years have also been enlightening and helped me grow as a person. I think the realization of my addiction to writing code came to me when I realized that even in my dreams, I was thinking of code..! <br /> <br />
 

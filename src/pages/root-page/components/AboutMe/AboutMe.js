@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from "framer-motion";
 import styled from 'styled-components';
 
-import { Page, Title, TitleSection, LineBottom, LineTop, StyledLink, StyledButton, ImageSection, Grid } from '../../../../styling/styles'
+import { Page, Title, TitleSection, LineBottom, LineTop, StyledLink, StyledButton, ImageSection, GridHorizontal } from '../../../../styling/styles'
 import { mediaQueries } from '../../../../styling/mediaQueries'
 
 
@@ -67,7 +67,7 @@ function AboutMe() {
   })
   return (
     < Page style={{ zIndex: 1 }}>
-      <Grid>
+      <GridHorizontal>
        
 
         <ThisImageSection initial={{ opacity: 0 }} animate={{ opacity: inView ? 1 : 0 }} >
@@ -93,7 +93,7 @@ function AboutMe() {
         </StyledButton>
         </ThisTitleSection>
 
-      </Grid>
+      </GridHorizontal>
 
 
 

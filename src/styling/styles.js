@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Button from '@material-ui/core/Button';
 import {mediaQueries} from './mediaQueries';
 
-export const Grid =styled.div`
+export const GridHorizontal =styled.div`
 
     @media ${mediaQueries.nondesktop}{
         width:100vw;
@@ -21,6 +21,8 @@ export const Grid =styled.div`
     }
 
 `
+
+
 export const Page = styled.section`
 overflow:hidden;
 width: 100%;
@@ -97,20 +99,20 @@ z-index:1;
 export const TitleSection = styled(motion.div)`
 
     @media ${mediaQueries.mobile}{
-        margin:auto;
+        margin-left:6%;
         width:77.5%;
         margin-top:10%
     }
 
     @media ${mediaQueries.ipadAndIpadPro}{
-        margin:auto;
+        margin-left:6%;
         width:68%;
     
     }
 
     @media ${mediaQueries.desktop}{
         grid-area: title; 
-        margin-left:4vw;
+        margin-left:3vw;
     }
 `
 
