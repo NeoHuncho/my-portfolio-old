@@ -176,6 +176,10 @@ export const ThisMenu = styled(Menu)`
     @media ${mediaQueries.ipadAndIpadPro}{
         display:none;
     }
+
+    @media ${mediaQueries.mobile}{
+        margin-top: 7%;
+    }
 `
 //for menu dropdown on mobile
 export const ThisMenuItem = styled(MenuItem)`

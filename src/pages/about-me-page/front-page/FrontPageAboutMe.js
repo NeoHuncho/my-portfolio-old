@@ -48,7 +48,7 @@ const Svg = styled(motion.img)`
 }
  `
 
-export default function frontPage() {
+export default function FrontPage() {
 
     const variantstext = {
         hidden: { opacity: 0, x: -50 },

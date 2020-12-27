@@ -101,7 +101,7 @@ export const TitleSection = styled(motion.div)`
     @media ${mediaQueries.mobile}{
         margin-left:6%;
         width:77.5%;
-        margin-top:10%
+       padding-top:10%
     }
 
     @media ${mediaQueries.ipadAndIpadPro}{

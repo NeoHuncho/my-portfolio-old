@@ -1,5 +1,5 @@
 import React from 'react'
-import FrontPage from './front-page/frontPage';
+import FrontPage from './front-page/FrontPageAboutMe';
 import CodingEducation from './coding-education/codingEducation';
 import Timeline from './timeline/timeline'
 
