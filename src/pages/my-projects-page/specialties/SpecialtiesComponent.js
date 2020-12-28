@@ -14,6 +14,10 @@ import { mediaQueries } from '../../../styling/mediaQueries';
 
 import ProgrammingLanguagesTab from  './Tabs/ProgramingLanguages/ProgrammingLanguagesTab';
 import FrontEndTab from './Tabs/FrontEndTechnologies/FrontEndTab';
+import BackEndTab from './Tabs/BackEndTechnologies/BackEndTab';
+import DatabaseTab from './Tabs/DatabaseTechnologies/DatabaseTab';
+import StorageDeploymentTab from './Tabs/StorageDeployment/StorageDeploymentTab';
+import DesignToolsTab from './Tabs/DesignTools/DesignToolsTab'
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -62,10 +66,6 @@ const Component = styled.div`
     }
 `
 
-
-
-
-
 export default function SpecialtiesComponent() {
 
   const [value, setValue] = React.useState(0);
@@ -89,29 +89,31 @@ export default function SpecialtiesComponent() {
         <Tab label="Back-end Technologies" {...a11yProps(2)} />
         <Tab label="Database Technologies" {...a11yProps(3)} />
         <Tab label="Storage and Deployment" {...a11yProps(4)} />
-        <Tab label="Other" {...a11yProps(5)} />
-        <Tab label="Item Seven" {...a11yProps(6)} />
+        <Tab label="Design Tools" {...a11yProps(5)} />
       </Tabs>
+     
       <TabPanel value={value} index={0}>
      <ProgrammingLanguagesTab />
       </TabPanel>
+     
       <TabPanel value={value} index={1}>
     <FrontEndTab />
       </TabPanel>
+     
       <TabPanel value={value} index={2}>
-        Item Three
+    <BackEndTab />
       </TabPanel>
+     
       <TabPanel value={value} index={3}>
-        Item Four
+       <DatabaseTab />
       </TabPanel>
+     
       <TabPanel value={value} index={4}>
-        Item Five
+        <StorageDeploymentTab />
       </TabPanel>
+     
       <TabPanel value={value} index={5}>
-        Item Six
-      </TabPanel>
-      <TabPanel value={value} index={6}>
-        Item Seven
+        <DesignToolsTab />
       </TabPanel>
     </Component>
   );
