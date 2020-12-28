@@ -5,12 +5,15 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
-//import AppBar from '@material-ui/core/AppBar';
 
 //import { motion } from "framer-motion";
 import styled from 'styled-components';
+import { mediaQueries } from '../../../styling/mediaQueries';
 //import { mediaQueries } from '../../../styling/mediaQueries';
 
+
+import ProgrammingLanguagesTab from  './Tabs/ProgramingLanguages/ProgrammingLanguagesTab';
+import FrontEndTab from './Tabs/FrontEndTechnologies/FrontEndTab';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -24,7 +27,7 @@ function TabPanel(props) {
       {...other}
     >
       {value === index && (
-        <Box p={3}>
+        <Box p={3} >
           <Typography>{children}</Typography>
         </Box>
       )}
@@ -46,11 +49,20 @@ function a11yProps(index) {
 }
 
 const Component = styled.div`
-  flex-grow: 1;
+    flex-grow: 1;
     background-color: #f5f5f5;
     width: 80%;
     margin: auto;
+
+    @media ${mediaQueries.desktop}{
+      margin-top:7%;
+      height:13vw;
+      
+
+    }
 `
+
+
 
 
 
@@ -64,6 +76,7 @@ export default function SpecialtiesComponent() {
 
   return (
     <Component>
+
       <Tabs
         orientation="horizontal"
         variant="scrollable"
@@ -80,10 +93,10 @@ export default function SpecialtiesComponent() {
         <Tab label="Item Seven" {...a11yProps(6)} />
       </Tabs>
       <TabPanel value={value} index={0}>
-        Item One
+     <ProgrammingLanguagesTab />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        Item Two
+    <FrontEndTab />
       </TabPanel>
       <TabPanel value={value} index={2}>
         Item Three

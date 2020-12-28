@@ -25,7 +25,8 @@ const ThisImageSection = styled(ImageSection)`
 
 @media ${mediaQueries.mobile}{
   margin-top:40%;
-  margin-left:1%;
+  margin-left:4%;
+
 }
 
 @media ${mediaQueries.ipadAndIpadPro}{
@@ -36,7 +37,8 @@ const ThisImageSection = styled(ImageSection)`
 
 const Svg = styled(motion.img)`
  @media ${mediaQueries.mobile}{
-    width: 100vw;
+    width: 90vw;
+   
  }
  @media ${mediaQueries.ipadAndIpadPro}{
     width: 80vw;

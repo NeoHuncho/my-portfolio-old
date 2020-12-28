@@ -27,6 +27,19 @@ export const Timeline = styled.ul`
 
   //this is the line in the center of the timeline      //this is the line in the center of the timeline
  
+  @media ${mediaQueries.mobile}{
+  :before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 2%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: gray;
+   }
+  }
+  
   @media ${mediaQueries.nonmobile}{
   :before {
     content: "";
