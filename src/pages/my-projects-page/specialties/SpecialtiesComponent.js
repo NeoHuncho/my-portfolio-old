@@ -1,15 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { makeStyles } from '@material-ui/core/styles';
+//import { makeStyles } from '@material-ui/core/styles';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
-import AppBar from '@material-ui/core/AppBar';
+//import AppBar from '@material-ui/core/AppBar';
 
-import { motion } from "framer-motion";
+//import { motion } from "framer-motion";
 import styled from 'styled-components';
-import { mediaQueries } from '../../../styling/mediaQueries';
+//import { mediaQueries } from '../../../styling/mediaQueries';
 
 
 function TabPanel(props) {
