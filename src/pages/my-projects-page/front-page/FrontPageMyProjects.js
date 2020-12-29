@@ -63,7 +63,7 @@ export default function FrontPage() {
             <GridHorizontal>
             <ThisImageSection style={{ zIndex: 0}} initial={{opacity:0,x:50}}
                animate={{opacity:1,x:0}}
-                transition={{ ease: "easeInOut", duration: 1 }}>
+                transition={{ ease: "easeInOut", duration: 1.5 }}>
                 
                 <Svg animate={{ y: [0, -10, 0] }} transition={{
                     duration: 5,
