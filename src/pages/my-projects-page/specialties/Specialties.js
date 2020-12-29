@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import {useInView} from 'react-intersection-observer';
+import { motion } from "framer-motion";
 
 import {  Title, TitleSection, LineBottom, LineTop } from '../../../styling/styles';
 import { mediaQueries } from '../../../styling/mediaQueries';
@@ -16,6 +17,10 @@ export const Page= styled.div`
   @media ${mediaQueries.desktop}{
     height: 80vh;
   }
+
+`
+
+export const AnimateComponent = styled(motion.div)`
 
 `
 
@@ -36,8 +41,11 @@ function Specialties() {
                     <LineTop />
                     <LineBottom />
             </TitleSection>
-       
-         <SpecialtiesComponent />
+       <AnimateComponent initial={{opacity:0}}
+               animate={{opacity:inView?1:0}}
+                transition={{ ease: "easeOut", duration: 1.5 }} >
+         <SpecialtiesComponent  />
+         </AnimateComponent>
         
         </Page>
     )
