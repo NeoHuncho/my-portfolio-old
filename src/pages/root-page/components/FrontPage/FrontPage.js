@@ -40,7 +40,7 @@ function FrontPage() {
         <GridHorizontal>
             <ImageSection  initial={{opacity:0,x:50}}
                animate={{opacity:1,x:0}}
-                transition={{ ease: "easeOut", duration: 2.5 }}>
+                transition={{ ease: "easeInOut", duration: 1.5 }}>
 
                 <motion.img animate={{ y: [0, -10, 0] }} transition={{
                     duration: 5,
