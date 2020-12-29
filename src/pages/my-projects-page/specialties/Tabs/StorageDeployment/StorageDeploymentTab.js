@@ -32,7 +32,7 @@ const Grid = styled(motion.div)`
 
 function StorageDeploymentTab() {
     return (
-        <Grid  initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+        <Grid intial={{opacity:0}} animate={{ opacity: [0,0,2] }} transition={{ times: [0,0.4,1.3], ease: "easeInOut" }}>
            <Image src={github}  style={{gridArea:'github'}} />
            <Image src={heroku}  style={{gridArea:'heroku'}}/>
            <Image src={netlify} style={{gridArea:'netlify'}}/>

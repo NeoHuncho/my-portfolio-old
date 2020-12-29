@@ -29,7 +29,7 @@ display: grid;
 
 function ProgrammingLanguagesTab() {
     return (
-        <Grid  initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+        <Grid  intial={{opacity:0}} animate={{ opacity: [0,0,2] }} transition={{ times: [0,0.4,1.3], ease: "easeInOut" }}>
            <Image src={js}  style={{gridArea:'js'}} />
            <Image src={ts}  style={{gridArea:'ts'}}/>
            <Image src={cSharp} style={{gridArea:'cSharp'}}/>
