@@ -17,7 +17,18 @@ import { mediaQueries } from '../../../../../styling/mediaQueries';
 
 const Image = styled(motion.img)`
   max-width:50%;
- 
+  @media ${mediaQueries.mobile}{
+    max-width:13vh;
+    padding-top:1.3vh;
+      
+    :nth-child(odd){
+        float:left;}
+    
+    :nth-child(even){
+        float: right;
+        }
+  }
+
 `
 const Grid = styled(motion.div)`
 @media ${mediaQueries.nonmobile}{
@@ -30,6 +41,7 @@ const Grid = styled(motion.div)`
     justify-items: center;
 
 }
+
 `
 
 

@@ -15,6 +15,17 @@ import { mediaQueries } from '../../../../../styling/mediaQueries';
 
 const Image = styled(motion.img)`
   max-width:35%;
+  @media ${mediaQueries.mobile}{
+    max-width:14vh;
+    padding-top:8vh;
+      
+    :nth-child(odd){
+        float:left;}
+    
+    :nth-child(even){
+        float: right;
+        }
+  }
  
 `
 const Grid = styled(motion.div)`

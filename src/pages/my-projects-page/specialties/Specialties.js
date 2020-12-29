@@ -17,6 +17,9 @@ export const Page= styled.div`
   @media ${mediaQueries.desktop}{
     height: 80vh;
   }
+  @media ${mediaQueries.mobile}{
+    height: 96vh;
+  }
 
 `
 

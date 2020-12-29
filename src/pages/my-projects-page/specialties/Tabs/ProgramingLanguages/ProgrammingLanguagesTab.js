@@ -9,7 +9,14 @@ import { mediaQueries } from '../../../../../styling/mediaQueries';
 
 
 const Image = styled(motion.img)`
+@media ${mediaQueries.desktop}{
   max-width:25%;
+  }
+
+@media ${mediaQueries.mobile}{
+  max-width:50%;
+  padding-top:20%;
+}
  
 `
 const Grid = styled(motion.div)`

@@ -61,6 +61,11 @@ const Component = styled.div`
     @media ${mediaQueries.desktop}{
       margin-top:7%;
       height:13vw;
+    }
+    @media ${mediaQueries.mobile}{
+      margin-top:12%;
+      height:70vh;
+      width: 90%;
       
 
     }
@@ -80,9 +85,11 @@ export default function SpecialtiesComponent() {
       <Tabs
         orientation="horizontal"
         variant="scrollable"
+        scrollButtons="on"
         value={value}
         onChange={handleChange}
         aria-label="Horizontal tabs example"
+       
       >
         <Tab label="Programming Languages" {...a11yProps(0)} />
         <Tab label="Front-end Technologies" {...a11yProps(1)} />
