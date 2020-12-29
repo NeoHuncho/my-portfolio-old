@@ -2,10 +2,10 @@ import React from 'react'
 import styled from 'styled-components'
 import { motion } from "framer-motion";
 
-import node from './LogoFinal/node-01.png';
-import express from './LogoFinal/express-01.png';
-import koa from './LogoFinal/koa-01.png';
-import socket from './LogoFinal/socket-01.png';
+import node from './LogoFinal/node-01.webp';
+import express from './LogoFinal/express-01.webp';
+import koa from './LogoFinal/koa-01.webp';
+import socket from './LogoFinal/socket-01.webp';
 
 
 

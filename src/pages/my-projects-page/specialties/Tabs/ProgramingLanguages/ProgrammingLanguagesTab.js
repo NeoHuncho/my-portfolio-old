@@ -2,9 +2,9 @@ import React from 'react'
 import styled from 'styled-components'
 import { motion } from "framer-motion";
 
-import js from './logos/js1.png';
-import cSharp from './logos/cSharp1.png';
-import ts from './logos/ts1.png'
+import js from './logos/js1.webp';
+import cSharp from './logos/cSharp1.webp';
+import ts from './logos/ts1.webp'
 import { mediaQueries } from '../../../../../styling/mediaQueries';
 
 

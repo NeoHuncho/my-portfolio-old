@@ -2,10 +2,10 @@ import React from 'react'
 import styled from 'styled-components'
 import { motion } from "framer-motion";
 
-import afterEffects from './LogoFinal/aftereffects-01.png';
-import figma from './LogoFinal/figma-01.png';
-import illustrator from './LogoFinal/illustrator-01.png';
-import premiere from './LogoFinal/premiere-01.png';
+import afterEffects from './LogoFinal/aftereffects-01.webp';
+import figma from './LogoFinal/figma-01.webp';
+import illustrator from './LogoFinal/illustrator-01.webp';
+import premiere from './LogoFinal/premiere-01.webp';
 
 
 

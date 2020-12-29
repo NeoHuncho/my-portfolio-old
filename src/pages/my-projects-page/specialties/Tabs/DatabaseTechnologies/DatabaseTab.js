@@ -2,9 +2,9 @@ import React from 'react'
 import styled from 'styled-components'
 import { motion } from "framer-motion";
 
-import firebase from './LogoFinal/firebase-01.png';
-import mongodb from './LogoFinal/mongodb-01.png';
-import mysql from './LogoFinal/Mysql-01.png';
+import firebase from './LogoFinal/firebase-01.webp';
+import mongodb from './LogoFinal/mongodb-01.webp';
+import mysql from './LogoFinal/Mysql-01.webp';
 
 
 

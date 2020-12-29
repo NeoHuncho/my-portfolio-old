@@ -2,13 +2,13 @@ import React from 'react'
 import styled from 'styled-components'
 import { motion } from "framer-motion";
 
-import reactlogo from './LogoFinal/react.png';
-import redux from './LogoFinal/redux.png';
-import gatsby from './LogoFinal/gatsby.png';
-import next from './LogoFinal/next.png';
-import d3 from './LogoFinal/d3.png';
-import framer_motion from './LogoFinal/framerMotion.png';
-import styled_components from './LogoFinal/styledComponents.png';
+import reactlogo from './LogoFinal/react.webp';
+import redux from './LogoFinal/redux.webp';
+import gatsby from './LogoFinal/gatsby.webp';
+import next from './LogoFinal/next.webp';
+import d3 from './LogoFinal/d3.webp';
+import framer_motion from './LogoFinal/framerMotion.webp';
+import styled_components from './LogoFinal/styledComponents.webp';
 
 
 
