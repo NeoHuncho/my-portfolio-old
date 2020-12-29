@@ -36,7 +36,7 @@ const Grid = styled(motion.div)`
 
 function FrontEndTab() {
     return (
-        <Grid  initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.7, ease: "easeInOut" }}>
+        <Grid  initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, ease: "easeInOut" }}>
            <Image src={reactlogo}  style={{gridArea:'react'}} />
            <Image src={redux}  style={{gridArea:'redux'}}/>
            <Image src={gatsby} style={{gridArea:'gatsby'}}/>
