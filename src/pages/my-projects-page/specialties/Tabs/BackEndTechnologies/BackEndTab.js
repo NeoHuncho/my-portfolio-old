@@ -23,10 +23,8 @@ const Image = styled(motion.img)`
   display: block;
    
     }
-
-  }
- 
 `
+
 const Grid = styled(motion.div)`
 @media ${mediaQueries.nonmobile}{
     display: grid;
