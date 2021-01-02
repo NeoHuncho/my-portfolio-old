@@ -50,7 +50,7 @@ const ThisTitleSection= styled(TitleSection)`
 export default function MyProjects() {
 
     const { ref, inView } = useInView({
-        threshold: 0.6,
+        threshold: 0.6 ,
     })
 
     return (

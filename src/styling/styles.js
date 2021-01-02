@@ -68,6 +68,15 @@ color: white !important;
     };  
 
 `
+
+export const PointList =styled.ul`
+@media ${mediaQueries.nonmobile}{
+padding-left:8%
+}
+`
+
+
+
 export const Scrooldown = styled.img`
 
 position:fixed;

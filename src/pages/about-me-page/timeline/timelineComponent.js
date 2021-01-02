@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { InView } from 'react-intersection-observer';
 import styled from 'styled-components';
 
+import {PointList} from '../../../styling/styles'
 import { mediaQueries } from '../../../styling/mediaQueries';
 
 
@@ -55,7 +56,15 @@ export const Timeline = styled.ul`
  
 `
 
+export const Point =styled.li`
+font-size: 16px;
+line-height: 30px;
+font-weight: 300;
+@media ${mediaQueries.nonmobile}{
+padding-bottom:5%;
 
+}
+`
 
 
 
@@ -127,12 +136,7 @@ font-weight: 500;
   margin-bottom: 10px;
 `
 
-export const Text = styled.p`
-  font-size: 16px;
-  line-height: 30px;
-  font-weight: 300;
 
-`
 
 export const Date = styled(motion.h3)`
   font-size: 12px;
@@ -169,10 +173,15 @@ const variantstext = {
       {({ ref, inView,}) => ( 
       <TimelineContent  ref={ref} initial={variantstext.hidden}animate={{opacity: inView ? 1 : 0 }} >
             
-            <Date>10th may, 2010</Date>
-            <Heading>Heading 1</Heading>
-            <Text>Culpa enim deserunt sint dolore occaecat mollit laboris aliquip irure. Dolor proident qui est fugiat minim reprehenderit sit eiusmod et mollit nostrud amet. Cillum Lorem ut minim duis pariatur nulla ullamco laboris dolore dolor cupi.
-                  </Text>
+            <Date>6th april, 1999</Date>
+            <Heading> Joining Earth</Heading>
+    
+<PointList>
+<Point>Born in France to à speaking English mother and a French speaking dad </Point>
+<Point>Remained in france for the remaining 18 years of my life </Point>
+<Point>Went to a multi-nationality school and the school my school classes half in French and half in English</Point>
+</PointList>
+               
         </TimelineContent>
       )}
        
@@ -184,10 +193,13 @@ const variantstext = {
      
         <TimelineContent  ref={ref} initial={variantstext.hidden}animate={{opacity: inView ? 1 : 0 }}>
            
-            <Date>10th may, 2010</Date>
-            <Heading>Heading 2</Heading>
-            <Text>Culpa enim deserunt sint dolore occaecat mollit laboris aliquip irure. Dolor proident qui est fugiat minim reprehenderit sit eiusmod et mollit nostrud amet. Cillum Lorem ut minim duis pariatur nulla ullamco laboris dolore dolor cupidatat voluptate. In exercitation cupidatat in quis tempor ut deserunt amet.
-                      </Text>
+            <Date>1st may, 2014</Date>
+            <Heading>HTML and CSS</Heading>
+            <PointList>
+              <Point>Started to learn  HTML and CSS at the age of 15  </Point>
+              <Point>Learned through a book called get coding with multiple small projects </Point>
+              <Point>Coding has always been my passion from then onward  </Point>
+            </PointList>
 
         </TimelineContent>
         )}
@@ -199,10 +211,19 @@ const variantstext = {
       {({ ref, inView,}) => ( 
         <TimelineContent ref={ref} initial={variantstext.hidden}animate={{opacity: inView ? 1 : 0 }} >
           
-          <Date>10th may, 2010</Date>
-          <Heading>Heading 3</Heading>
-          <Text>Culpa enim deserunt sint dolore occaecat mollit laboris aliquip irure. Dolor proident qui est fugiat minim reprehenderit sit eiusmod et mollit nostrud amet. Cillum Lorem ut minim duis pariatur nulla ullamco laboris dolore dolor cupidatat voluptate. In exercitation cupidatat in quis tempor ut deserunt amet.
-                    </Text>
+          <Date>1st September, 2018</Date>
+          <Heading>University</Heading>
+          <PointList>
+              <Point>Started studying at Concordia University in Montreal Canada  </Point>
+              <Point>Studied business technology management </Point>
+              <Point>earned a bachelor's degree with a 3.7 gpa in business technology management major and a 3.0 GPA overall. </Point>
+              <Point>Example of classes I took:</Point>
+                <Point>Introduction to Business Applicant Development(C#)</Point>
+                <Point>Database Management(MySql)</Point>
+                <Point>Information Systems Analysis/ Design and Implementation/ Strategy, Management, and Sourcing</Point>
+                <Point>The Management of Digital Privacy in Society</Point>
+                <Point>E-Business</Point>
+          </PointList>
         
         </TimelineContent>
    )}
@@ -213,10 +234,35 @@ const variantstext = {
       {({ ref, inView,}) => ( 
         <TimelineContent ref={ref} initial={variantstext.hidden}animate={{opacity: inView ? 1 : 0 }}>
          
-          <Date>10th may, 2010</Date>
-          <Heading>Heading 4</Heading>
-          <Text>Culpa enim deserunt sint dolore occaecat mollit laboris aliquip irure. Dolor proident qui est fugiat minim reprehenderit sit eiusmod et mollit nostrud amet. Cillum Lorem ut minim duis pariatur nulla ullamco laboris dolore dolor cupidatat voluptate. In exercitation cupidatat in quis tempor ut deserunt amet.
-                    </Text>
+          <Date>28th November, 2019</Date>
+          <Heading>FreeCodeCamp</Heading>
+          <PointList>
+              <Point>Started to use FreeCodeCamp to learn and practice the skills of full-stack dev. </Point>
+              <Point>Completed the following certifications: </Point>
+              <Point>Responsive Web design </Point>
+              <Point>JavaScript Algorithms and data structures </Point>
+              <Point>Front End Libraries  </Point>
+              <Point>Data visualization  </Point>
+              <Point>API and Microservices</Point>
+              <Point>FreeCodeCamp practice-first approach helped me gain a lot of knowledge and confidence when writing code. </Point>
+          </PointList>
+
+        </TimelineContent>
+        )}
+   </InView>
+
+   <InView threshold={0.25}>
+      {({ ref, inView,}) => ( 
+        <TimelineContent ref={ref} initial={variantstext.hidden}animate={{opacity: inView ? 1 : 0 }}>
+         
+          <Date>28th November, 2019</Date>
+          <Heading>React.js</Heading>
+          <PointList>
+              <Point>Started using React.js as my primary framework </Point>
+              <Point>Created a bunch of projects with React which all have repos on GithHub</Point>
+              <Point>I use a multitude of React libraries  </Point>
+              <Point>For now, React is my favorite framework, but I am also testing other ones   </Point>
+          </PointList>
 
         </TimelineContent>
         )}
