@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { HashRouter as Router, Route } from 'react-router-dom';
 
 import ScrollToTop from './ScrolllToTop';
 import FrontPage from './pages/root-page/components/FrontPage/FrontPage';
