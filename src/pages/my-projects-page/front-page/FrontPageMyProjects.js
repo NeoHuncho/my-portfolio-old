@@ -2,18 +2,14 @@ import React from 'react'
 import { motion } from "framer-motion";
 import styled from 'styled-components';
 
-import { FullPage, Title, TitleSection, LineBottom, LineTop,Scrooldown,GridHorizontal,ImageSection } from '../../../styling/styles'
+import { FullPage, Title, FrontPageTitleSection, LineBottom, LineTop,Scrooldown,GridHorizontal,ImageSection } from '../../../styling/styles'
 import {mediaQueries} from '../../../styling/mediaQueries';
 
 import front_page_image from './files/my_projects_front_page_image.png';
 import scroolDown from '../../ScroolDown_bar.svg'
 
-const ThisTitleSection=styled(TitleSection)`
+const ThisTitleSection=styled(FrontPageTitleSection)`
  
- @media ${mediaQueries.mobile}{
-    position:absolute;
-    top:50vh;
-    }
    
     @media ${mediaQueries.ipadAndIpadPro}{
         margin-bottom:15%;

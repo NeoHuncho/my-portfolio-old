@@ -110,6 +110,11 @@ z-index:1;
     }
 
 `
+/*position:absolute;
+top:115vw;
+left:8vw;
+width:77.5%;*/
+
 
 export const TitleSection = styled(motion.div)`
 
@@ -128,6 +133,15 @@ export const TitleSection = styled(motion.div)`
     @media ${mediaQueries.desktop}{
         grid-area: title; 
         margin-left:3vw;
+    }
+`
+export const FrontPageTitleSection = styled(TitleSection)`
+
+    @media ${mediaQueries.mobile}{
+      position:absolute;
+    top:105vw;
+    left:2vw;
+    width:77.5%;
     }
 `
 
