@@ -11,6 +11,7 @@ import scroolDown from '../../ScroolDown_bar.svg'
 const ThisTitleSection=styled(TitleSection)`
  
  @media ${mediaQueries.mobile}{
+    position:absolute;
         margin-top:15%;
         margin-bottom:10%
     }
