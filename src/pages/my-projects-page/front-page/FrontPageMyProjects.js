@@ -12,8 +12,7 @@ const ThisTitleSection=styled(TitleSection)`
  
  @media ${mediaQueries.mobile}{
     position:absolute;
-        margin-top:15%;
-        margin-bottom:10%
+    top:50vh;
     }
    
     @media ${mediaQueries.ipadAndIpadPro}{
