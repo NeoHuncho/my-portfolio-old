@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { InView } from 'react-intersection-observer';
 import styled from 'styled-components';
 
-import {PointList} from '../../../styling/styles'
+import {PointList,SubPointList} from '../../../styling/styles'
 import { mediaQueries } from '../../../styling/mediaQueries';
 
 
@@ -59,11 +59,17 @@ export const Timeline = styled.ul`
 export const Point =styled.li`
 font-size: 16px;
 line-height: 30px;
-font-weight: 300;
+font-weight: 350;
 @media ${mediaQueries.nonmobile}{
-padding-bottom:5%;
+padding-bottom:3%;
 
 }
+`
+
+export const SubPoint = styled(Point)`
+font-size: 14px;
+line-height: 20px;
+font-weight: 250;
 `
 
 
@@ -133,7 +139,7 @@ export const Heading = styled.h1`
 font-weight: 500;
   font-size: 25px;
   line-height: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 6%;
 `
 
 
@@ -196,7 +202,7 @@ const variantstext = {
             <Date>1st may, 2014</Date>
             <Heading>HTML and CSS</Heading>
             <PointList>
-              <Point>Started to learn  HTML and CSS at the age of 15  </Point>
+              <Point>Started to learn  HTML and CSS at 15 y/o</Point>
               <Point>Learned through a book called get coding with multiple small projects </Point>
               <Point>Coding has always been my passion from then onward  </Point>
             </PointList>
@@ -218,11 +224,13 @@ const variantstext = {
               <Point>Studied business technology management </Point>
               <Point>earned a bachelor's degree with a 3.7 gpa in business technology management major and a 3.0 GPA overall. </Point>
               <Point>Example of classes I took:</Point>
-                <Point>Introduction to Business Applicant Development(C#)</Point>
-                <Point>Database Management(MySql)</Point>
-                <Point>Information Systems Analysis/ Design and Implementation/ Strategy, Management, and Sourcing</Point>
-                <Point>The Management of Digital Privacy in Society</Point>
-                <Point>E-Business</Point>
+              <SubPointList>
+                <SubPoint>Introduction to Business Applicant Development(C#)</SubPoint>
+                <SubPoint>Database Management(MySql)</SubPoint>
+                <SubPoint>Information Systems Analysis/ Design and Implementation/ Strategy, Management, and Sourcing</SubPoint>
+                <SubPoint>The Management of Digital Privacy in Society</SubPoint>
+                <SubPoint>E-Business</SubPoint>
+              </SubPointList>
           </PointList>
         
         </TimelineContent>
@@ -239,11 +247,13 @@ const variantstext = {
           <PointList>
               <Point>Started to use FreeCodeCamp to learn and practice the skills of full-stack dev. </Point>
               <Point>Completed the following certifications: </Point>
-              <Point>Responsive Web design </Point>
-              <Point>JavaScript Algorithms and data structures </Point>
-              <Point>Front End Libraries  </Point>
-              <Point>Data visualization  </Point>
-              <Point>API and Microservices</Point>
+              <SubPointList>
+              <SubPoint>Responsive Web design </SubPoint>
+              <SubPoint>JavaScript Algorithms and data structures </SubPoint>
+              <SubPoint>Front End Libraries  </SubPoint>
+              <SubPoint>Data visualization  </SubPoint>
+              <SubPoint>API and Microservices</SubPoint>
+              </SubPointList>
               <Point>FreeCodeCamp practice-first approach helped me gain a lot of knowledge and confidence when writing code. </Point>
           </PointList>
 

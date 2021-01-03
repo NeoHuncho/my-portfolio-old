@@ -50,14 +50,14 @@ const ThisTitleSection= styled(TitleSection)`
 export default function MyProjects() {
 
     const { ref, inView } = useInView({
-        threshold: 0.6 ,
+        threshold: 0 ,
     })
 
     return (
         <Page  style={{ zIndex: 2 }}>
              <GridHorizontal>
             <StyledLink to='/my-projects'>
-                <ThisImageSection  ref={ref} initial={{ opacity: 0 }} animate={{ opacity: inView ? 1 : 0 }}  >
+                <ThisImageSection  initial={{ opacity: 0 }} animate={{ opacity: inView ? 1 : 0 }}  >
                     <Svg animate={{ y: [0, -10, 0] }} transition={{
                         duration: 5,
                         ease: "easeInOut",
@@ -65,7 +65,7 @@ export default function MyProjects() {
                     }} src={computer} alt='Computer' />
                 </ThisImageSection>
             </StyledLink>
-            <ThisTitleSection  initial={{ opacity: 0, x: -50 }}
+            <ThisTitleSection  ref={ref} initial={{ opacity: 0, x: -50 }}
                 animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -50 }} transition={{ duration: 1, ease: "easeOut" }}>
                 <StyledLink to='/my-projects' >
                     <Title >My<br /> Projects</Title>

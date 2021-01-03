@@ -75,6 +75,12 @@ padding-left:8%
 }
 `
 
+export const SubPointList =styled(PointList)`
+@media ${mediaQueries.nonmobile}{
+padding-left:12%
+}
+`
+
 
 
 export const Scrooldown = styled.img`

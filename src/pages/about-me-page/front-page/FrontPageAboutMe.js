@@ -59,7 +59,7 @@ export default function FrontPage() {
          
             <Scrooldown  src={scroolDown} style={{ zIndex: 1 }} />
             <GridHorizontal>
-            <ThisImageSection intial={{opacity:0}} animate={{ opacity: [0,0,2] }} transition={{ times: [0,0.4,1.1], ease: "easeInOut"}}>
+            <ThisImageSection intial={{opacity:0,x:0}} animate={{ opacity: [0,0,2] }} transition={{ times: [0,0.4,1.1], ease: "easeInOut"}}>
                 
                 <Svg animate={{ y: [0, -10, 0] }} transition={{
                     duration: 5,
