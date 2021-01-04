@@ -1,6 +1,6 @@
 import React from 'react'
 import FrontPage from './front-page/FrontPageAboutMe';
-import CodingEducation from './coding-education/codingEducation';
+import MoreInformation from './more-information/moreInformation';
 import Timeline from './timeline/timeline'
 
 export default function aboutMe() {
@@ -8,7 +8,7 @@ export default function aboutMe() {
         <div>
            <FrontPage />
            <Timeline  />
-           <CodingEducation />
+           <MoreInformation />
         </div>
     )
 }

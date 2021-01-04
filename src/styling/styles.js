@@ -79,6 +79,9 @@ export const SubPointList =styled(PointList)`
 @media ${mediaQueries.nonmobile}{
 padding-left:12%
 }
+@media ${mediaQueries.mobile}{
+padding-left:10%
+}
 `
 
 

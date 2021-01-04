@@ -45,7 +45,7 @@ display: grid;
 
 function BackEndTab() {
     return (
-        <Grid  intial={{opacity:0}} animate={{ opacity: [0,0,2] }} transition={{ times: [0,0.4,1.1], ease: "easeInOut" }}>
+        <Grid  intial={{opacity:0}} animate={{ opacity: [0,0,2] }} transition={{ times: [0,0.5,1.2], ease: "easeInOut" }}>
            <Image src={mysql}  style={{gridArea:'mysql'}} />
            <Image src={mongodb}  style={{gridArea:'mongodb'}}/>
            <Image src={firebase} style={{gridArea:'firebase'}}/>

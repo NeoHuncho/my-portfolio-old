@@ -6,13 +6,14 @@ import { FullPage, Title, TitleSection,LineBottom, LineTop} from '../../../styli
 
 
 import second_page_image from './second page image-01-min.png';
+
 import {useInView} from 'react-intersection-observer';
 import { mediaQueries } from '../../../styling/mediaQueries';
 
 const ThisPage= styled(FullPage)`
 
 @media ${mediaQueries.mobile}{
-    height: 180vh;
+    height: 120vh;
 }
 
 @media ${mediaQueries.ipadAndIpadPro}{
@@ -142,11 +143,13 @@ const Paragraph =styled(motion.p)`
 
     @media ${mediaQueries.desktop}{
    grid-area:paragraph;
-   line-height: 3.8vh;
-   font-size: 1.2vw;   
-   height:75%;
-   margin-right:10%;
-   margin-top : 5%;
+   text-align:center;  
+   margin-top:10%;
+   margin-right: 20%;
+   line-height: 4vh;
+   font-size: 1.5vw;   
+   height:100%;
+
    }
 `
 
@@ -156,7 +159,7 @@ export const ThisLineTop= styled(LineTop)`
 
 `
 
-export default function CodingEducation() {
+export default function MoreInformation() {
    
     const { ref, inView } = useInView({
         threshold: 0.4
@@ -169,7 +172,7 @@ export default function CodingEducation() {
             <ThisTitleSection   initial={{opacity:0,x:-50}}
                animate={{opacity:inView?1:0,x:inView?0:-50}}
                 transition={{ ease: "easeOut", duration: 1.5 }}>
-                <ThisTitle>Coding and Education.</ThisTitle>
+                <ThisTitle>More Information.</ThisTitle>
                 <ThisLineTop />
                 <LineBottom /> 
             </ThisTitleSection>
@@ -182,11 +185,14 @@ export default function CodingEducation() {
                         loop: Infinity
                     }}  src={second_page_image} alt='Computer' />
             </ImageSection>
-            <Paragraph  initial={{ opacity: 0 }}  transition={{ ease: "easeOut", duration: 1.25 }}animate={{ opacity:inView?1:0 }}>I love to code. It all started when I was 12 y/o and my parents bought me a book called ‘Learn to Code’. While this book only covered the basics of HTML and CSS,  I knew from then on that technology would be a driving force in my life. <br /> <br />
-
-                I’m addicted to the expansiveness of the subject and the fact that there is always more to see and new things to learn/use. What kick-started my learning was FreeCodeCamp. I would also say that the 100s of YouTube tutorials that I watched throughout the years have also been enlightening and helped me grow as a person. I think the realization of my addiction to writing code came to me when I realized that even in my dreams, I was thinking of code..! <br /> <br />
-
-                In terms of education, I spent my first 18 years of my life in a multilingual school, called Lycee International, located next to Paris, France. From there, I enrolled in a business undergraduate degree, at the University of Concordia, Montreal, Canada. My major is Business Technology Management. Although it helped me grow as a person, it paradoxically also help me understand what I wanted to do later in life: I didn’t want to manage people or technology projects, but rather build software and collaborate with people. I felt like what we were learning was theoretical and stuck in the past, when I am interested in concrete and the cutting edge!
+            <Paragraph  initial={{ opacity: 0 }}  transition={{ ease: "easeOut", duration: 1.25 }}animate={{ opacity:inView?1:0 }}>
+                I have a driving license, but I prefer to bike/public transport <span role='img'aria-label='image' >🚴</span> <br /> <br />
+                I live 30 minutes away from Paris by train (Transilien L) <span role='img'aria-label='image' >🚄</span> <br /> <br />
+                Before coding daily, I wanted to become a motion designer. I am therefore competent in Adobe After Effect & Illustrator.  <span role='img'aria-label='image' >💻</span>  <br /> <br />
+                I am a big fan of virtual reality and own an Oculus Quest 2 right now.  <span role='img'aria-label='image' >🎮</span> <br /> <br />
+                I am vegetarian.  <span role='img'aria-label='image' >🥦</span> <br /> <br />
+                I am concerned about climate change.  <span role='img'aria-label='image' >🔥</span> <br /> <br />
+                I want to live  in Europe for the rest of my life.  <span role='img'aria-label='image' >🌎</span>  <br /> <br />
             </Paragraph>
             </InnerGrid>
             </Grid>

@@ -42,7 +42,7 @@ const Grid = styled(motion.div)`
 
 function BackEndTab() {
     return (
-        <Grid  intial={{opacity:0}} animate={{ opacity: [0,0,2] }} transition={{ times: [0,0.4,1.1], ease: "easeInOut" }}>
+        <Grid  intial={{opacity:0}} animate={{ opacity: [0,0,2] }} transition={{ times: [0,0.5,1.2], ease: "easeInOut" }}>
            <Image src={node}  style={{gridArea:'node'}} />
            <Image src={express}  style={{gridArea:'express'}}/>
            <Image src={koa} style={{gridArea:'koa'}}/>

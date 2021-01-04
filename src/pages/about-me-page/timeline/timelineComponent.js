@@ -67,9 +67,14 @@ padding-bottom:3%;
 `
 
 export const SubPoint = styled(Point)`
-font-size: 14px;
-line-height: 20px;
+font-size: 15px;
+line-height: 22px;
 font-weight: 250;
+@media ${mediaQueries.mobile}{
+  line-height: 22px;
+  margin-top:2%;
+  margin-bottom:2%;
+}
 `
 
 
