@@ -13,7 +13,7 @@ import { mediaQueries } from '../../../styling/mediaQueries';
 const ThisPage= styled(FullPage)`
 
 @media ${mediaQueries.mobile}{
-    height: 120vh;
+    height: 100%;
 }
 
 @media ${mediaQueries.ipadAndIpadPro}{
