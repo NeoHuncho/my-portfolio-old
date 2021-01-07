@@ -58,7 +58,6 @@ const Component = styled.div`
 
     @media ${mediaQueries.desktop}{
       margin-top:7%;
-      height:13vw;
     }
     @media ${mediaQueries.mobile}{
       margin-top:12%;

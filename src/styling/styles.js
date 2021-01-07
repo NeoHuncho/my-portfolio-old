@@ -17,7 +17,9 @@ export const GridHorizontal =styled.div`
         gap: 0px 0px;
         grid-template-areas:
         "title image";
-        justify-items: center;
+        justify-content: center;
+  align-items: center;
+       
     }
 
 `
