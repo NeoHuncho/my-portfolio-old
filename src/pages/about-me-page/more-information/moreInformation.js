@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from "framer-motion";
 import styled from 'styled-components';
 
-import { FullPage, Title, TitleSection,LineBottom, LineTop} from '../../../styling/styles'
+import { FullPage, SecondaryTitle, TitleSection,LineBottom, LineTop} from '../../../styling/styles'
 
 
 import second_page_image from './second page image-01-min.png';
@@ -74,17 +74,7 @@ margin-left: 4vw;
     }
 `
 
-const ThisTitle= styled(Title)`
 
-@media ${mediaQueries.nondesktop}{
-    font-size:8vw;
-    margin-bottom:0vh;
-}
-
-@media ${mediaQueries.desktop}{
-    font-size:6vw;
-}
-`
 
 const ImageSection = styled(motion.div)`
 @media ${mediaQueries.desktop}{
@@ -172,7 +162,7 @@ export default function MoreInformation() {
             <ThisTitleSection   initial={{opacity:0,x:-50}}
                animate={{opacity:inView?1:0,x:inView?0:-50}}
                 transition={{ ease: "easeOut", duration: 1.5 }}>
-                <ThisTitle>More Information.</ThisTitle>
+                <SecondaryTitle>More Information.</SecondaryTitle>
                 <ThisLineTop />
                 <LineBottom /> 
             </ThisTitleSection>

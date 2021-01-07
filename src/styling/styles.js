@@ -44,7 +44,7 @@ height: 100vh;
 
 export const StyledLink = styled(Link)`
     &:hover{
-        text-decoration: none
+        text-decoration: none !important;
         };
 `
 
@@ -175,6 +175,13 @@ font-style: normal;
     @media ${mediaQueries.desktop}{
         font-size: 8vw;
         line-height: 8vw;
+    }
+`
+
+export const SecondaryTitle = styled(Title)`
+ @media ${mediaQueries.desktop}{
+        font-size: 6vw;
+        line-height: 7vw;
     }
 `
 

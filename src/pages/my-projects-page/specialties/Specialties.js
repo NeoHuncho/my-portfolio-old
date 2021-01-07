@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import {useInView} from 'react-intersection-observer';
 import { motion } from "framer-motion";
 
-import {  Title, TitleSection, LineBottom, LineTop } from '../../../styling/styles';
+import {  SecondaryTitle, TitleSection, LineBottom, LineTop } from '../../../styling/styles';
 import { mediaQueries } from '../../../styling/mediaQueries';
 
 import SpecialtiesComponent from './SpecialtiesComponent';
@@ -38,9 +38,9 @@ function Specialties() {
             <TitleSection ref={ref} initial={{opacity:0,x:-50}}
                animate={{opacity:inView?1:0,x:inView?0:-50}}
                 transition={{ ease: "easeOut", duration: 1.5 }}  >
-                <Title >
+                <SecondaryTitle >
                   Specialties
-                </Title>
+                </SecondaryTitle>
                     <LineTop />
                     <LineBottom />
             </TitleSection>

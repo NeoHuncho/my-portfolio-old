@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import {useInView} from 'react-intersection-observer';
 import { motion } from "framer-motion";
 
-import {  Title, TitleSection, LineBottom, LineTop } from '../../../styling/styles';
+import {  SecondaryTitle, TitleSection, LineBottom, LineTop } from '../../../styling/styles';
 import { mediaQueries } from '../../../styling/mediaQueries';
 
 import ProjectsComponent from './ProjectsComponent';
@@ -30,17 +30,17 @@ export const AnimateComponent = styled(motion.div)`
 function Projects() {
 
     const { ref, inView } = useInView({
-        threshold: 0.4
+        threshold: 0
     })
 
     return (
         <Page  style={{ zIndex: 2 }} >
-            <TitleSection initial={{opacity:0,x:-50}}
+            <TitleSection  ref={ref} initial={{opacity:0,x:-50}}
                animate={{opacity:inView?1:0,x:inView?0:-50}}
                 transition={{ ease: "easeOut", duration: 1.5 }}  >
-                <Title >
+                <SecondaryTitle >
                   Projects
-                </Title>
+                </SecondaryTitle>
                     <LineTop />
                     <LineBottom />
             </TitleSection>

@@ -11,11 +11,11 @@ import styled from 'styled-components';
 import { mediaQueries } from '../../../styling/mediaQueries';
 //import { mediaQueries } from '../../../styling/mediaQueries';
 
-import FrontEndProjects from './front-end-projets/FrontEndProjects'
-import BackEndTab from '../specialties//Tabs/BackEndTechnologies/BackEndTab';
-import DatabaseTab from '../specialties//Tabs/DatabaseTechnologies/DatabaseTab';
-import StorageDeploymentTab from '../specialties//Tabs/StorageDeployment/StorageDeploymentTab';
-import DesignToolsTab from '../specialties//Tabs/DesignTools/DesignToolsTab'
+import FrontEndProjects from './tabs/front-end-projets/FrontEndProjects.js'
+import BackEndTab from '../specialties/Tabs/BackEndTechnologies/BackEndTab';
+import DatabaseTab from '../specialties/Tabs/DatabaseTechnologies/DatabaseTab';
+import StorageDeploymentTab from '../specialties/Tabs/StorageDeployment/StorageDeploymentTab';
+import DesignToolsTab from '../specialties/Tabs/DesignTools/DesignToolsTab'
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -61,8 +61,7 @@ const Component = styled.div`
     }
     @media ${mediaQueries.mobile}{
       margin-top:12%;
-      height:70vh;
-      width: 90%;
+   
       
 
     }

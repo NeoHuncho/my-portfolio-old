@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components';
 import {useInView} from 'react-intersection-observer';
 
-import {  Title, TitleSection, LineBottom, LineTop } from '../../../styling/styles';
+import {  SecondaryTitle, TitleSection, LineBottom, LineTop } from '../../../styling/styles';
 import { mediaQueries } from '../../../styling/mediaQueries';
 
 import TimeLineComponent from './timelineComponent';
@@ -29,9 +29,9 @@ function Timeline() {
             <TitleSection ref={ref} initial={{opacity:0,x:-50}}
                animate={{opacity:inView?1:0,x:inView?0:-50}}
                 transition={{ ease: "easeOut", duration: 1.5 }}  >
-                <Title >
+                <SecondaryTitle >
                     Timeline
-                </Title>
+                </SecondaryTitle>
                     <LineTop />
                     <LineBottom />
             </TitleSection>
