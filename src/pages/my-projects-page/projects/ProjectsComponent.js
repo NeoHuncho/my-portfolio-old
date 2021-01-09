@@ -1,18 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-//import { makeStyles } from '@material-ui/core/styles';
+
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 
-//import { motion } from "framer-motion";
 import styled from 'styled-components';
 import { mediaQueries } from '../../../styling/mediaQueries';
-//import { mediaQueries } from '../../../styling/mediaQueries';
+
 
 import FrontEndProjects from './tabs/front-end-projets/FrontEndProjects.js'
-import BackEndTab from '../specialties/Tabs/BackEndTechnologies/BackEndTab';
+import OtherFrontEndProjects from './tabs/other-front-end-projects/OtherFrontEndProject';
 import DatabaseTab from '../specialties/Tabs/DatabaseTechnologies/DatabaseTab';
 import StorageDeploymentTab from '../specialties/Tabs/StorageDeployment/StorageDeploymentTab';
 import DesignToolsTab from '../specialties/Tabs/DesignTools/DesignToolsTab'
@@ -57,7 +56,7 @@ const Component = styled.div`
     margin: auto;
 
     @media ${mediaQueries.desktop}{
-      margin-top:7%;
+      margin-top:2%;
     }
     @media ${mediaQueries.mobile}{
       margin-top:12%;
@@ -76,7 +75,7 @@ export default function ProjectsComponent() {
   };
 
   return (
-    <Component>
+    <Component style={{backgroundColor: 'rgba(0, 0, 0, 0.00)'}}>
 
       <Tabs
         orientation="horizontal"
@@ -87,11 +86,11 @@ export default function ProjectsComponent() {
         aria-label="Horizontal tabs example"
        
       >
-        <Tab label="Front-End React (FCC)" {...a11yProps(0)} />
-        <Tab label="Front-end Technologies" {...a11yProps(1)} />
-        <Tab label="Back-end Technologies" {...a11yProps(2)} />
-        <Tab label="Database Technologies" {...a11yProps(3)} />
-        <Tab label="Storage and Deployment" {...a11yProps(4)} />
+        <Tab label="Front-End React (FCC)" {...a11yProps(0)} style={{color: 'white'}} />
+        <Tab label="Other Front-End Projects" {...a11yProps(1)} style={{color: 'white'}} />
+        <Tab label="Back-end Technologies" {...a11yProps(2)} style={{color: 'white'}}/>
+        <Tab label="Database Technologies" {...a11yProps(3)}  style={{color: 'white'}}/>
+        <Tab label="Storage and Deployment" {...a11yProps(4)}  style={{color: 'white'}}/>
         <Tab label="Design Tools" {...a11yProps(5)} />
       </Tabs>
      
@@ -100,11 +99,11 @@ export default function ProjectsComponent() {
       </TabPanel>
      
       <TabPanel value={value} index={1}>
-    <FrontEndProjects  />
+      <OtherFrontEndProjects />
       </TabPanel>
      
       <TabPanel value={value} index={2}>
-    <BackEndTab />
+    <OtherFrontEndProjects />
       </TabPanel>
      
       <TabPanel value={value} index={3}>
