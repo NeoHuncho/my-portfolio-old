@@ -12,8 +12,7 @@ import { mediaQueries } from '../../../styling/mediaQueries';
 
 import FrontEndProjects from './tabs/front-end-projets/FrontEndProjects.js'
 import OtherFrontEndProjects from './tabs/other-front-end-projects/OtherFrontEndProject';
-import DatabaseTab from '../specialties/Tabs/DatabaseTechnologies/DatabaseTab';
-import StorageDeploymentTab from '../specialties/Tabs/StorageDeployment/StorageDeploymentTab';
+import DataVisualizationProjects from './tabs/data-visualization/DataVisualization';
 import DesignToolsTab from '../specialties/Tabs/DesignTools/DesignToolsTab'
 
 function TabPanel(props) {
@@ -54,6 +53,7 @@ const Component = styled.div`
     background-color: #f5f5f5;
     width: 80%;
     margin: auto;
+   
 
     @media ${mediaQueries.desktop}{
       margin-top:2%;
@@ -88,7 +88,7 @@ export default function ProjectsComponent() {
       >
         <Tab label="Front-End React (FCC)" {...a11yProps(0)} style={{color: 'white'}} />
         <Tab label="Other Front-End Projects" {...a11yProps(1)} style={{color: 'white'}} />
-        <Tab label="Back-end Technologies" {...a11yProps(2)} style={{color: 'white'}}/>
+        <Tab label="Data Visualization (FCC)" {...a11yProps(2)} style={{color: 'white'}}/>
         <Tab label="Database Technologies" {...a11yProps(3)}  style={{color: 'white'}}/>
         <Tab label="Storage and Deployment" {...a11yProps(4)}  style={{color: 'white'}}/>
         <Tab label="Design Tools" {...a11yProps(5)} />
@@ -103,15 +103,15 @@ export default function ProjectsComponent() {
       </TabPanel>
      
       <TabPanel value={value} index={2}>
-    <OtherFrontEndProjects />
+    <DataVisualizationProjects />
       </TabPanel>
      
       <TabPanel value={value} index={3}>
-       <DatabaseTab />
+       
       </TabPanel>
      
       <TabPanel value={value} index={4}>
-        <StorageDeploymentTab />
+       
       </TabPanel>
      
       <TabPanel value={value} index={5}>

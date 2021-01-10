@@ -22,8 +22,8 @@ export const Colors = {
   }
 
 export const ProjectCard = styled(Card)`
-    max-width:445px;
-    max-height:360px;
+    max-width:60vh;
+    max-height:58vh;
         :nth-child(n+3) {
         margin-top:5%;   
         }
