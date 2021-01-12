@@ -15,18 +15,17 @@ export const ProjectPage= styled.div`
 }
 `
 
-export const Colors = {
-    background: '#424242',
-    primary: '#fff',
-    secondary: 'rgba(255, 255, 255, 0.7)',
-  }
-
 export const ProjectCard = styled(Card)`
+   @media ${mediaQueries.desktop}{
     max-width:60vh;
     max-height:320px;
         :nth-child(n+3) {
         margin-top:5%;   
         }
+   }
+    @media ${mediaQueries.mobile}{
+        margin-bottom:8%;
+    }
     `
 
 

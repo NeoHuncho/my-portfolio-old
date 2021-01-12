@@ -6,6 +6,7 @@ import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 
+
 import styled from 'styled-components';
 import { mediaQueries } from '../../../styling/mediaQueries';
 
@@ -57,9 +58,11 @@ const Component = styled.div`
 
     @media ${mediaQueries.desktop}{
       margin-top:2%;
+      
     }
     @media ${mediaQueries.mobile}{
       margin-top:12%;
+      width: 100%;
     }
 `
 
@@ -80,14 +83,15 @@ export default function ProjectsComponent() {
 
   return (
     <Component style={{backgroundColor: 'rgba(0, 0, 0, 0.00)'}}>
-
+   
       <ThisTabs
-        orientation="horizontal"
         variant="scrollable"
         value={value}
         onChange={handleChange}
         aria-label="Horizontal tabs example"
-       
+        scrollButtons="on"
+        indicatorColor="primary"
+        textColor="primary"
       >
         <Tab label="Front-End React (FCC)" {...a11yProps(0)} style={{color: 'white'}} />
         <Tab label="Other Front-End Projects" {...a11yProps(1)} style={{color: 'white'}} />
@@ -95,6 +99,7 @@ export default function ProjectsComponent() {
         <Tab label="Full-Stack Projects" {...a11yProps(3)}  style={{color: 'white'}}/>
       
       </ThisTabs>
+      
      
       <TabPanel value={value} index={0}>
      <FrontEndProjects  />
