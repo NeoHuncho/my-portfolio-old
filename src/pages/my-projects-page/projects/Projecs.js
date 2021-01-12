@@ -13,12 +13,12 @@ export const Page= styled.div`
   display: block;
   position: relative;
   background: radial-gradient(50% 98.88% at 50% 50%, #16045E 18.23%, #0E021E 100%);
-  
+
   @media ${mediaQueries.desktop}{
-    
+
   }
   @media ${mediaQueries.mobile}{
-    height: 96vh;
+    height: 100%;
   }
 
 `

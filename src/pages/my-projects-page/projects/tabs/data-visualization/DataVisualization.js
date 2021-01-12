@@ -7,7 +7,7 @@ import D3 from '../../../specialties/Tabs/FrontEndTechnologies/LogoSource/d3.png
 import github from '../../../specialties/Tabs/StorageDeployment/LogoSource/github.png';
 
 import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
+
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
@@ -38,21 +38,14 @@ function DataVisualizationProjects() {
                 <TechnologiesSection >
                   <Technology  title="React" src={react}/>
                   <Technology title="D3" src={D3}/>
-                </TechnologiesSection >
-              
-              </CardContent>
-          
-            </CardActionArea>
-            <CardActions >
-              <GLink href="https://github.com/NeoHuncho/D3-Bar-Chart" target="_blank">
+                  <GLink href="https://github.com/NeoHuncho/D3-Bar-Chart" target="_blank">
               <Github src={github}  />
               </GLink>
-            </CardActions> 
+                </TechnologiesSection >
+              </CardContent>
+            </CardActionArea>
         </ProjectCard>
-   
-      
 
-     
           <ProjectCard >
             <CardActionArea  href="https://scaterplotgraphdd3.netlify.app/"  target="_blank" style={{ textDecoration: 'none' }} > 
               <CardMedia
@@ -72,17 +65,45 @@ function DataVisualizationProjects() {
                 <TechnologiesSection >
                 <Technology  title="React" src={react}/>
                   <Technology title="D3" src={D3}/>
-                </TechnologiesSection >
-              
+                  <GLink href="https://github.com/NeoHuncho/Scatterplot-Graph-FCC" target="_blank">
+              <Github src={github}  />
+              </GLink>
+                </TechnologiesSection >        
               </CardContent>
           
             </CardActionArea>
-            <CardActions >
-              <GLink href="https://github.com/NeoHuncho/Scatterplot-Graph-FCC" target="_blank">
+        </ProjectCard>
+
+        <ProjectCard >
+            <CardActionArea  href="https://scaterplotgraphdd3.netlify.app/"  target="_blank" style={{ textDecoration: 'none' }} > 
+              <CardMedia
+                component="img"
+                alt="Scatter Plot Project"
+                height="180"
+                image={scatterPlot}
+                title="Scatter Plot Project"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5"  component="h2">
+                Scatter Plot 
+                </Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
+                 Scatter Plot using D3 
+                </Typography>
+                <TechnologiesSection >
+                <Technology  title="React" src={react}/>
+                  <Technology title="D3" src={D3}/>
+                  <GLink href="https://github.com/NeoHuncho/Scatterplot-Graph-FCC" target="_blank">
               <Github src={github}  />
               </GLink>
-            </CardActions> 
+                </TechnologiesSection >        
+              </CardContent>
+          
+            </CardActionArea>
         </ProjectCard>
+
+
+        
   
       
       

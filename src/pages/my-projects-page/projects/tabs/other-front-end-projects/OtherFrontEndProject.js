@@ -8,7 +8,6 @@ import github from '../../../specialties/Tabs/StorageDeployment/LogoSource/githu
 import styledComponents from '../../../specialties/Tabs/FrontEndTechnologies/LogoSource/styledcomponents.png'
 
 import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
@@ -45,16 +44,14 @@ function OtherFrontEndProjects() {
                   <Technology  title="React" src={react}/>
                   <Technology title="Styled Components" src={styledComponents}/>
                   <Technology title="Framer Motion" src={framer_motion}/> 
+                  <GLink href="https://github.com/NeoHuncho/Porfolio-Website" target="_blank">
+              <Github src={github}  />
+              </GLink>
                 </TechnologiesSection >
               
               </CardContent>
           
             </CardActionArea>
-            <CardActions >
-              <GLink href="https://github.com/NeoHuncho/Porfolio-Website" target="_blank">
-              <Github src={github}  />
-              </GLink>
-            </CardActions> 
         </ProjectCard>
    
       
@@ -78,16 +75,15 @@ function OtherFrontEndProjects() {
                 </Typography>
                 <TechnologiesSection >
                   <Technology  title="React" src={react}/>
+                  <GLink href="https://github.com/NeoHuncho/expense-tracker" target="_blank">
+              <Github src={github}  />
+              </GLink>
                 </TechnologiesSection >
               
               </CardContent>
           
             </CardActionArea>
-            <CardActions >
-              <GLink href="https://github.com/NeoHuncho/expense-tracker" target="_blank">
-              <Github src={github}  />
-              </GLink>
-            </CardActions> 
+
         </ProjectCard>
   
       
@@ -109,16 +105,14 @@ function OtherFrontEndProjects() {
                 </Typography>
                 <TechnologiesSection >
                   <Technology  title="React" src={react}/>
+                  <GLink href="https://github.com/NeoHuncho/To-do-list-react/blob/master/package.json"  target="_blank">
+              <Github src={github}  />
+              </GLink>
                 </TechnologiesSection >
               
               </CardContent>
           
             </CardActionArea>
-            <CardActions >
-              <GLink href="https://github.com/NeoHuncho/To-do-list-react/blob/master/package.json"  target="_blank">
-              <Github src={github}  />
-              </GLink>
-            </CardActions> 
         </ProjectCard>
     
       </ProjectPage>

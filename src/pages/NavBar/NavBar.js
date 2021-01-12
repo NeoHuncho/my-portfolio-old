@@ -13,7 +13,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 
 export const Navbar = styled.header`
 position: fixed;
-top: 3%;
+top: 2%;
 left: 2%;
 width: 100%;
 align-items: center;
@@ -48,9 +48,7 @@ export const Grid= styled.div`
 `
 
 export const StyledLink = styled(Link)`
-  
 text-decoration: 'none';
-color: 'white' !important;
 
 &:hover{
 text-decoration: none
@@ -208,9 +206,11 @@ export default function NavBar() {
     return (
         <Navbar>
             <Grid >
-            <StyledLink to="/">
-                <TitleItem >W.G</TitleItem>
-            </StyledLink>
+                <TitleItem >  
+                    <StyledLink to="/"> <NavBarItem>  W.G</NavBarItem>
+                       
+                    </StyledLink>
+                </TitleItem>
             <NavBarItem>
                 <a href='https://github.com/NeoHuncho' rel="noopener noreferrer" target="_blank">
                     <Github src={github} alt='Free Code Camp link' />

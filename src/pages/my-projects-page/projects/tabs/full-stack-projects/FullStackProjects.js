@@ -4,19 +4,19 @@ import { ProjectCard, TechnologiesSection, GLink, Github, ProjectPage, Technolog
 
 import react from '../../../specialties/Tabs/FrontEndTechnologies/LogoSource/react.png';
 import redux from '../../../specialties/Tabs/FrontEndTechnologies/LogoSource/redux.png';
-import framer_motion from '../../../specialties/Tabs/FrontEndTechnologies/LogoSource/framer-motion.jpg'
+import mongodb from '../../../specialties/Tabs/DatabaseTechnologies/LogoSource/mongodb.png';
+import express from '../../../specialties/Tabs/BackEndTechnologies/LogoSource/express.png';
+import nodejs from '../../../specialties/Tabs/BackEndTechnologies/LogoSource/nodejs.png'
 import github from '../../../specialties/Tabs/StorageDeployment/LogoSource/github.png';
-import marked from './images/marked.svg'
+import heroku from '../../../specialties/Tabs/StorageDeployment/LogoSource/heroku.png';
+
 
 import CardActionArea from '@material-ui/core/CardActionArea';
-
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 
-import markdownConverterimg from '../front-end-projets/images/markdown-converter.png';
-import calculatorReact from './images/calculatorReact.png';
-import drumpadReact from './images/drumpadReact.png';
+import memories from './images/memories.png';
 
 
 
@@ -27,26 +27,29 @@ function FrontEndProjects() {
       <motion.div intial={{opacity:0}} animate={{ opacity: [0,0,1] }} transition={{ times: [0,0.5,1.1], ease: "easeInOut" }}>
         <ProjectPage >
           <ProjectCard >
-            <CardActionArea  href="https://drumpadreact.netlify.app/" target="_blank" style={{ textDecoration: 'none' }} > 
+            <CardActionArea  href="https://memories-mernstack.netlify.app/" target="_blank" style={{ textDecoration: 'none' }} > 
               <CardMedia
                 component="img"
-                alt="Contemplative Reptile"
+                alt="Memories Project"
                 height="180"
-                image={drumpadReact}
-                title="Contemplative Reptile"
+                image={memories}
+                title="Memories Project"
               />
               <CardContent>
                 <Typography gutterBottom variant="h5"  component="h2">
-                Drum Pad 
+                Memories
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                Online Drum Pad w/ keyboard keys- Sound Bar - Bank Switcher
+               MERN project/ Create posts w/image, like and delete functionality.
                 </Typography>
                 <TechnologiesSection >
                   <Technology  title="React" src={react}/>
                   <Technology title="Redux" src={redux}/>
-                  <Technology title="Framer Motion" src={framer_motion}/> 
-                  <GLink href="https://github.com/NeoHuncho/drum-machine" target="_blank">
+                  <Technology title="MongoDb" src={mongodb}/>
+                  <Technology title="Express" src={express}/>
+                  <Technology title="NodeJs" src={nodejs}/>
+                  <Technology title="Heroku" src={heroku}/>
+                  <GLink href="https://github.com/NeoHuncho/memories-MERN" target="_blank">
                 <Github src={github}  />
                </GLink>
                 </TechnologiesSection >
@@ -60,63 +63,73 @@ function FrontEndProjects() {
       
 
      
-          <ProjectCard >
-            <CardActionArea  href="https://markdown-previewer-react1.netlify.app/"  target="_blank" style={{ textDecoration: 'none' }} > 
+        <ProjectCard >
+            <CardActionArea  href="https://memories-mernstack.netlify.app/" target="_blank" style={{ textDecoration: 'none' }} > 
               <CardMedia
                 component="img"
-                alt="Markdown Converter project"
+                alt="Memories Project"
                 height="180"
-                image={markdownConverterimg}
-                title="Markdown Converter project"
+                image={memories}
+                title="Memories Project"
               />
               <CardContent>
                 <Typography gutterBottom variant="h5"  component="h2">
-                Markdown Converter 
+                Memories
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                 HTML5 Markdown converter w/ instant conversion 
+               MERN project/ Create posts w/image, like and delete functionality.
                 </Typography>
                 <TechnologiesSection >
                   <Technology  title="React" src={react}/>
-                  <Technology  title="Marked" src={marked}/>
-                  <GLink href="https://github.com/NeoHuncho/Markdown-Previewer" target="_blank">
-                    <Github src={github}  />
-                  </GLink>
+                  <Technology title="Redux" src={redux}/>
+                  <Technology title="MongoDb" src={mongodb}/>
+                  <Technology title="Express" src={express}/>
+                  <Technology title="NodeJs" src={nodejs}/>
+                  <Technology title="Heroku" src={heroku}/>
+                  <GLink href="https://github.com/NeoHuncho/memories-MERN" target="_blank">
+                <Github src={github}  />
+               </GLink>
                 </TechnologiesSection >
               
               </CardContent>
           
             </CardActionArea>
+        
         </ProjectCard>
   
       
-          <ProjectCard >
-            <CardActionArea  href="https://calculatoreact.netlify.app/"  target="_blank" style={{ textDecoration: 'none' }} > 
+        <ProjectCard >
+            <CardActionArea  href="https://memories-mernstack.netlify.app/" target="_blank" style={{ textDecoration: 'none' }} > 
               <CardMedia
                 component="img"
-                alt="Contemplative Reptile"
+                alt="Memories Project"
                 height="180"
-                image={calculatorReact}
-                title="Contemplative Reptile"
+                image={memories}
+                title="Memories Project"
               />
               <CardContent>
                 <Typography gutterBottom variant="h5"  component="h2">
-                Calculator
+                Memories
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                  Simple online calculator 
+               MERN project/ Create posts w/image, like and delete functionality.
                 </Typography>
                 <TechnologiesSection >
                   <Technology  title="React" src={react}/>
-                  <GLink href="https://github.com/NeoHuncho/calculator/"  target="_blank">
-                    <Github src={github}  />
-                  </GLink>
+                  <Technology title="Redux" src={redux}/>
+                  <Technology title="MongoDb" src={mongodb}/>
+                  <Technology title="Express" src={express}/>
+                  <Technology title="NodeJs" src={nodejs}/>
+                  <Technology title="Heroku" src={heroku}/>
+                  <GLink href="https://github.com/NeoHuncho/memories-MERN" target="_blank">
+                <Github src={github}  />
+               </GLink>
                 </TechnologiesSection >
               
               </CardContent>
           
             </CardActionArea>
-
+        
         </ProjectCard>
     
       </ProjectPage>

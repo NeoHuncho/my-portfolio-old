@@ -13,7 +13,7 @@ import { mediaQueries } from '../../../styling/mediaQueries';
 import FrontEndProjects from './tabs/front-end-projets/FrontEndProjects.js'
 import OtherFrontEndProjects from './tabs/other-front-end-projects/OtherFrontEndProject';
 import DataVisualizationProjects from './tabs/data-visualization/DataVisualization';
-import DesignToolsTab from '../specialties/Tabs/DesignTools/DesignToolsTab'
+import FullStackProjects from './tabs/full-stack-projects/FullStackProjects';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -60,12 +60,16 @@ const Component = styled.div`
     }
     @media ${mediaQueries.mobile}{
       margin-top:12%;
-   
-      
-
     }
 `
 
+const ThisTabs = styled(Tabs)`
+@media ${mediaQueries.nonmobile}{
+margin-left:15%;
+margin-right:auto;
+}
+
+`
 export default function ProjectsComponent() {
 
   const [value, setValue] = React.useState(0);
@@ -77,10 +81,9 @@ export default function ProjectsComponent() {
   return (
     <Component style={{backgroundColor: 'rgba(0, 0, 0, 0.00)'}}>
 
-      <Tabs
+      <ThisTabs
         orientation="horizontal"
         variant="scrollable"
-        scrollButtons="on"
         value={value}
         onChange={handleChange}
         aria-label="Horizontal tabs example"
@@ -89,10 +92,9 @@ export default function ProjectsComponent() {
         <Tab label="Front-End React (FCC)" {...a11yProps(0)} style={{color: 'white'}} />
         <Tab label="Other Front-End Projects" {...a11yProps(1)} style={{color: 'white'}} />
         <Tab label="Data Visualization (FCC)" {...a11yProps(2)} style={{color: 'white'}}/>
-        <Tab label="Database Technologies" {...a11yProps(3)}  style={{color: 'white'}}/>
-        <Tab label="Storage and Deployment" {...a11yProps(4)}  style={{color: 'white'}}/>
-        <Tab label="Design Tools" {...a11yProps(5)} />
-      </Tabs>
+        <Tab label="Full-Stack Projects" {...a11yProps(3)}  style={{color: 'white'}}/>
+      
+      </ThisTabs>
      
       <TabPanel value={value} index={0}>
      <FrontEndProjects  />
@@ -107,16 +109,10 @@ export default function ProjectsComponent() {
       </TabPanel>
      
       <TabPanel value={value} index={3}>
-       
+       <FullStackProjects />
       </TabPanel>
      
-      <TabPanel value={value} index={4}>
-       
-      </TabPanel>
-     
-      <TabPanel value={value} index={5}>
-        <DesignToolsTab />
-      </TabPanel>
+    
     </Component>
   );
 }
