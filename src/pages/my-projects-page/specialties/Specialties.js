@@ -15,7 +15,7 @@ export const Page= styled.div`
   background: radial-gradient(50% 98.88% at 50% 50%, #16045E 18.23%, #0E021E 100%);
   
   @media ${mediaQueries.desktop}{
-    height: 80vh;
+    height: 70vh;
   }
   @media ${mediaQueries.mobile}{
     height: 96vh;
