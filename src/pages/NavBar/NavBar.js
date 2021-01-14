@@ -5,6 +5,7 @@ import { mediaQueries } from '../../styling/mediaQueries';
 
 import fcc from './Files/fcc.png';
 import github from './Files/github white.svg';
+import email from './Files/email.png'
 import hamburger from './Files/hamburger.svg';
 
 import { Link } from 'react-router-dom';
@@ -31,20 +32,20 @@ export const Grid= styled.div`
         grid-template-rows: 100%;
         gap: 0px 0px;
         grid-template-areas:
-            "Home Github FCC myProjects aboutMe";
+            "Home Email Github FCC myProjects aboutMe";
     @media ${mediaQueries.desktop}{
-        grid-template-columns: 60% 5% 15% 10% 10%;}
+        grid-template-columns: 55% 5% 5% 15% 10% 10%;}
 
      @media ${mediaQueries.ipad}{
-        grid-template-columns: 40% 6% 13% 21% 22%;}
+        grid-template-columns: 34% 6% 6% 13% 21% 22%;}
 
      @media ${mediaQueries.ipadPro}{
         grid-template-columns: 38% 6% 13% 22% 22%;}
 
     @media ${mediaQueries.mobile}{
         grid-template-areas:
-            "Home Github FCC Menu";
-        grid-template-columns: 54% 10% 17% 0%;}
+            "Home Email Github FCC Menu";
+        grid-template-columns: 40% 12% 12% 17% 0%;}
 `
 
 export const StyledLink = styled(Link)`
@@ -87,15 +88,15 @@ grid-area: Home;
 text-decoration: 'none';
 color: 'white';
 
-    @media ${mediaQueries.ipadPro}{
+    @media ${mediaQueries.ipadAndIpadPro}{
         margin-right: auto;
-        font-size: 200%;
+        font-size: 100%;
         padding: 12px 16px;
     }
 
     @media ${mediaQueries.desktop}{
         margin-right: auto;
-        font-size: 150%;
+        font-size: 130%;
 
     }
 
@@ -109,6 +110,27 @@ export const NotMobileLink = styled(NavBarItem)`
         display: none;
     }
 `
+export const Email = styled.img`
+height: auto;
+grid-area: Email;
+    @media ${mediaQueries.mobile}{
+        width: 6vw;
+    }
+
+    @media ${mediaQueries.ipad}{
+        
+        width: 4vw;
+    }
+
+    @media ${mediaQueries.ipadPro}{
+        width: 3.5vw;
+    }
+
+    @media ${mediaQueries.desktop}{
+        width: 1.7vw;
+    }
+`
+
 export const FCC = styled.img`
 height: auto;
 grid-area: FCC;
@@ -211,9 +233,16 @@ export default function NavBar() {
                        
                     </StyledLink>
                 </TitleItem>
+            
+            <NavBarItem>
+                <a href = "mailto: william.guinaudie@gmail.com" rel="noopener noreferrer" target="_blank">
+                    <Email src={email} alt='email link' />
+                </a>
+            </NavBarItem>
+            
             <NavBarItem>
                 <a href='https://github.com/NeoHuncho' rel="noopener noreferrer" target="_blank">
-                    <Github src={github} alt='Free Code Camp link' />
+                    <Github src={github} alt='Github link' />
                 </a>
             </NavBarItem>
             <NavBarItem>

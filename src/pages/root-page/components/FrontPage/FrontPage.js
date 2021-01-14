@@ -38,7 +38,7 @@ function FrontPage() {
 
             <Scrooldown src={scroolDown} style={{ zIndex: 1 }} />
         <GridHorizontal>
-            <ImageSection  initial={{opacity:0,x:50,y:-70}}
+            <ImageSection  initial={{opacity:0,x:50,y:-50}}
                animate={{opacity:1,x:0,y:0}}
                 transition={{ ease: "easeInOut", duration: 1.5 }}>
 
