@@ -14,9 +14,9 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 
-import markdownConverterimg from '../front-end-projets/images/markdown-converter.png';
-import calculatorReact from './images/calculatorReact.png';
-import drumpadReact from './images/drumpadReact.png';
+import markdownConverterimg from '../front-end-projets/images/markdown-converter.webp';
+import calculatorReact from './images/calculatorReact.webp';
+import drumpadReact from './images/drumpadReact.webp';
 
 
 

@@ -12,8 +12,8 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 
-import scatterPlot from './images/scatterPlot.png';
-import barChart from './images/barChart.png';
+import scatterPlot from './images/scatterPlot.webp';
+import barChart from './images/barChart.webp';
 
 function DataVisualizationProjects() {
     return (

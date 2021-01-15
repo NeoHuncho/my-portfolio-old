@@ -40,7 +40,9 @@ export const Grid= styled.div`
         grid-template-columns: 34% 6% 6% 13% 21% 22%;}
 
      @media ${mediaQueries.ipadPro}{
-        grid-template-columns: 38% 6% 13% 22% 22%;}
+        grid-template-areas:
+            "Home Email Github FCC Menu";
+        grid-template-columns: 40% 12% 12% 17% 0%;}
 
     @media ${mediaQueries.mobile}{
         grid-template-areas:

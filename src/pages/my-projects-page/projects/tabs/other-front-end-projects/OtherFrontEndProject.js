@@ -12,9 +12,9 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 
-import expenseTracker from './images/expenseTracker.png';
-import portfolio from './images/portfolio.png';
-import toDoList from './images/ToDoList.png';
+import expenseTracker from './images/expenseTracker.webp';
+import portfolio from './images/portfolio.webp';
+import toDoList from './images/ToDoList.webp';
 
 
 
