@@ -1,20 +1,18 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-import Tabs from '@material-ui/core/Tabs';
-import Tab from '@material-ui/core/Tab';
-import Typography from '@material-ui/core/Typography';
-import Box from '@material-ui/core/Box';
+import Tabs from "@material-ui/core/Tabs";
+import Tab from "@material-ui/core/Tab";
+import Typography from "@material-ui/core/Typography";
+import Box from "@material-ui/core/Box";
 
+import styled from "styled-components";
+import { mediaQueries } from "../../../styling/mediaQueries";
 
-import styled from 'styled-components';
-import { mediaQueries } from '../../../styling/mediaQueries';
-
-
-import FrontEndProjects from './tabs/front-end-projets/FrontEndProjects.js'
-import OtherFrontEndProjects from './tabs/other-front-end-projects/OtherFrontEndProject';
-import DataVisualizationProjects from './tabs/data-visualization/DataVisualization';
-import FullStackProjects from './tabs/full-stack-projects/FullStackProjects';
+import FrontEndProjects from "./tabs/front-end-projets/FrontEndProjects.js";
+import OtherFrontEndProjects from "./tabs/other-front-end-projects/OtherFrontEndProject";
+import DataVisualizationProjects from "./tabs/data-visualization/DataVisualization";
+import FullStackProjects from "./tabs/full-stack-projects/FullStackProjects";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -28,7 +26,7 @@ function TabPanel(props) {
       {...other}
     >
       {value === index && (
-        <Box p={3} >
+        <Box p={3}>
           <Typography>{children}</Typography>
         </Box>
       )}
@@ -45,36 +43,32 @@ TabPanel.propTypes = {
 function a11yProps(index) {
   return {
     id: `vertical-tab-${index}`,
-    'aria-controls': `vertical-tabpanel-${index}`,
+    "aria-controls": `vertical-tabpanel-${index}`,
   };
 }
 
 const Component = styled.div`
-    flex-grow: 1;
-    background-color: #f5f5f5;
-    width: 80%;
-    margin: auto;
-   
+  flex-grow: 1;
+  background-color: #f5f5f5;
+  width: 80%;
+  margin: auto;
 
-    @media ${mediaQueries.desktop}{
-      margin-top:2%;
-      
-    }
-    @media ${mediaQueries.mobile}{
-      margin-top:12%;
-      width: 100%;
-    }
-`
+  @media ${mediaQueries.desktop} {
+    margin-top: 2%;
+  }
+  @media ${mediaQueries.mobile} {
+    margin-top: 12%;
+    width: 100%;
+  }
+`;
 
 const ThisTabs = styled(Tabs)`
-@media ${mediaQueries.nonmobile}{
-margin-left:15%;
-margin-right:auto;
-}
-
-`
+  @media ${mediaQueries.nonmobile} {
+    margin-left: 15%;
+    margin-right: auto;
+  }
+`;
 export default function ProjectsComponent() {
-
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
@@ -82,8 +76,7 @@ export default function ProjectsComponent() {
   };
 
   return (
-    <Component style={{backgroundColor: 'rgba(0, 0, 0, 0.00)'}}>
-   
+    <Component style={{ backgroundColor: "rgba(0, 0, 0, 0.00)" }}>
       <ThisTabs
         variant="scrollable"
         value={value}
@@ -93,31 +86,43 @@ export default function ProjectsComponent() {
         indicatorColor="primary"
         textColor="primary"
       >
-        <Tab label="Front-End React (FCC)" {...a11yProps(0)} style={{color: 'white'}} />
-        <Tab label="Other Front-End Projects" {...a11yProps(1)} style={{color: 'white'}} />
-        <Tab label="Data Visualization (FCC)" {...a11yProps(2)} style={{color: 'white'}}/>
-        <Tab label="Full-Stack Projects" {...a11yProps(3)}  style={{color: 'white'}}/>
-      
+        <Tab
+          label="Full-Stack Projects"
+          {...a11yProps(3)}
+          style={{ color: "white" }}
+        />
+        <Tab
+          label="Front-End React (FCC)"
+          {...a11yProps(0)}
+          style={{ color: "white" }}
+        />
+        <Tab
+          label="Other Front-End Projects"
+          {...a11yProps(1)}
+          style={{ color: "white" }}
+        />
+        <Tab
+          label="Data Visualization (FCC)"
+          {...a11yProps(2)}
+          style={{ color: "white" }}
+        />
       </ThisTabs>
-      
-     
+
       <TabPanel value={value} index={0}>
-     <FrontEndProjects  />
+        <FullStackProjects />
       </TabPanel>
-     
+
       <TabPanel value={value} index={1}>
-      <OtherFrontEndProjects />
+        <FrontEndProjects />
       </TabPanel>
-     
+
       <TabPanel value={value} index={2}>
-    <DataVisualizationProjects />
+        <OtherFrontEndProjects />
       </TabPanel>
-     
+
       <TabPanel value={value} index={3}>
-       <FullStackProjects />
+        <DataVisualizationProjects />
       </TabPanel>
-     
-    
     </Component>
   );
 }

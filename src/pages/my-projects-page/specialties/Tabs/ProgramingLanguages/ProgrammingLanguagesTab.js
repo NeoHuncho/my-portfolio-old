@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 import js from './logos/js1.webp';
 import cSharp from './logos/cSharp1.webp';
-import ts from './logos/ts1.webp'
+import python from './logos/python1.webp'
 import { mediaQueries } from '../../../../../styling/mediaQueries';
 
 
@@ -26,7 +26,7 @@ display: grid;
   grid-template-rows: 1fr;
   gap: 0px 0px;
   grid-template-areas:
-    "js ts cSharp";
+    "js python cSharp";
     justify-items: center;
 
 }
@@ -38,7 +38,7 @@ function ProgrammingLanguagesTab() {
     return (
         <Grid  intial={{opacity:0}} animate={{ opacity: [0,0,2] }} transition={{ times: [0,0.5,1.2], ease: "easeInOut" }}>
            <Image src={js}  style={{gridArea:'js'}} />
-           <Image src={ts}  style={{gridArea:'ts'}}/>
+           <Image src={python}  style={{gridArea:'python'}}/>
            <Image src={cSharp} style={{gridArea:'cSharp'}}/>
         </Grid>
     )
