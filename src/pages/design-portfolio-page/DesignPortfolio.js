@@ -7,14 +7,7 @@ import summitRecap from "./summitAd2Preview.png";
 import meetGreet from "./summitAd3Preview.png";
 import ytVideo from "./summitAd4Preview.png";
 
-import {
-  FullPage,
-  Title,
-  FrontPageTitleSection,
-  LineBottom,
-  LineTop,
-  Scrooldown,
-} from "../../styling/styles";
+import { Title, LineBottom } from "../../styling/styles";
 import { mediaQueries } from "../../styling/mediaQueries";
 
 const ThisTitleSection = styled(motion.div)`
