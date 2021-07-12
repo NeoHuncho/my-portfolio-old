@@ -62,6 +62,10 @@ const Component = styled.div`
       margin-top:7%;
       height:13vw;
     }
+    @media ${mediaQueries.ipadAndIpadPro}{
+      margin-top:7%;
+      height:20vw;
+    }
     @media ${mediaQueries.mobile}{
       margin-top:12%;
       height:70vh;

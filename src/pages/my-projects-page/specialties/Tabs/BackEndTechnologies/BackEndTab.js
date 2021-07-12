@@ -18,6 +18,12 @@ const Image = styled(motion.img)`
     margin-right: auto;
     display: block;
   }
+  @media ${mediaQueries.ipadAndIpadPro} {
+    max-width: 12vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
 `;
 
 const Grid = styled(motion.div)`

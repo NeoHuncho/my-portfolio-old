@@ -63,7 +63,7 @@ const Component = styled.div`
 `;
 
 const ThisTabs = styled(Tabs)`
-  @media ${mediaQueries.nonmobile} {
+  @media ${mediaQueries.desktop} {
     margin-left: 15%;
     margin-right: auto;
   }

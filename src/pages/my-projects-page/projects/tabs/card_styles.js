@@ -22,7 +22,7 @@ export const ProjectCard = styled(Card)`
       margin-top: 5%;
     }
   }
-  @media ${mediaQueries.mobile} {
+  @media ${mediaQueries.nondesktop} {
     margin-bottom: 8%;
   }
 `;
@@ -41,7 +41,7 @@ export const TechnologiesSection = styled(motion.div)`
 `;
 
 export const TechnologiesSection1Liner = styled(TechnologiesSection)`
-  margin-top: 5%;
+  margin-top: 1vh;
 `;
 
 export const Technology = styled.img`
@@ -73,7 +73,7 @@ export const Express = styled(Technology)`
 `;
 export const GLplatform = styled(Technology)`
   margin-top: -2%;
- 
+
   max-width: 12%;
 `;
 export const Firebase = styled(Technology)`
