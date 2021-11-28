@@ -329,6 +329,32 @@ export default function TimeLineComponent() {
             </TimelineContent>
           )}
         </InView>
+        <InView threshold={0.25}>
+          {({ ref, inView }) => (
+            <TimelineContent
+              ref={ref}
+              initial={variantstext.hidden}
+              animate={{ opacity: inView ? 1 : 0 }}
+            >
+              <Date>Oct 27, 2021</Date>
+              <Heading>Cagette et Paprika</Heading>
+              <PointList>
+                <Point>
+                  Junior Full Stack Developer
+                </Point>
+                <Point>
+                Integration of Firebase Analytics, Cloud Messaging & Deep Links Messaging into a React Native application
+                </Point>
+                <Point>Integration of Algolia</Point>
+                <Point>
+                Back-end work on a  web server (Node JS and PHP). Interaction with Woo Commerce, Bubble, Algolia and an API.
+                </Point>
+                <Point>
+                Front-end work - Modification to the UI of the website and application. (React Native & PHP).  </Point>
+              </PointList>
+            </TimelineContent>
+          )}
+        </InView>
       </Timeline>
     </Container>
   );
