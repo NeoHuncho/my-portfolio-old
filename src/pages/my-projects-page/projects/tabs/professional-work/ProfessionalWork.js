@@ -90,7 +90,7 @@ function FrontEndProjects() {
             <CardContent>
               <TitleSection>
                 <Typography gutterBottom variant="h5" component="h2">
-                  Cagette & Paprika PHP website
+                  Cagette & Paprika PHP website + back-end
                 </Typography>
               </TitleSection>
 
