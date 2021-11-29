@@ -174,10 +174,9 @@ export default function MoreInformation() {
             <span role="img" aria-label="image">
               🚴
             </span>{" "}
-            <br /> <br />I live 30 minutes away from Paris by train (Transilien
-            L){" "}
+            <br /> <br />I live in Lille, France. (Quartier Fives){" "}
             <span role="img" aria-label="image">
-              🚄
+              🏠
             </span>{" "}
             <br /> <br />
             Before coding daily, I wanted to become a motion designer. I am

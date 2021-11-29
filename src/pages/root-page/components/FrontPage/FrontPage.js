@@ -57,7 +57,7 @@ function FrontPage() {
                 <Title >WILLIAM<br /> GUINAUDIE</Title>
                 <LineTop/>
                 <LineBottom/>
-                <SubTitle>full stack<br />web developer</SubTitle>
+                <SubTitle>Full Stack Developer</SubTitle>
             </FrontPageTitleSection>
         </GridHorizontal>
         </FullPage>

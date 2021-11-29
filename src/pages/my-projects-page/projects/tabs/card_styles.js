@@ -16,8 +16,8 @@ export const ProjectPage = styled.div`
 
 export const ProjectCard = styled(Card)`
   @media ${mediaQueries.desktop} {
-    max-width: 60vh;
-    max-height: 320px;
+    max-width: 30vw;
+    max-height: 100%;
     :nth-child(n + 3) {
       margin-top: 5%;
     }
@@ -84,6 +84,18 @@ export const NodeJS = styled(Technology)`
   margin-left: 56%;
   margin-top: 2%;
   max-width: 10%;
+`;
+export const PHP = styled(Technology)`
+
+margin-top:1%;
+  max-width: 9%;
+  margin-left: 13% !important;
+`;
+export const WOO = styled(Technology)`
+
+margin-top:1%;
+  max-width: 9%;
+  margin-left: 41% !important;
 `;
 
 export const GLink = styled.a``;

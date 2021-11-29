@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-
+import { isMobile } from "react-device-detect";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
@@ -13,6 +13,7 @@ import FrontEndProjects from "./tabs/front-end-projets/FrontEndProjects.js";
 import OtherFrontEndProjects from "./tabs/other-front-end-projects/OtherFrontEndProject";
 import DataVisualizationProjects from "./tabs/data-visualization/DataVisualization";
 import FullStackProjects from "./tabs/full-stack-projects/FullStackProjects";
+import ProfessionalWork from "./tabs/professional-work/ProfessionalWork";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -50,7 +51,7 @@ function a11yProps(index) {
 const Component = styled.div`
   flex-grow: 1;
   background-color: #f5f5f5;
-  width: 80%;
+  width: 90%;
   margin: auto;
 
   @media ${mediaQueries.desktop} {
@@ -62,13 +63,8 @@ const Component = styled.div`
   }
 `;
 
-const ThisTabs = styled(Tabs)`
-  @media ${mediaQueries.desktop} {
-    margin-left: 15%;
-    margin-right: auto;
-  }
-`;
 export default function ProjectsComponent() {
+  console.log(isMobile);
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
@@ -77,15 +73,21 @@ export default function ProjectsComponent() {
 
   return (
     <Component style={{ backgroundColor: "rgba(0, 0, 0, 0.00)" }}>
-      <ThisTabs
-        variant="scrollable"
+      <Tabs
+        variant={isMobile ? "scrollable" : ""}
         value={value}
         onChange={handleChange}
-        aria-label="Horizontal tabs example"
-        scrollButtons="on"
+        aria-label="project tabs"
+        scrollButtons={isMobile ? "on" : "off"}
         indicatorColor="primary"
         textColor="primary"
+        centered
       >
+        <Tab
+          label="Professional Work"
+          {...a11yProps(4)}
+          style={{ color: "white" }}
+        />
         <Tab
           label="Full-Stack Projects"
           {...a11yProps(3)}
@@ -106,10 +108,10 @@ export default function ProjectsComponent() {
           {...a11yProps(2)}
           style={{ color: "white" }}
         />
-      </ThisTabs>
+      </Tabs>
 
       <TabPanel value={value} index={0}>
-        <FullStackProjects />
+        <ProfessionalWork />
       </TabPanel>
 
       <TabPanel value={value} index={1}>
