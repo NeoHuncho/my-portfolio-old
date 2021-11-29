@@ -3,14 +3,11 @@ import { motion } from "framer-motion";
 import {
   ProjectCard,
   TechnologiesSection,
-  GLink,
-  Github,
+
   ProjectPage,
   Technology,
   TitleSection,
-  GLplatform,
   Firebase,
-  Express,
   NodeJS,
   WOO,
   PHP,
@@ -20,7 +17,6 @@ import react from "../../../specialties/Tabs/FrontEndTechnologies/LogoSource/rea
 import redux from "../../../specialties/Tabs/FrontEndTechnologies/LogoSource/redux.png";
 import fireBase from "../../../specialties/Tabs/DatabaseTechnologies/LogoSource/firebase.png";
 import nodejs from "../../../specialties/Tabs/BackEndTechnologies/LogoSource/nodejs.png";
-import github from "../../../specialties/Tabs/StorageDeployment/LogoSource/github.png";
 import rnNavigation from "../../../specialties/Tabs/FrontEndTechnologies/LogoFinal/RNNavigation.png";
 import php from "../../../specialties/Tabs/FrontEndTechnologies/LogoFinal/PHP.png";
 import WP from "../../../specialties/Tabs/FrontEndTechnologies/LogoFinal/Wordpress.png";

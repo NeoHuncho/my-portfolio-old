@@ -113,16 +113,19 @@ export default function ProjectsComponent() {
       <TabPanel value={value} index={0}>
         <ProfessionalWork />
       </TabPanel>
-
       <TabPanel value={value} index={1}>
-        <FrontEndProjects />
+        <FullStackProjects />
       </TabPanel>
 
       <TabPanel value={value} index={2}>
-        <OtherFrontEndProjects />
+        <FrontEndProjects />
       </TabPanel>
 
       <TabPanel value={value} index={3}>
+        <OtherFrontEndProjects />
+      </TabPanel>
+
+      <TabPanel value={value} index={4}>
         <DataVisualizationProjects />
       </TabPanel>
     </Component>
